@@ -17,21 +17,25 @@ export function Header() {
   const pathname = usePathname();
   const lenis = useLenis();
 
+  const isHome = pathname === "/";
+
   useEffect(() => {
     if (!lenis) return;
     return lenis.on("scroll", (instance) => setIsScrolled(instance.scroll > 60));
   }, [lenis]);
 
+  const isSolid = isScrolled || isMenuOpen || !isHome;
+
   return (
     <>
       <header
         className={cn(
-          "fixed inset-x-0 top-0 z-50 transition-colors duration-500",
-          isScrolled || isMenuOpen ? "bg-cream/90 backdrop-blur-md" : "bg-transparent",
+          "fixed inset-x-0 top-0 z-50 text-cream transition-colors duration-500",
+          isSolid ? "bg-ink/85 backdrop-blur-md" : "bg-transparent",
         )}
       >
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 md:px-10 xl:px-16">
-          <Logo />
+          <Logo className="text-cream" />
 
           <nav className="hidden items-center gap-9 md:flex">
             {mainNav.map((link) => (
@@ -39,7 +43,8 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 aria-current={pathname === link.href ? "page" : undefined}
-                className="group relative text-sm font-medium tracking-wide text-ink/80 transition-colors hover:text-ink"
+                data-cursor="hover"
+                className="group relative text-sm font-medium tracking-wide text-cream/80 transition-colors hover:text-cream"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 h-px w-0 bg-brass transition-all duration-300 group-hover:w-full" />
@@ -49,8 +54,8 @@ export function Header() {
 
           <div className="hidden md:block">
             <Magnetic>
-              <Button href="/contact" variant="primary" className="text-xs">
-                Start a project
+              <Button href="/contact" className="bg-brass text-ink border-brass text-xs hover:bg-cream hover:text-ink hover:border-cream">
+                Book Consultation
               </Button>
             </Magnetic>
           </div>
@@ -62,8 +67,8 @@ export function Header() {
             onClick={() => setIsMenuOpen((open) => !open)}
             className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
           >
-            <span className={cn("h-px w-6 bg-ink transition-transform duration-300", isMenuOpen && "translate-y-[3.5px] rotate-45")} />
-            <span className={cn("h-px w-6 bg-ink transition-transform duration-300", isMenuOpen && "-translate-y-[3.5px] -rotate-45")} />
+            <span className={cn("h-px w-6 bg-cream transition-transform duration-300", isMenuOpen && "translate-y-[3.5px] rotate-45")} />
+            <span className={cn("h-px w-6 bg-cream transition-transform duration-300", isMenuOpen && "-translate-y-[3.5px] -rotate-45")} />
           </button>
         </div>
       </header>

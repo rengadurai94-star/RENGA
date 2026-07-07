@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { Magnetic } from "@/components/ui/Magnetic";
 import { mainNav, socialLinks } from "@/data/navigation";
 import { SITE } from "@/lib/constants";
 import { Logo } from "./Logo";
@@ -7,7 +9,24 @@ import { Logo } from "./Logo";
 export function Footer() {
   return (
     <footer className="bg-ink text-cream">
-      <Container className="grid gap-16 py-20 md:grid-cols-[1.2fr_1fr_1fr]">
+      <Container className="flex flex-col gap-10 py-24 md:py-32">
+        <span className="text-xs font-medium tracking-[0.3em] text-cream/40 uppercase">
+          Book a consultation
+        </span>
+        <Link
+          href="/contact"
+          data-cursor="hover"
+          className="font-display block max-w-5xl text-4xl leading-[0.95] font-medium tracking-tight uppercase sm:text-6xl md:text-7xl lg:text-8xl"
+        >
+          Let&apos;s design something{" "}
+          <span className="text-brass italic">extraordinary</span>
+        </Link>
+        <Magnetic className="w-fit">
+          <Button href="/contact">Book Consultation</Button>
+        </Magnetic>
+      </Container>
+
+      <Container className="grid gap-16 border-t border-cream/10 py-20 md:grid-cols-[1.2fr_1fr_1fr]">
         <div className="flex flex-col gap-6">
           <Logo className="text-cream" />
           <p className="max-w-sm text-sm leading-relaxed text-cream/60">{SITE.tagline}</p>
@@ -38,9 +57,6 @@ export function Footer() {
             <br />
             {SITE.phone}
           </address>
-          <Button href="/contact" variant="secondary" className="mt-2 w-fit border-cream/30 text-cream hover:bg-cream hover:text-ink">
-            Get in touch
-          </Button>
         </div>
       </Container>
 

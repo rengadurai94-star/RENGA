@@ -1,64 +1,35 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { gsap } from "@/lib/gsap";
+import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Reveal } from "@/components/ui/Reveal";
 import { testimonials } from "@/data/services";
 
 export function Testimonials() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const quoteRef = useRef<HTMLDivElement>(null);
-
-  const goTo = (index: number) => {
-    const nextIndex = (index + testimonials.length) % testimonials.length;
-    const el = quoteRef.current;
-    if (!el) {
-      setActiveIndex(nextIndex);
-      return;
-    }
-
-    gsap.to(el, {
-      opacity: 0,
-      y: -12,
-      duration: 0.3,
-      ease: "power2.in",
-      onComplete: () => {
-        setActiveIndex(nextIndex);
-        gsap.fromTo(el, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" });
-      },
-    });
-  };
-
-  const active = testimonials[activeIndex];
-
   return (
     <section className="bg-ink py-28 text-cream md:py-36">
-      <Container className="flex flex-col items-center gap-10 text-center">
-        <Eyebrow className="text-cream/60">Client word</Eyebrow>
+      <Container className="flex flex-col gap-14">
+        <SectionHeading eyebrow="Client word" title="What it's like to work with us." theme="dark" />
 
-        <div ref={quoteRef} className="flex max-w-3xl flex-col items-center gap-8">
-          <blockquote className="font-display text-2xl leading-snug font-medium italic md:text-4xl">
-            &ldquo;{active.quote}&rdquo;
-          </blockquote>
-          <figcaption className="text-sm text-cream/60">
-            {active.name} — {active.role}
-          </figcaption>
-        </div>
-
-        <div className="flex items-center gap-4">
-          {testimonials.map((testimonial, index) => (
-            <button
+        <Reveal stagger className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            <motion.div
               key={testimonial.id}
-              type="button"
-              aria-label={`Show testimonial from ${testimonial.name}`}
-              onClick={() => goTo(index)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                index === activeIndex ? "w-8 bg-brass" : "w-1.5 bg-cream/30"
-              }`}
-            />
+              whileHover={{ y: -8 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="flex flex-col justify-between gap-10 rounded-sm border border-cream/10 bg-charcoal p-8 md:p-10"
+            >
+              <blockquote className="font-display text-xl leading-snug font-medium text-cream italic md:text-2xl">
+                &ldquo;{testimonial.quote}&rdquo;
+              </blockquote>
+              <figcaption className="flex items-center gap-3 text-sm text-cream/60">
+                <span className="h-px w-6 bg-brass" />
+                {testimonial.name} — {testimonial.role}
+              </figcaption>
+            </motion.div>
           ))}
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

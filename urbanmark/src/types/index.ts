@@ -46,3 +46,17 @@ export interface SocialLink {
   label: string;
   href: string;
 }
+
+export interface ExpertiseCategory {
+  id: string;
+  title: string;
+  description: string;
+  seed: string;
+}
+
+export interface Material {
+  id: string;
+  name: string;
+  category: string;
+  swatch: "marble" | "travertine" | "walnut" | "oak" | "fluted" | "brass" | "concrete" | "fabric";
+}

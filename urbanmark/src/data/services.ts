@@ -48,23 +48,43 @@ export const services: Service[] = [
 export const processSteps: ProcessStep[] = [
   {
     step: "01",
-    title: "Discovery",
+    title: "Consultation",
     description: "A walk-through of the space and an honest conversation about how you want to live in it.",
   },
   {
     step: "02",
-    title: "Concept",
-    description: "Spatial studies, mood, and material direction presented as one coherent story, not a moodboard.",
+    title: "Planning",
+    description: "Spatial studies and a brief that turns ambitions into a scope every following step answers to.",
   },
   {
     step: "03",
-    title: "Development",
-    description: "Detailed drawings, joinery specs, and sourcing — the unglamorous work that makes the concept real.",
+    title: "Moodboard",
+    description: "Mood, material direction, and reference presented as one coherent story, not a scrapbook.",
   },
   {
     step: "04",
-    title: "Installation",
-    description: "On-site delivery and styling, room by room, until every surface earns its place.",
+    title: "3D Visualization",
+    description: "Photoreal renders of every room, so decisions are made on the space itself, not a floor plan.",
+  },
+  {
+    step: "05",
+    title: "Material Selection",
+    description: "Stone, timber, and textile sourced and sampled on site, under your own light.",
+  },
+  {
+    step: "06",
+    title: "Execution",
+    description: "Detailed drawings, joinery specs, and procurement — the unglamorous work that makes it real.",
+  },
+  {
+    step: "07",
+    title: "Site Supervision",
+    description: "Weekly walk-throughs to hold the build to the drawing, not the other way around.",
+  },
+  {
+    step: "08",
+    title: "Handover",
+    description: "Final styling and a walkthrough of the finished space, room by room, with you.",
   },
 ];
 
@@ -93,8 +113,8 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const stats: StatItem[] = [
-  { label: "Projects delivered", value: 84 },
-  { label: "Years in practice", value: 12 },
-  { label: "Cities worked in", value: 19 },
-  { label: "Design awards", value: 7 },
+  { label: "Projects", value: 84 },
+  { label: "Clients", value: 61 },
+  { label: "Years", value: 12 },
+  { label: "Cities", value: 19 },
 ];

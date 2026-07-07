@@ -18,9 +18,13 @@ export const BREAKPOINTS = {
 } as const;
 
 export const SITE = {
-  name: "Ostrum Interiors",
-  tagline: "Interiors built to be lived in, not just photographed.",
-  email: "studio@ostruminteriors.com",
-  phone: "+44 20 7946 0958",
+  name: "Urban Mark Interior",
+  shortName: "Urban Mark",
+  headline: "Design Beyond Walls",
+  tagline: "Luxury Interior Design Crafted Around Your Lifestyle",
+  email: "studio@urbanmarkinterior.com",
+  phone: "+91 98765 43210",
+  whatsapp: "https://wa.me/919876543210",
   address: "14 Ropewalk Yard, London E2",
+  mapsEmbedSrc: "https://www.google.com/maps?q=14+Ropewalk+Yard+London+E2&output=embed",
 } as const;

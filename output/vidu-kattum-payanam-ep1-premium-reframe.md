@@ -1,125 +1,128 @@
-SERIES: "Veedu Kattum Payanam" — Episode 1 (PREMIUM REFRAME)
+SERIES: "Veedu Kattum Payanam" — Episode 1 (PREMIUM REFRAME — AUTHORITATIVE VOICE)
 Episode 1 – "Plan Finalize Panrathukku Munnadi Idha Therinjukonga"
 Runtime: 6-7 Minutes
 
 ---
 
-WHAT CHANGED AND WHY
+VOICE NOTE FOR THIS PASS
 
-Original version: every point was framed as "here's how YOU can check this" (ask your
-architect if the structural drawing is ready, confirm orientation yourself, etc.) —
-that's a DIY-empowerment mechanic, and it signals a viewer who plans to supervise
-their own build. That's a low-ticket audience.
+Previous draft had the right structure — case-study, not DIY-checklist — but the
+delivery still read casual: filler connectors like "Seri...", an exclamation-heavy
+sign-off ("Bye Bye!!!!"), and lines that narrated events without stating the
+principle behind them. This pass keeps the same language (Tanglish, matching your
+working style) but:
 
-This version: every point is reframed as a case — something the presenter caught,
-decided, or redesigned on an actual project. The viewer isn't being taught to check
-rebar/orientation/approvals themselves; they're watching proof that if they don't
-hire someone who thinks this way, nobody will catch it for them. The CTA shifts from
-"ask your architect this question" to "this is what you get when you work with us,
-and we take limited projects a year."
+- Cuts casual fillers and softened phrasing.
+- After every case, adds one declarative principle line — a sentence that states
+  what the presenter believes, not just what happened. This is what turns anecdote
+  into expertise.
+- Replaces the recap and sign-off with composed, confident closing language — a
+  standard being stated, not a casual wrap-up.
+- Drops hedging words used loosely ("konjam", "sila neram") where they weaken
+  authority — kept only where they're factually necessary.
 
-Same 4 points, same running order, same series structure (recap, mid-CTA, closer
-teasing Episode 2) — only the framing device changes.
+Apply this same voice standard when Episodes 3-8 are rewritten.
 
 ---
 
 [ HOOK ]
-Kadaisi maasam, oru client vandhu ennakitta oru plan kaatunga...
-Vera oru firm design pannadhu.
-Paakka romba nalla irundhuchu... elevation aloready stunning.
-Aana naan andha plan-a rendaam murai paathapo...
-Ondru rendu decisions irundhuchu... adhu andha family-oda 4 Crore investment-a
-permanent-a affect pannirukum.
-Adhu enna decisions-nu, indha video full-a explain pannaporen.
-Idhu "Veedu Kattum Payanam" series-oda Episode 1.
+Kadaisi maasam, oru client vera oru firm design pannina plan-a ennakitta
+kondu vandhanga.
+Elevation genuinely well done-a irundhuchu.
+Aana naan andha plan-oda structural side-a review pannapo, rendu decisions
+theriyuchu — andha family-oda naalu crore investment-a permanent-a
+compromise pannirukum decisions.
+Andha rendu decisions enna-nu, ivlo detail-a ivlo confidence-oda naan
+ungalukku sollaporen, adha inge explain pannaporen.
+Idhu "Veedu Kattum Payanam" Episode 1.
 
 [SERIES INTRO]
-Indha series-a naan yean start pannen-na...
-Veedu katturadhu, especially oru premium build, 8 to 12 months journey.
-Ovvoru stage-layum edukra ஒரு decision, permanent-a next stage-a affect pannum.
-Idhu oru "how-to" series illa.
-Idhu naan real projects-la edukra decisions-a, real time-la unga munnadi vekkara
-oru series.
-Innaiku Episode 1-la, plan finalize aagara stage-la naan enna paakraen,
-enna catch pannraen-nu paakalam.
+Indha series-a naan yean build pannen-nu sollren.
+Oru premium home, oru purchase illa. Idhu 8 to 12 months process, ovvoru
+early decision-um, apparam enna possible-nu decide pannuthu.
+Idhu oru how-to series illa. Naan ungala unga site-a inspect panna
+kathukodukka poga maatten.
+Naan real projects-la edukra decisions-a ungalukku kaatraen — adhu correct-a
+build pannina veedu-kum, correct-a paakra veedu-kum irukura difference-a
+neenga puriya.
+Innaiku, plan approve panradhukku munnadi naan edukra naalu decisions.
 
 [POINT 1 — Structural Drawing]
-Andha client-oda plan-la, oru beautiful elevation mattum thaan irundhuchu.
-Structural drawing — columns enga varum, beam size enna, slab thickness evlo-nu
-kaatra document — adhu missing.
-Naan andha firm-kitta kettapo, "site-la decide pannikuvom" nu solli irundhanga.
-Adhu naan accept panra oru answer illa.
-4 Crore budget-la, "site-la decide pannikuvom" nnu solranga-na, adhu ஒரு guess work,
-oru plan illa.
-Naan andha project-ku full structural drawing separately commission pannen,
-2 weeks delay aachu, aana andha delay dhaan andha house-a next 50 years-ku
-safe-a irukka vachadhu.
-Idhu thaan naan every project-layum first-a check panra vishayam — idhu neenga
-check panna vendiya vishayam illa, naan check panra vishayam.
+Andha client-oda plan-la ஒரே document mattum irundhuchu — elevation.
+Structural drawing illa. Column positions illa, beam sizing illa, slab
+thickness illa.
+Andha previous firm-kitta naan kettapo, avanga answer — "site-la decide
+pannikuvom."
+Idhu naan accept panra answer illa. Naalu crore project-la, "site-la decide
+pannikuvom" nu solradhu flexibility illa — adhu ஒரு plan-oda absence.
+Naan full structural drawing separately commission pannen. Adhukku rendu
+weeks aachu. Andha rendu weeks-thaan, andha structure next 50 years-ku
+edhu problem-um illama nikka காரணம்.
+Idhu naan edukra ovvoru project-layும் first-a verify panra vishayam —
+client kettadhukku illa, idhu naan non-negotiable-a vaikkura vishayam.
 
 [POINT 2 — Plot Orientation]
-Rendaavadhu case — oru client, avanga cousin veetuku vekka use panna plan-a
-kondu vandhanga.
-"Idhe plan namma plot-kum use pannalam" nu nenachanga.
-Aana andha cousin veedu south-facing road-la irundhuchu, indha client-oda plot
-north-facing.
-Adhe plan copy pannirundha, living room afternoon sun full-a adikkum, bedrooms
-ventilation illama irukkum.
-Naan andha plan-a completely re-orient panni, structure-a maathama, layout-a
-maathi, andha plot-oda exact sun-path-ku match panni redesign pannen.
-Idhu thaan difference — oru template plan vs oru site-specific design.
-Premium build-la, oru plan "reuse" pannradhu illa — ovvoru plot-um unique-a
-treat pannanum.
+Rendaavadhu client, avanga cousin veedu-oda plan-a pidichirukku-nu, "namma
+plot-kum idhe use pannalama" nu kettanga.
+Andha cousin veedu south-facing. Indha client-oda plot north-facing.
+Adhe plan change illama use pannirundha, living room afternoon-la full heat
+adichirukum, bedrooms lifetime-ku ventilation illama irundhirukum.
+Naan andha design muzhukka, andha plot-oda actual sun-path-ku match panni
+re-orient pannivechen — ஒரு wall கூட draw pannறதுக்கு முன்னாடி.
+Oru plan, ஒரு template illa. Adhu ஒரு specific site-ku கொடுக்கற response.
+Naan plans-a plots-oda naடுவுல reuse pannமாட்டேன் — ovvoru plot-um தன்னோட
+design decisions-a தானே earn pannanum.
 
-[POINT 3 — Future Expansion]
-Moonaavadhu case — oru joint family, ippo 4 pேr, aana next 10 years-la
-son marriage aagi, family expand aagalam-nu solranga.
-Naan andha foundation-a, ippa thevai illama irundhaalum, ஒரு extra floor
-load thaanga mudiya maari over-design pannen.
-Client-kitta clear-a solren — "இப்போ கொஞ்சம் extra cost, aana 10 years
-kazhichu neenga foundation break panni strengthen panna வேண்டாம்."
-Idhu naan every family-oda future plan-a kekkara reason — client-a "future-la
-enna venum-nu neenga yosikkanum" nu solli vidamaatten, naan andha conversation-a
-naanே lead pannuven, decision-a naan edukuven.
+[POINT 3 — Future Load]
+Moonaavadhu client, ippo naalu pேr joint family, aana next 10 years-la son
+marriage aagi family expand aagum-nu sonnanga.
+Naan andha foundation-a, ippo thevai illama irundhaalum, ஒரு extra floor
+load-a thaanga muடிya maari design pannivechen.
+Client-kitta naan clear-a sonnen — "ippo konjam extra cost, aana apparam
+finished foundation-a break panni strengthen panradhu, adhu already vாழ்ற
+veetu-yum disturb pannum."
+Naan client sonnadhukku wait pannமாட்டேன். ஒரு family-க்கு 10 years-la enna
+thevai-nu anticipate panradhu, en responsibility — client-oda responsibility
+illa.
 
 [ MID CTA ]
-Idhu maadhiri, real projects-la naan edukra decisions-a paakanumna...
-Ippove subscribe pannunga.
-Description-la irukkura playlist-a save pannikonga.
-Indha series-la ovvoru episode-um, ஒரு real project decision-a base panni irukum.
+Idhu maadhiri real projects-la naan edukra decisions-a continue-a
+paakanumna, ippove subscribe pannunga, indha series-a playlist-la save
+pannikonga.
+Ovvoru episode-um adhukku munnadi vandha episode-oda melea build aagum —
+idhu ஒரு body of work, tips-oda list illa.
 
 [POINT 4 — Approval Timeline]
-Naalaavadhu — Panchayat, Municipality, DTCP, CMDA — approval evlo time
-edukum-nu client-a naan yosikka vidamaatten.
-Naan indha timeline-a, project-oda master schedule-la Day 1-layே build
-panniduven.
-Adhanala client-ku surprise delays varadhu, material price escalation-ku
-already ஒரு buffer plan pannirukும்.
-Indha level planning, ஒரு client தானே manage panna мுடியாதhu — idhukku
-ஒரு dedicated team தேவை.
+Panchayat, Municipality, DTCP, CMDA — ovvoru approval-kum தன்னோட timeline
+irukku, ஒண்ணும் fast illa.
+Naan indha timeline-a client mid-project-la discover panna vidamaatten.
+Approval timeline-a, master schedule-la Day 1-லேயே build pannivடுven —
+contractor book panradhுக்கு முன்னாடியே, material order panradhுக்கு
+முன்னாடியே.
+Indha step-a skip panra projects, approval delay ஆனதும் material price
+escalation-a, contractor availability problem-a face pannும். Ennoda ஒரு
+project-um இந்த risk-ku expose ஆனதே இல்ல.
 
 [RECAP]
-Seri...
-Innaiku Episode 1-la paatha 4 real decisions...
-Structural drawing-a naanே commission panni verify pannuven.
-Plot orientation-ku specific-a ovvoru design-um unique-a redesign pannuven.
-Future expansion-a client-a kekkama, naanே foresee panni foundation design pannuven.
-Approval timeline-a Day 1-layே master schedule-la build pannuven.
+Naalu decisions, naalu projects, ஒரே standard.
+Structural drawing-a naanே commission panni, personally verify pannாம plan
+approve pannமாட்டேன்.
+Ovvoru plot-a அதோட own terms-la design panren — ஒண்ணும் reuse pannமாட்டேன்.
+Family-oda future-a, present-a மட்டும் இல்ல, naanே plan panren.
+Approval timeline-a, project-oda வேற ஏதோ move ஆகறதுக்கு முன்னாடியே schedule-la
+build pannिடுven.
 
 [CLOSER]
-Idhu thaan "Veedu Kattum Payanam" — but idhu unga own-ah supervise panna
-oru guide illa.
-Idhu, naan unga project-a எப்படி handle pannுven-nu neenga paaka oru window.
-Next Episode-la, Foundation stage-la naan edukra decisions-a paakalam —
-soil test-la naan enna kandupudichen, adhu ஒரு project-a எப்படி save pannுchu-nu
-real example-oda paakalam.
-Neenga oru premium home build panna yosikitrukel, aana unga own-ah supervise
-panna time illama irundha...
-Description-la irukkura contact details-la connect pannunga.
-Naan ஒரு வருஷத்துல limited projects mattum edukren, adhanala ovvoru project-layும்
+Plan finalize aayiduchunna, adutha stage — Foundation.
+Next episode-la, soil testing-la naan enna paakraen-nu, andha ஒரே street-ல
+வேற ஒரு builder catch pannாம போன ஒரு failure-a naan eppadi prevent
+pannினேன்-nu உங்களுக்கு காட்டுவேன்.
+Neenga ஒரு premium home build panna plan pannிக்கிட்டு irundha, indha
+level decisions-a chance-ku vidாம ownership எடுக்குற ஒருவரோட வேலை பண்ண
+விரும்பினா — description-la irukkura contact details-la connect pannunga.
+Naan ஒரு வருஷத்துல limited projects mattum edukren, ovvoru project-layும்
 personal-a involve aaven.
-Next Episode-la meet pannalam.
-Bye Bye!
+Next episode-la meet pannalam.
 
 ---
 
@@ -139,18 +142,17 @@ VISUAL DIRECTION
 
 TITLE OPTIONS
 
-1. Veedu Kattum Payanam Ep 1: Plan Stage-la Naan Enna Catch Panren
-2. 4 Crore Home Plan-la Naan Kandupudicha Problem (Series Ep 1)
-3. Oru Premium Build-a Average Build-a Irundhu Vera Panra Vishayam
+1. Veedu Kattum Payanam Ep 1: The Decisions I Make Before I Approve a Plan
+2. What I Found in a Four-Crore Home's Plan (Series Ep 1)
+3. This Is What Separates a Premium Build From an Average One
 
 THUMBNAIL
 
-- Presenter reviewing a real plan/drawing at a desk, focused expression
+- Presenter reviewing a real plan/drawing at a desk, focused, composed expression
 - Elegant text: "What I Catch Before You Build"
-- No warning icons, no checklist ticks — matches the premium series visual language
-  from the other HNW scripts (nri-legacy-home-script.md, land-banking-jv-development-script.md)
+- No warning icons, no checklist ticks — clean premium visual language
 
 DESCRIPTION FIRST LINE
 
-Oru 4 Crore home plan-la naan yean catch pannina 2 decisions, andha family-oda
-next 50 years-a affect pannina — Episode 1 la full case paarunga.
+Naalu crore home plan-la naan catch pannina rendu decisions, andha family-oda
+investment-a permanent-a affect pannirukum — full case, Episode 1-la.

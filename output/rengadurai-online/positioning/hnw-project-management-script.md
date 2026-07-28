@@ -51,7 +51,9 @@ cost, delegation, single point of accountability.
 > சுருக்கமா — உங்க time-ன் opportunity cost-ஐ calculate பண்ணுங்க. Premium scale-ல vendor coordination ஒரு full-time job. Quality control-க்கு trained expertise தேவை. மற்றும் self-management-ல "save பண்றேன்"-ன்னு நினைக்குற cost, பெரும்பாலும் reverse-ஆ இருக்கும்.
 
 ### [5:10 — CLOSER / CTA / 110 sec]
-> இதுன்னா என்ன option-ன்னு கேட்பீங்க — ஒரு single point of accountability. ஒரு architect-led, end-to-end project management model-ல, design-ல இருந்து handover வரைக்கும் ஒரே நபர்/team responsible-ஆ இருப்பாங்க. வேற வேற vendors-கூட நீங்க தனித்தனியா பேசவே தேவை இல்ல, weekly ஒரு structured update கிடைக்கும், மற்றும் எந்த problem வந்தாலும் "இது யாருடையது"-ன்னு குழப்பம் இருக்காது. நீங்க ஒரு busy entrepreneur-ஆ, professional-ஆ, அல்லது NRI-ஆ இருந்து, உங்க time-ஐ protect பண்ணிக்கிட்டே, ஒரு premium home கட்டணும்-ன்னு இருந்தா — description-ல contact details-ல connect பண்ணுங்க. நான் ஒரு வருஷத்துல limited projects மட்டும் எடுத்துக்குறேன், அதனால ஒவ்வொண்ணுக்கும் நேரடியா involve ஆவேன். இது போன்ற content வேணும்னா subscribe பண்ணி bell icon press பண்ணுங்க. நன்றி!
+> இதுன்னா என்ன option-ன்னு கேட்பீங்க — ஒரு single point of accountability. ஒரு architect-led, end-to-end project management model-ல, design-ல இருந்து handover வரைக்கும் ஒரே நபர்/team responsible-ஆ இருப்பாங்க. வேற வேற vendors-கூட நீங்க தனித்தனியா பேசவே தேவை இல்ல, weekly ஒரு structured update கிடைக்கும், மற்றும் எந்த problem வந்தாலும் "இது யாருடையது"-ன்னு குழப்பம் இருக்காது. நீங்க ஒரு busy entrepreneur-ஆ, professional-ஆ, அல்லது NRI-ஆ இருந்து, உங்க time-ஐ protect பண்ணிக்கிட்டே, ஒரு premium home கட்டணும்-ன்னு இருந்தா — ₹1 crore-க்கு மேல project details-ஐ description-ல இருக்குற link மூலம் அனுப்புங்க. நான் ஒரு வருஷத்துல limited projects மட்டும் எடுத்துக்குறேன், அதனால ஒவ்வொண்ணுக்கும் நேரடியா involve ஆவேன். இது போன்ற content வேணும்னா subscribe பண்ணி bell icon press பண்ணுங்க. நன்றி!
+
+CTA (brief-aligned): "For premium home and villa projects above Rs. 1 crore, send your project details."
 
 ---
 

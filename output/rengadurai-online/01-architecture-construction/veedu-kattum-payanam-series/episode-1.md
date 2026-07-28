@@ -117,12 +117,16 @@ Plan finalize aayiduchunna, adutha stage — Foundation.
 Next episode-la, soil testing-la naan enna paakraen-nu, andha ஒரே street-ல
 வேற ஒரு builder catch pannாம போன ஒரு failure-a naan eppadi prevent
 pannினேன்-nu உங்களுக்கு காட்டுவேன்.
-Neenga ஒரு premium home build panna plan pannிக்கிட்டு irundha, indha
-level decisions-a chance-ku vidாம ownership எடுக்குற ஒருவரோட வேலை பண்ண
-விரும்பினா — description-la irukkura contact details-la connect pannunga.
+Neenga ₹1 crore-க்கு மேல premium home அல்லது villa project plan
+pannிக்கிட்டு irundha — unga project details-ஐ description-la irukkura
+link மூலம் அனுப்புங்க.
 Naan ஒரு வருஷத்துல limited projects mattum edukren, ovvoru project-layும்
 personal-a involve aaven.
 Next episode-la meet pannalam.
+
+---
+CTA (brief-aligned): "For premium home and villa projects above Rs. 1
+crore, send your project details."
 
 ---
 

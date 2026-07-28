@@ -98,11 +98,14 @@ Quote-ல் ஒவ்வொரு line item-ஐயும் naanே break-up �
 Kitchen, wardrobes decide aayiduchunna, home almost move-in ready.
 Next episode-la, indha series-oda கடைசி பகுதி — move-in aagுறதுக்கு
 முன், naan personally verify panra final checklist-a காட்டுவேன்.
-Neenga ஒரு premium home build panna plan pannிக்கிட்டு irundha, இந்த
-level scrutiny தேவை-nu therinjுக்கிட்டா — description-la irukkura
-contact details-la connect pannunga.
+₹15 lakh-க்கு மேல kitchen அல்லது wardrobe interior project-க்கு, Urban
+Mark Interior மூலம் enquire pண்ணுங்க — link description-la இருக்கு.
 Naan ஒரு வருஷத்துல limited projects mattum edukren.
 Next, கடைசி episode-la meet pannalam.
+
+---
+CTA (brief-aligned, interiors sub-topic): "For premium interiors above
+Rs. 15 lakhs, enquire through Urban Mark Interior."
 
 ---
 

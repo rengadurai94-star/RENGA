@@ -96,10 +96,14 @@ Flooring, painting முடிந்த பிறகு, adutha stage — Inter
 மற்றும் Wardrobes.
 Next episode-la, ஒரே size kitchen-க்கு ₹3 lakh முதல் ₹15 lakh வரைக்கும்
 quote ஏன் வருது-nu, real project decisions-oda காட்டுவேன்.
-Neenga ஒரு premium home build panna plan pannிக்கிட்டு irundha, இந்த
-level detail-a unga own-ah supervise panna time இல்லாம இருந்தா —
-description-la irukkura contact details-la connect pannunga.
+Neenga ₹1 crore-க்கு மேல premium home அல்லது villa project plan
+pannிக்கிட்டு irundha — unga project details-ஐ description-la irukkura
+link மூலம் அனுப்புங்க.
 Naan ஒரு வருஷத்துல limited projects mattum edukren.
+
+---
+CTA (brief-aligned): "For premium home and villa projects above Rs. 1
+crore, send your project details."
 Next episode-la meet pannalam.
 
 ---

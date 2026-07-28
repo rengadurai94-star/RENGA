@@ -104,11 +104,15 @@ pannுven.
 Structure முடிந்த பிறகு, adutha stage — brickwork மற்றும் plastering.
 Next episode-la, wall crack ஏன் வருதுன்னு, ஒரு project-la naan
 catch pannின decision-oda காட்டுவேன்.
-Neenga ஒரு premium home build panna plan pannிக்கிட்டு irundha, structure
-stage-la இந்த level scrutiny தேவை-nu therinjுக்கிட்டா — description-la
-irukkura contact details-la connect pannunga.
+Neenga ₹1 crore-க்கு மேல premium home அல்லது villa project plan
+pannிக்கிட்டு irundha — unga project details-ஐ description-la irukkura
+link மூலம் அனுப்புங்க.
 Naan ஒரு வருஷத்துல limited projects mattum edukren.
 Next episode-la meet pannalam.
+
+---
+CTA (brief-aligned): "For premium home and villa projects above Rs. 1
+crore, send your project details."
 
 ---
 

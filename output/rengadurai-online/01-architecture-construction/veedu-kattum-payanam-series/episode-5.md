@@ -92,11 +92,15 @@ Wall close aana பிறகு, adutha stage — Flooring மற்றும்
 Next episode-la, flooring, paint select panறதுல naan enna decisions
 edukren-nu, budget-ஐயும் quality-ஐயும் எப்படி balance panren-nu
 காட்டுவேன்.
-Neenga ஒரு premium home build panna plan pannிக்கிட்டு irundha, இந்த
-level foresight தேவை-nu therinjுக்கிட்டா — description-la irukkura
-contact details-la connect pannunga.
+Neenga ₹1 crore-க்கு மேல premium home அல்லது villa project plan
+pannிக்கிட்டு irundha — unga project details-ஐ description-la irukkura
+link மூலம் அனுப்புங்க.
 Naan ஒரு வருஷத்துல limited projects mattum edukren.
 Next episode-la meet pannalam.
+
+---
+CTA (brief-aligned): "For premium home and villa projects above Rs. 1
+crore, send your project details."
 
 ---
 

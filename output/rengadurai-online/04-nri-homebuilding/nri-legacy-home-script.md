@@ -54,7 +54,9 @@ legacy — not budget anxiety.
 > சுருக்கமா — Legacy home-ஐ ஒரு investment property மாதிரி design பண்ணாதீங்க. Remote trust-ஐ ஒரு structured reporting system-ஆ மாத்துங்க. Material procurement-ஐ trusted partner through பண்ணுங்க. Large-value land-க்கு extra legal diligence பண்ணுங்க. மற்றும் boutique attention தரக்கூடிய architect-ஐ select பண்ணுங்க.
 
 ### [6:00 — CLOSER / CTA / 60 sec]
-> உங்க family-க்கு, தலைமுறை தலைமுறையா நினைவுகூரக்கூடிய ஒரு home கட்டணும்-ன்னு யோசிச்சிட்டு இருந்தா — வெளிநாட்டுல இருந்தா கூட — description-ல இருக்குற contact details-ல personal-ஆ connect பண்ணுங்க. நான் limited number of legacy home projects மட்டும் ஒரு வருஷத்துல எடுத்துக்குறேன், ஒவ்வொண்ணுக்கும் direct-ஆ involve ஆவேன். இது போன்ற content வேணும்னா subscribe பண்ணி bell icon press பண்ணுங்க. நன்றி!
+> உங்க family-க்கு, தலைமுறை தலைமுறையா நினைவுகூரக்கூடிய ஒரு home கட்டணும்-ன்னு யோசிச்சிட்டு இருந்தா — வெளிநாட்டுல இருந்தா கூட — Tamil Nadu-ல NRI homebuilding அல்லது real estate advisory-க்கு, DM CONSULT. நான் limited number of legacy home projects மட்டும் ஒரு வருஷத்துல எடுத்துக்குறேன், ஒவ்வொண்ணுக்கும் direct-ஆ involve ஆவேன். இது போன்ற content வேணும்னா subscribe பண்ணி bell icon press பண்ணுங்க. நன்றி!
+
+CTA (brief-aligned, NRI): "For NRI homebuilding or real estate advisory in Tamil Nadu, DM CONSULT."
 
 ---
 

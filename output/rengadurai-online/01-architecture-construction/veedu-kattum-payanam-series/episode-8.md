@@ -92,12 +92,16 @@ naan personally edukra decisions.
 Idhு தான் difference — ஒரு premium build-ல், ஒவ்வொரு stage-லும் ஒருவர்
 ownership எடுக்கணும். Client-க்கு அந்த decisions தெரியவே தேவை இல்ல,
 aana andha decisions correct-ஆ எடுக்கப்பட வேண்டும்.
-Neenga ஒரு premium home build panna plan pண்ணிக்கிட்டு இருந்தா, indha
-level ownership தேவை-nu therinjுக்கிட்டா — description-la irukkura
-contact details-la personal-ஆ connect pண்ணுங்க.
+Neenga ₹1 crore-க்கு மேல premium home அல்லது villa project plan
+pண்ணிக்கிட்டு இருந்தா — unga project details-ஐ description-la irukkura
+link மூலம் அனுப்புங்க.
 Naan ஒரு வருஷத்துல limited projects mattum edukren, ovvoru project-layும்
 நேரடியாக involve aaven.
 Nandri.
+
+---
+CTA (brief-aligned): "For premium home and villa projects above Rs. 1
+crore, send your project details."
 
 ---
 

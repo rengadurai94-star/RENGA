@@ -53,7 +53,9 @@ resonates with landowners who are already wealthy and are optimizing, not saving
 > சுருக்கமா — JV development-ல land உங்க equity, capital developer-ஓடது. Share ratio-ஐ location/FSI அடிப்படையில negotiate பண்ணுங்க. Developer-ன் track record verify பண்ணுங்க. Highest-and-best-use analysis பண்ணி எந்த development type optimal-ன்னு decide பண்ணுங்க. மற்றும் JDA-ஐ lawyer, CA, consultant ஆலோசனையோட finalize பண்ணுங்க.
 
 ### [6:20 — CLOSER / CTA / 60 sec]
-> உங்களுக்கோ, உங்க family-க்கோ 1 ஏக்கருக்கு மேல land இருந்து, அதை எப்படி develop பண்றதுன்னு yosikkitrukirengala — description-ல இருக்குற contact details-ல connect பண்ணுங்க. நான் land evaluation, developer selection, மற்றும் JDA structuring-ல personal-ஆ guidance தர முடியும். இது போன்ற wealth-building real estate content வேணும்னா subscribe பண்ணி bell icon press பண்ணுங்க. நன்றி!
+> உங்களுக்கோ, உங்க family-க்கோ 1 ஏக்கருக்கு மேல land இருந்து, அதை எப்படி develop பண்றதுன்னு yosikkitrukirengala — land development அல்லது JV advisory-க்கு, Square Mount Development Partners-ஐ contact பண்ணுங்க. நான் land evaluation, developer selection, மற்றும் JDA structuring-ல personal-ஆ guidance தர முடியும். இது போன்ற wealth-building real estate content வேணும்னா subscribe பண்ணி bell icon press பண்ணுங்க. நன்றி!
+
+CTA (brief-aligned, landowner/JV): "For land development or JV advisory, contact Square Mount Development Partners."
 
 ---
 

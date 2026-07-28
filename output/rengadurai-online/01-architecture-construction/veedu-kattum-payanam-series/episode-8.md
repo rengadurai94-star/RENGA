@@ -9,7 +9,14 @@ VOICE NOTE
 Same standard as Episodes 1-7: no casual fillers, a declarative principle line
 after every case, a composed recap. This is the finale, so the closer changes —
 it wraps the whole series and states the standard as a whole, rather than
-teasing a next episode.
+teasing a next episode. Also corrected per the brief's "not a contractor/site
+engineer" instruction: Point 2 no longer has the presenter personally testing
+earthing with a multimeter — a licensed electrician provides a documented
+certificate, which he reviews and signs off on. Point 1's water test is now
+framed as a mandatory protocol with the result reported to him, not something
+he personally executes. Point 3 (door/window/lock walkthrough) was left as a
+personal final check — a principal doing the last handover walkthrough
+themselves is normal white-glove practice, not site-engineer work.
 
 ---
 
@@ -33,23 +40,28 @@ final checklist.
 Muthal case — handover date நெருங்கிக்கிட்டு இருந்தது, contractor
 sonnaru, "tiles already போட்டாச்சு, தேவையில்லை."
 Naan அதை accept pannவே இல்லை.
-Naan bathrooms, terrace, water tank area-ல் 48 மணி நேரம் தண்ணீர்
-நிரப்பி வெச்சேன்.
-Terrace corner ஒண்ணுல, minor seepage கண்டுபிடிச்சேன் — furniture,
-electronics வந்த பிறகு இது கண்டுபிடிக்கவே முடியாது.
+Ennoda handover protocol-படி, ஒவ்வொரு project-லும் bathrooms, terrace,
+water tank area-ல் 48 மணி நேரம் mandatory water test நடக்கும், அந்த
+result naan-கிட்ட நேரடியா report ஆகும்.
+Andha report-ல், terrace corner ஒண்ணுல minor seepage flag ஆனது —
+furniture, electronics வந்த பிறகு இது கண்டுபிடிக்கவே முடியாது.
 Naan move-in-க்கு முன் இந்த test-ஐ ஒருபோதும் skip pண்ணமாட்டேன் —
 "finished ஆச்சு" nu சொல்றது, verify pண்ணதுக்கு substitute இல்ல.
 
 [POINT 2 — Electrical & Earthing]
 Rendaavadhu case — electrician "எல்லாம் ready, earthing pண்ணிட்டோம்" nu
 sonnaru.
-Naan ஒவ்வொரு switch, socket, light point-ஐயும் personally on/off
-pண்ணி check pண்ணினேன், earthing-ஐ meter வெச்சு test pண்ணச் சொன்னேன்.
-ஒரு earthing point specification meet pண்ணலை.
+Naan அதை verbal confirmation-ஆ accept pண்ணவே இல்லை.
+Ennoda protocol-படி, ஒவ்வொரு point-உம் ஒரு licensed electrician
+formal-ஆ test pண்ணி, documented certificate தரணும் — naan andha
+certificate-ஐ personally review pண்ணேன்.
+Andha certificate-ல், ஒரு earthing point specification meet pண்ணலை-nu
+தெரிஞ்சுது.
 Naan andha entire point-ஐ redo pண்ணச் சொன்னேன், AC, geyser போன்ற
 high-load appliances-க்கு இது critical.
 Contractor-oda verbal confirmation-ஐ naan ஒருபோதும் final-ஆ accept
-pண்ணமாட்டேன் — naanே physically test pண்ணுவேன்.
+pண்ணமாட்டேன் — documented certificate இல்லாம ஒரு point-உம் sign-off
+ஆகாது.
 
 [POINT 3 — Doors, Windows, Locks]
 Moonaavadhu case — client walkthrough-க்கு ஒரு மணி நேரத்துக்கு முன்,
@@ -77,8 +89,8 @@ pண்ணும் — naan இதை ஒருபோதும் skip pண்�
 [RECAP]
 Naalு decisions, naalு cases, ஒரே standard.
 Water leakage-ஐ furniture வருறதுக்கு முன்னாடியே naanே catch panren.
-Earthing-ஐ verbal confirmation-ல் இல்ல, naanே meter வெச்சு test
-panren.
+Earthing-ஐ verbal confirmation-ல் இல்ல, documented electrician certificate
+மூலம் naanே confirm panren.
 Client walkthrough-க்கு முன், ஒவ்வொரு rough edge-ஐயும் naanே
 personally check pண்ணி fix pண்ணுவேன்.
 CC, OC, warranty papers-ஐ naanே handover-க்கு முன் தொகுத்து
@@ -111,8 +123,8 @@ VISUAL DIRECTION
 |---|---|
 | Hook | Presenter pointing at a small seepage stain caught days before handover |
 | Series intro | Title-card: "Episode 8 — Season Finale" with all 7 previous thumbnails in a grid |
-| Point 1 | Bathroom/terrace filled with water for the 48-hour leakage test |
-| Point 2 | Presenter testing earthing with a meter, MCB board close-up |
+| Point 1 | Presenter reviewing the 48-hour water test report, terrace seepage flagged on the document |
+| Point 2 | Presenter reviewing a licensed electrician's earthing certificate, MCB board close-up |
 | Point 3 | Presenter personally checking a door lock an hour before a client walkthrough |
 | Point 4 | Documents folder — CC/OC papers and warranty cards being organized by the presenter |
 | Recap | Four-point summary, clean minimal text |

@@ -57,6 +57,18 @@ framing, no budget/cheap language, no "comment price" CTAs.
 4. Production plan (`production-plan.md`, moved from the old flat file)
    still applies as-is — shoot order and B-roll sourcing guidance are
    unaffected by the reframe.
+5. **Positioning correction (all 8 episodes):** the brief is explicit that
+   Rengadurai should not read as "a contractor, civil engineer, site
+   engineer, or ordinary construction company owner" — only as "Architect.
+   Real estate developer. Property decision advisor." Several episodes
+   originally had him personally performing site-engineer/QC-technician
+   tasks (checking cement manufacturing dates, physically testing steel,
+   holding a plumb bob, testing earthing with a multimeter, cutting
+   plywood samples by hand). These were reworked so he mandates the
+   quality-certification/testing protocol and personally reviews the
+   resulting reports/certificates to make the accept/reject call — his
+   site engineers and consultants perform the physical testing. Each
+   affected episode's VOICE NOTE documents exactly what changed.
 
 ## Known gap
 

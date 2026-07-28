@@ -8,7 +8,10 @@ VOICE NOTE
 
 Same standard as Episodes 1-3: no casual fillers, a declarative principle line
 after every case, a composed recap and closer. Tanglish throughout — delivery
-register elevated, language unchanged.
+register elevated, language unchanged. Also corrected per the brief's
+"not a contractor/site engineer" instruction: Point 2 no longer has the
+presenter personally operating a plumb bob — he catches the tilt by eye
+during a walkthrough and has the site engineer verify it with the tool.
 
 ---
 
@@ -42,11 +45,13 @@ Idhு ஒரு rush-la skip aaga கூடிய step — naan ஒருபோ
 allow pannமாட்டேன்.
 
 [POINT 2 — Plumb & Level]
-Rendaavadhu case — wall konjam course-ஆ construct aana பிறகு, naan
-plumb bob-ஐ personally வெச்சு check pannினேன்.
-Wall கொஞ்சம் tilt ஆகி இருந்தது — கண்ணுக்கு தெரியாத அளவு, ஆனா door
-frame fit aagும்போது gap தெரியும் level-ல.
-Naan andha portion-ஐ break panni, correct plumb-ல மறுபடியும் kattச்
+Rendaavadhu case — wall konjam course-ஆ construct aana பிறகு, naan site
+walkthrough-ல் andha wall கொஞ்சம் tilt ஆகி இருக்குனு கண்ணால
+கவனிச்சேன்.
+Kண்ணுக்கு almost தெரியாத அளவு தான் — ஆனா door frame fit aagும்போது gap
+தெரியும் level-ல.
+Naan site engineer-ஐ plumb bob வெச்சு verify pண்ணச் சொன்னேன் — confirm
+ஆனது. Naan andha portion-ஐ break panni, correct plumb-ல மறுபடியும் kattச்
 சொன்னேன்.
 Contractor "இது problem illa, adjust panniடலாம்" nu solla try
 pannாru. Naan அதை accept pannமாட்டேன்.
@@ -116,7 +121,7 @@ VISUAL DIRECTION
 | Hook | Hairline crack close-up, presenter narrating calmly at a site |
 | Series intro | Quiet, confident title card |
 | Point 1 | Presenter stopping a mason mid-lay, bricks being soaked in a tub |
-| Point 2 | Plumb bob against a rising wall, presenter marking a portion for rebuild |
+| Point 2 | Presenter noticing the tilt during a walkthrough, site engineer confirming it with a plumb bob, presenter marking the portion for rebuild |
 | Point 3 | Uneven brickwork close-up, presenter directing a redo instead of a thick plaster patch |
 | Mid-CTA | Understated subscribe animation |
 | Point 4 | Waterproofing membrane applied at a bathroom/terrace junction, presenter overseeing |

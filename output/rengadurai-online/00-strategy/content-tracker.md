@@ -11,7 +11,7 @@ what's still a gap. Update the Status column as scripts move from draft
 
 | Asset | Path | Status | Notes |
 |---|---|---|---|
-| Veedu Kattum Payanam (8-episode series) | `01-architecture-construction/veedu-kattum-payanam-series/episode-1.md` ... `episode-8.md` | **Ready — script done, CTA fixed** | Process-education, case-driven, authoritative voice. Ep7 CTA routes to Category 6/Urban Mark Interior since it's kitchen/wardrobe content. |
+| Veedu Kattum Payanam (8-episode series) | `01-architecture-construction/veedu-kattum-payanam-series/episode-1.md` ... `episode-8.md` | **Ready — script done, CTA fixed, positioning corrected** | Process-education, case-driven, authoritative voice. Ep7 CTA routes to Category 6/Urban Mark Interior since it's kitchen/wardrobe content. Positioning pass: removed hands-on site-engineer/QC-technician actions (personally checking cement dates, testing steel, holding a plumb bob, testing earthing with a multimeter, cutting plywood samples) per brief's explicit "not a contractor/civil engineer/site engineer" instruction. Rengadurai now mandates quality-certification systems and personally reviews reports/certificates to make the call — his site engineers/consultants do the physical testing. See each episode's VOICE NOTE for what changed. |
 | Series outline | `01-architecture-construction/veedu-kattum-payanam-series/series-outline.md` | Ready | Canonical titles + episode table |
 | Production/shoot plan | `01-architecture-construction/veedu-kattum-payanam-series/production-plan.md` | Ready | Shoot order (presenter track vs B-roll track), still valid post-reframe |
 

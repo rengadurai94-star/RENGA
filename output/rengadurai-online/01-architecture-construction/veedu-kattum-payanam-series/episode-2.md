@@ -8,7 +8,11 @@ VOICE NOTE FOR THIS PASS
 
 Same voice standard as Episode 1: cut casual fillers, add a declarative principle
 line after each case, replace the recap/sign-off with composed closing language.
-Tanglish retained throughout — only the delivery register changes, not the language.
+Tanglish retained throughout — only the delivery register changes, not the
+language. Also corrected per the brief's "not a contractor/site engineer"
+instruction: Point 2 no longer has the presenter personally standing at the
+bore hole — he commissions an independent geotechnical firm and personally
+reviews the report.
 
 ---
 
@@ -49,8 +53,9 @@ panra vishayam.
 [POINT 2 — What I Personally Verify]
 Rendaavadhu — soil test-nu solli, junior engineer-a anupi report vாங்கிட்டு
 "done" nu solla mudியாது.
-Naan personally site-la iருப்பேன், bore holes எங்க edukraanga-nu paarpen,
-report வந்ததும் andha numbers-a naanே interpret panren.
+Naan ஒரு independent geotechnical firm-ஐ commission பண்ணுவேன், report
+வந்ததும் andha numbers-a naanே personally review pண்ணி, site history-கூட
+cross-check panren.
 Andha "next door" house-la problem வந்ததுக்கு காரணம், avanga oru quick,
 cheap soil test வெச்சு, actual bearing depth verify pannாமலே foundation
 design finalize pannாங்க.
@@ -127,7 +132,7 @@ VISUAL DIRECTION
 | Hook | Split-screen: two adjacent houses, one with a cracked wall, presenter narrating calmly, not alarmed |
 | Series intro | Quiet, confident title card, no checklist icons |
 | Point 1 | Map graphic of soil types across a neighborhood, presenter pointing at two different plots |
-| Point 2 | Presenter on site personally observing a bore-hole sample, report in hand |
+| Point 2 | Presenter reviewing a geotechnical report at a desk, bore-hole photos referenced on screen |
 | Point 3 | Soil report close-up, presenter marking up a raft-foundation sketch |
 | Mid-CTA | Understated subscribe animation |
 | Point 4 | Excavation site with water seepage, presenter catching it before work proceeds |

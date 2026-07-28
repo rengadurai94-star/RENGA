@@ -8,7 +8,12 @@ VOICE NOTE
 
 Same standard as Episodes 1-5: no casual fillers, a declarative principle line
 after every case, a composed recap and closer. Tanglish throughout — delivery
-register elevated, language unchanged.
+register elevated, language unchanged. Reviewed against the brief's
+"not a contractor/site engineer" instruction: this episode's cases are
+already decision/oversight-level (material selection call, quote
+verification, scheduling/sequencing) — only Point 3's opening was
+tightened to frame the catch as a scheduled site quality walkthrough,
+not routine site presence.
 
 ---
 
@@ -55,8 +60,9 @@ quote-ஐ வெச்சு அல்ல.
 கேட்டு verify panren.
 
 [POINT 3 — Primer & Putty]
-Moonaavadhu case — painter top coat straight-ஆ apply panna ready-ஆ
-நின்னார், putty layer குறைவா, primer coats skip aagி இருந்தது.
+Moonaavadhu case — ஒரு scheduled site quality walkthrough-ல், painter top
+coat straight-ஆ apply panna ready-ஆ நின்னார், putty layer குறைவா,
+primer coats skip aagி இருந்தது.
 Naan அந்த work-ஐ நிறுத்தினேன்.
 Cheap putty, moisture வந்தா bubbles, peeling-ஐ உருவாக்கும் — brand name
 paint use pannினாலும் கூட.

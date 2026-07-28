@@ -8,7 +8,12 @@ VOICE NOTE
 
 Same standard as Episodes 1-6: no casual fillers, a declarative principle line
 after every case, a composed recap and closer. Tanglish throughout — delivery
-register elevated, language unchanged.
+register elevated, language unchanged. Also corrected per the brief's
+"not a contractor/site engineer" instruction: Points 1 and 2 no longer have
+the presenter personally cutting a plywood sample or personally testing
+cabinet hinges by hand — he mandates independent lab testing / a hardware
+inspection checklist, reviews those reports, and makes the reject/accept
+call from them.
 
 ---
 
@@ -31,20 +36,21 @@ Naalு decisions, naalு cases — இதுல naan enna verify panren-nu paa
 
 [POINT 1 — Material]
 Muthal case — oru vendor "premium plywood" nu solli quote kudுத்தார்.
-Naan site-ல் andha material sample-ஐ personally cut பண்ணி பார்த்தேன் —
-adhு BWP marine ply இல்ல, adhு ஒரு lower-grade MDF, "premium" nu label
-pannirundhanga.
+Ennoda protocol-படி, ஒவ்வொரு material batch-கும் ஒரு independent lab
+test report கட்டாயம்.
+Andha report naan-கிட்ட வந்தப்போ, adhு BWP marine ply இல்ல, adhு ஒரு
+lower-grade MDF, "premium" nu label pண்ணிருந்தாங்க-nu தெரிஞ்சுது.
 Naan andha entire order-ஐ reject pannினேன்.
 Kitchen-ல் steam, water splash regular-ஆ இருக்கும் — moisture-resistant
 material இல்லாம, carcass rendு வருஷத்துல swell aagும்.
 Naan material grade-ஐ, oru vendor-oda label-ஐ நம்பி ஒருபோதும் accept
-pannமாட்டேன் — naanே physically verify panren.
+pannமாட்டேன் — independent lab report மூலம் naanே verify panren.
 
 [POINT 2 — Hardware]
 Rendaavadhu case — same vendor, hinges-ஐ "branded" nu quote-ல் mention
 pannirundhанga, ஆனா site-ல் delivery aana hardware unbranded-ஆ irundhுchu.
-Naan andha cabinet doors-ஐ personally open pannి close panனி check
-pannினேன் — action smooth-ஆ இல்லை.
+Ennoda site engineer-oda hardware inspection checklist-ல் இது flag
+ஆனது — naan andha report-ஐ review pண்ணி confirm pண்ணேன்.
 Naan andha hardware-ஐயும் அனுப்பி வெச்சேன், Hettich அல்லது Blum grade
 மட்டும் accept pannுவேன்-nu clear-a சொன்னேன்.
 Cheap hardware, ஒரு வருஷத்துல loose aagும், sag aagும் — client அதை
@@ -89,7 +95,7 @@ adhு extra cost-ஆ, extra rework-ஆ மாறும்.
 
 [RECAP]
 Naalு decisions, naalு cases, ஒரே standard.
-Material grade-ஐ naanே physically verify panren.
+Material grade-ஐ, independent lab report மூலம் naanே verify panren.
 Hardware grade-ல் naan ஒருபோதும் compromise pannமாட்டேன்.
 Storage design-ஐ client-oda actual usage-க்கு naanே custom pannுven.
 Quote-ல் ஒவ்வொரு line item-ஐயும் naanே break-up கேட்டு verify panren.
@@ -115,8 +121,8 @@ VISUAL DIRECTION
 |---|---|
 | Hook | Split-screen: two "modular kitchens" — one premium, one basic — same size |
 | Series intro | Quiet, confident title card |
-| Point 1 | Presenter cutting a plywood sample on site, comparing against a genuine BWP sample |
-| Point 2 | Close-up of presenter testing a cabinet hinge, rejecting a delivery |
+| Point 1 | Presenter reviewing an independent lab test report, plywood sample visible for reference |
+| Point 2 | Presenter reviewing a hardware inspection checklist with the site engineer, rejecting a delivery |
 | Point 3 | Overhead kitchen layout graphic showing the broken vs corrected working triangle |
 | Mid-CTA | Understated subscribe animation |
 | Point 4 | Quote document close-up, line items being expanded into a full itemized break-up |

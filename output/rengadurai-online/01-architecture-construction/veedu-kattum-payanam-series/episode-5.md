@@ -8,7 +8,11 @@ VOICE NOTE
 
 Same standard as Episodes 1-4: no casual fillers, a declarative principle line
 after every case, a composed recap and closer. Tanglish throughout — delivery
-register elevated, language unchanged.
+register elevated, language unchanged. Also corrected per the brief's
+"not a contractor/site engineer" instruction: Point 2 no longer has the
+presenter personally checking pipe slope with a tool — his site engineer
+runs that check per protocol and reports to him, and he makes the call
+from the report.
 
 ---
 
@@ -43,14 +47,17 @@ andha conduit ஏற்கனவே இருந்ததால், அது �
 10 வருஷத்துல எங்க இருப்பாங்க-nu naanே anticipate panren.
 
 [POINT 2 — Plumbing Pipe Material & Slope]
-Rendaavadhu case — plumber drainage pipe-ஐ lay pannிக்கிட்டு இருந்தார்,
-naan andha slope-ஐ personally check pannினேன்.
-Slope தப்பா இருந்தது — barely noticeable, ஆனா தண்ணீர் correct-a flow
-aagாது, blockage frequent-ஆ வரும்.
+Rendaavadhu case — plumber drainage pipe-ஐ lay pannிக்கிட்டு இருந்தார்.
+Ennoda site engineer, wall close aagுறதுக்கு முன் ஒவ்வொரு pipe run-கும்
+slope check pண்ணி report தர வேண்டும்-nu ennoda protocol.
+Andha report-ஐ naan review pண்ணும்போது, slope தப்பா இருக்குனு
+கண்டுபிடிச்சேன் — barely noticeable, ஆனா தண்ணீர் correct-a flow aagாது,
+blockage frequent-ஆ வரும்.
 Naan andha entire section-ஐ மறுபடியும் lay pannச் சொன்னேன், wall close
 aagுறதுக்கு முன்னாடியே.
 Idhு wall-க்குள் ஒரு தடவை போனா, correct panradhு extremely கஷ்டம் — naan
-இதை always wall close aagுறதுக்கு முன்னாடியே physically verify panren.
+இதை always wall close aagுறதுக்கு முன்னாடியே, documented report மூலம்
+verify panren.
 
 [POINT 3 — Electrical & Plumbing Coordination]
 Moonaavadhu case — interior layout-ல் ஒரு wardrobe வர இருந்த exact spot-ல்,
@@ -111,7 +118,7 @@ VISUAL DIRECTION
 | Hook | Wall being broken open to add a missed electrical point — a mistake this episode prevents |
 | Series intro | Quiet, confident title card |
 | Point 1 | Empty conduits laid in a wall before closing, labeled for future use |
-| Point 2 | Presenter checking pipe slope with a level tool, halting a lay-in-progress |
+| Point 2 | Presenter reviewing a site engineer's slope-check report, then halting a lay-in-progress |
 | Point 3 | Electrician and plumber reviewing an interior layout together on site with the presenter |
 | Mid-CTA | Understated subscribe animation |
 | Point 4 | Presenter photographing an open wall, then handing labeled photos to a client years later |

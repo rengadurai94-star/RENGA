@@ -12,7 +12,9 @@ Tanglish retained throughout — only the delivery register changes, not the
 language. Also corrected per the brief's "not a contractor/site engineer"
 instruction: Point 2 no longer has the presenter personally standing at the
 bore hole — he commissions an independent geotechnical firm and personally
-reviews the report.
+reviews the report. Point 4 was also tightened — the water-table catch is
+now explicitly sourced from reviewing that same geotechnical report, not
+from an unexplained personal "discovery" on site.
 
 ---
 
@@ -79,13 +81,15 @@ Adutha rendu points, ஒரு project-a completely derail பண்ண மு�
 important.
 
 [POINT 4 — Water Table]
-Naalaavadhu — ECR side ஒரு project, water table romba mேல-ஆ irundhுchu.
-Naan excavation ஆரம்பிக்குறதுக்கு முன்னாடியே இதை கண்டுபிடித்தேன்,
-waterproofing-a extra-strong-ஆ redesign pannivechen.
-Idha naan catch pannாம போயிருந்தா, excavation நடுவுல தண்ணீர் ஊறி,
-schedule delay ஆகி, client-ku surprise cost வந்திருக்கும்.
-Naan indha check-a project-oda Day 1-லேயே build panniduven — client idha
-கேட்கவே தேவை இல்ல.
+Naalaavadhu — ECR side ஒரு project, geotechnical report-ல் water table
+romba mேல-ஆ irundhுchு-nu documented aagi irundhுchு.
+Naan andha report-ஐ excavation ஆரம்பிக்குறதுக்கு முன்னாடியே review
+pண்ணும்போது இதை கண்டுபிடித்தேன், waterproofing-a extra-strong-ஆ redesign
+pannivechen.
+Idha naan report-ல் catch pannாம போயிருந்தா, excavation நடுவுல தண்ணீர்
+ஊறி, schedule delay ஆகி, client-ku surprise cost வந்திருக்கும்.
+Naan geotechnical report review-ஐ project-oda Day 1-லேயே schedule-la
+build panniduven — client idha கேட்கவே தேவை இல்ல.
 
 [POINT 5 — Why I Never Compromise on This]
 ஐந்தாவது — soil test cost, ஒரு multi-crore project-oda budget-ல ஒரு
@@ -105,7 +109,7 @@ Ainthu decisions, ரெண்டு real cases, ஒரே standard.
 Ovvoru plot-கும் independent soil test naanே commission panren.
 Report-a naanே personally verify panren — junior-kitta விடமாட்டேன்.
 Bearing capacity குறைவா vandha, foundation type-a naanே switch panren.
-Water table-a excavation-க்கு முன்னாடியே naanே check panren.
+Water table-ஐ geotechnical report review மூலம், excavation-க்கு முன்னாடியே naanே catch panren.
 மற்றும் இந்த step-ஐ, client rush pannினாலும், naan ஒருபோதும் skip
 pannமாட்டேன்.
 
@@ -135,7 +139,7 @@ VISUAL DIRECTION
 | Point 2 | Presenter reviewing a geotechnical report at a desk, bore-hole photos referenced on screen |
 | Point 3 | Soil report close-up, presenter marking up a raft-foundation sketch |
 | Mid-CTA | Understated subscribe animation |
-| Point 4 | Excavation site with water seepage, presenter catching it before work proceeds |
+| Point 4 | Presenter reviewing the geotechnical report, water-table data highlighted, before excavation begins |
 | Point 5 | Cost comparison shown subtly — a rounding-error visual, not a warning graphic |
 | Recap | Five-point summary, clean minimal text |
 | Closer | Presenter at an active foundation site, confident, direct address |

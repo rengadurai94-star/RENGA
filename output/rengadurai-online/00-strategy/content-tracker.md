@@ -48,7 +48,7 @@ Category 2 below.
 
 | Asset | Path | Status | Notes |
 |---|---|---|---|
-| — | `06-real-estate-investment/README.md` | **GAP** | No content yet on apartment vs land vs plotted development, rental yield vs appreciation, REITs, etc. Tone constraint: educational, evidence-based, never promise returns. |
+| Evaluating a real estate investment (framework) | `06-real-estate-investment/evaluating-real-estate-investment-script.md` | **Ready — CTA aligned** | 9-10 min standalone. Covers apartment vs land vs plotted development, yield vs appreciation, liquidity/resale risk, title/approval/loanability/litigation risk, a 4-pillar "safe asset" framework, brief REITs mention. No return promises, per brief tone constraint. |
 
 ## Category 7: Founder Journey And Authority
 
@@ -89,7 +89,7 @@ treatment as VKP got), not just a CTA fix, before reuse. Not done yet.
 | 3. Interiors | ⚠️ Partial — one episode only, no dedicated content |
 | 4. NRI Homebuilding | ✅ One script ready |
 | 5. Landowner/JV | ✅ One script ready |
-| 6. Real Estate Investment | ❌ Gap |
+| 6. Real Estate Investment | ✅ One script ready |
 | 7. Founder Journey | ❌ Gap |
 
 ## Not Yet Done (repo-wide, applies to everything above)

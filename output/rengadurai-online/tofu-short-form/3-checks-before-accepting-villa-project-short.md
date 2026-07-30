@@ -94,7 +94,7 @@ discovering him.
 see `1-crore-home-can-still-fail-short.md`. Remaining, same TOFU
 treatment (30-90 sec, single idea, soft CTA) applies to each:
 - "Never give your land for JV before checking this."
-- "This is why NRIs lose money in construction."
+- "This is why NRIs lose money in construction." (MOFU long-form pairing already written: `../04-nri-homebuilding/how-nris-lose-money-in-construction-script.md`)
 - "Why cheap contractors become expensive."
-- "This is what makes a villa feel premium."
+- "This is what makes a villa feel premium." (MOFU long-form pairing already written: `../01-architecture-construction/what-makes-a-villa-premium-script.md`)
 - "Before buying a 1 crore apartment, check this first."

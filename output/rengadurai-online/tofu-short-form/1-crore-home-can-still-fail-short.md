@@ -87,7 +87,7 @@ CTA, no brand name mention.
 
 Second of 6 planned TOFU shorts from brief §10. Remaining:
 - "Never give your land for JV before checking this."
-- "This is why NRIs lose money in construction."
+- "This is why NRIs lose money in construction." (MOFU long-form pairing already written: `../04-nri-homebuilding/how-nris-lose-money-in-construction-script.md`)
 - "Why cheap contractors become expensive."
-- "This is what makes a villa feel premium."
+- "This is what makes a villa feel premium." (MOFU long-form pairing already written: `../01-architecture-construction/what-makes-a-villa-premium-script.md`)
 - "Before buying a 1 crore apartment, check this first."

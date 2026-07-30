@@ -19,6 +19,7 @@ checklist).
 | Series outline | `01-architecture-construction/veedu-kattum-payanam-series/series-outline.md` | Ready | — | Canonical titles + episode table |
 | Production/shoot plan | `01-architecture-construction/veedu-kattum-payanam-series/production-plan.md` | Ready | — | Shoot order (presenter track vs B-roll track), still valid post-reframe |
 | Why expensive homes fail without good planning | `01-architecture-construction/why-expensive-homes-fail-without-good-planning-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Direct expansion of the TOFU short "A 1 crore home can still fail" -- 6 planning factors (orientation, structural documentation, future-proofing, service coordination, water/drainage, maintenance). Matches brief's own listed Category 1 content angle. First deliberate TOFU-to-MOFU funnel pairing in the repo. |
+| What makes a villa premium (beyond elevation) | `01-architecture-construction/what-makes-a-villa-premium-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Positive framing for once -- every other script in this run has been cautionary (fails, losses, mistakes, risks). Covers proportion/scale, material honesty, light quality, acoustic comfort, restraint/editing. Matches brief's Category 1 content angle verbatim. Sets up a future TOFU pairing with the last unwritten short-form hook, "This is what makes a villa feel premium." |
 
 **Gap:** none of the brief's 5 named proof projects (Palavakkam villa,
 Nolambur villa, Mandaveli house, etc.) have a dedicated script yet — see

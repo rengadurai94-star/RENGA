@@ -17,9 +17,12 @@ for the first). Same rules applied:
    counter-intuitive to a budget-focused viewer ("but I'm spending a
    crore, how can it fail?").
 2. **Depth:** three quick, concrete planning failures, one line each — no
-   explanation of *how* to fix them. That's exactly what VKP Episode 1
-   (plan finalization, MOFU) is for — this short should make a viewer
-   curious enough to go watch that.
+   explanation of *how* to fix them. That's exactly what the MOFU
+   long-form deep-dive is for — see
+   `../01-architecture-construction/why-expensive-homes-fail-without-good-planning-script.md`,
+   written as this short's direct long-form pairing (6 planning factors
+   instead of 3, in full depth). This short should make a viewer curious
+   enough to go watch that.
 3. **CTA:** soft — follow only.
 4. **Length:** under 50 sec. Resisted expanding any single point.
 

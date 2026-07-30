@@ -88,12 +88,11 @@ discovering him.
 
 ---
 
-## Next in this batch (not yet written)
+## Next in this batch
 
-Per `../00-strategy/funnel-mapping.md`, brief §10 has several more
-ready-to-script hooks — same TOFU treatment (30-90 sec, single idea, soft
-CTA) applies to each:
-- "A 1 crore home can still fail if planning is wrong."
+"A 1 crore home can still fail if planning is wrong" is written —
+see `1-crore-home-can-still-fail-short.md`. Remaining, same TOFU
+treatment (30-90 sec, single idea, soft CTA) applies to each:
 - "Never give your land for JV before checking this."
 - "This is why NRIs lose money in construction."
 - "Why cheap contractors become expensive."

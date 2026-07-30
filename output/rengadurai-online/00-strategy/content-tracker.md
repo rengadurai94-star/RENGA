@@ -49,7 +49,8 @@ Category 2 below.
 
 | Asset | Path | Status | Stage | Notes |
 |---|---|---|---|---|
-| Land banking / JV development script | `05-landowner-jv/land-banking-jv-development-script.md` | **Ready — CTA fixed to Square Mount Development Partners** | MOFU | Covers JV mechanics, share ratio negotiation, developer vetting, highest-and-best-use, agreement structure |
+| Sell, Hold, Lease, Develop, or JV | `05-landowner-jv/sell-hold-lease-develop-jv-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Upstream decision video -- compares all 5 paths for an undecided landowner, closes with a 3-question decision framework. Matches brief's own listed Category 4(Landowner) topic verbatim ("Should you sell, hold, lease, develop, or enter JV?"). Different structural format from the recent mistakes/loss-pattern scripts -- a comparison matrix, not a list. Recommended watch order: before the JV mechanics script below. |
+| Land banking / JV development script | `05-landowner-jv/land-banking-jv-development-script.md` | **Ready — CTA fixed to Square Mount Development Partners** | MOFU | Covers JV mechanics, share ratio negotiation, developer vetting, highest-and-best-use, agreement structure. Assumes JV is already the chosen path -- now cross-referenced with the upstream decision script above. |
 
 ## Category 6: Real Estate Investment Intelligence
 

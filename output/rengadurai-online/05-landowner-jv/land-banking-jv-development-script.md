@@ -10,6 +10,12 @@ urban-fringe land) with significant net worth, not single-plot home builders
 as naturally spoken — "equity", "IRR", "JDA", "RERA", "highest and best use")
 **Format:** Direct-to-camera presenter + drone/land + development render cutaways
 
+**Cross-reference:** `sell-hold-lease-develop-jv-script.md` is the
+upstream decision video — it compares JV against sell/hold/lease/
+self-development for a landowner who hasn't picked a path yet. This
+script assumes JV is already the chosen path and goes deep on mechanics.
+Recommended watch order: that one first, this one second.
+
 ---
 
 ## Why this topic works for the HNW segment

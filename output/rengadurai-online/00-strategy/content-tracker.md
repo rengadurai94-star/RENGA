@@ -56,7 +56,8 @@ Category 2 below.
 
 | Asset | Path | Status | Stage | Notes |
 |---|---|---|---|---|
-| Evaluating a real estate investment (framework) | `06-real-estate-investment/evaluating-real-estate-investment-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Covers apartment vs land vs plotted development, yield vs appreciation, liquidity/resale risk, title/approval/loanability/litigation risk, a 4-pillar "safe asset" framework, brief REITs mention. No return promises, per brief tone constraint. |
+| Evaluating a real estate investment (framework) | `06-real-estate-investment/evaluating-real-estate-investment-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Covers apartment vs land vs plotted development, yield vs appreciation, liquidity/resale risk, title/approval/loanability/litigation risk, a 4-pillar "safe asset" framework. No return promises, per brief tone constraint. Now cross-referenced with the REITs script below. |
+| REITs in India, explained | `06-real-estate-investment/reits-in-india-explained-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Closes the gap flagged in the framework script's notes -- REITs previously got one line, now a full explainer: what a REIT is, how it differs from direct ownership (liquidity, ticket size, management), what it actually owns (commercial, not residential), risk considerations, who it suits vs who direct property suits. No return promises. Different format again -- financial-vehicle explainer + persona comparison, not a mistakes list or decision matrix. |
 
 ## Category 7: Founder Journey And Authority
 

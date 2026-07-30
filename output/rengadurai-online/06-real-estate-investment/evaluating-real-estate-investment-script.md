@@ -69,7 +69,7 @@ advisory, send your requirement."
 ### [7:30 — POINT 5: What Makes a Real Estate Asset Actually Safe / 80 sec]
 > ஐந்தாவது — இந்த எல்லா factors-ஐயும் ஒரு simple framework-ஆ சுருக்கமா சொல்றேன். ஒரு real estate asset "safe"-ஆ இருக்கணும்-ன்னா, இந்த நாலு தூண்கள் இருக்கணும் — clean title & approval, realistic liquidity expectation, location fundamentals (infrastructure, demand, employment proximity), மற்றும் honest yield/appreciation expectation, not hype-based.
 >
-> REITs (Real Estate Investment Trusts) பத்தியும் ஒரு சின்ன குறிப்பு — direct property ownership-ஓட headache இல்லாம, real estate exposure வேணும்-ன்னு நினைக்குறவங்களுக்கு, India-ல் REITs ஒரு relatively newer, regulated option. இது direct property-க்கு substitute இல்ல, ஆனா ஒரு diversification tool-ஆ consider பண்ணலாம் — இதுவும் ஒரு தனி வீடியோவ்ல் deep-ஆ பேசலாம்.
+> REITs (Real Estate Investment Trusts) பத்தியும் ஒரு சின்ன குறிப்பு — direct property ownership-ஓட headache இல்லாம, real estate exposure வேணும்-ன்னு நினைக்குறவங்களுக்கு, India-ல் REITs ஒரு relatively newer, regulated option. இது direct property-க்கு substitute இல்ல, ஆனா ஒரு diversification tool-ஆ consider பண்ணலாம் — REIT என்ன, எப்படி வேலை செய்யுது, யாருக்கு fit ஆகும்-ன்னு ஒரு தனி video-ல் முழுசா பேசியிருக்கேன், அது description-ல் link பண்ணி இருக்கேன்.
 
 ### [8:50 — CLOSER / CTA / 70 sec]
 > சுருக்கமா — Asset type-ஐ உங்க liquidity need-க்கு match பண்ணுங்க. Yield-ஐயும் appreciation-ஐயும் ஒண்ணா குழப்பாதீங்க. Liquidity-ஐ return அளவுக்கே seriously எடுங்க. மற்றும் title, approval, loanability, litigation — இந்த legal safety இல்லாம, எந்த number-உம் meaning இல்ல.

@@ -1,19 +1,23 @@
 # Rengadurai Online — Content Tracker
 
 Maps every content asset in this repo to the Content Strategy Brief's
-7-category structure. Use this to see what exists, what's on-brief, and
-what's still a gap. Update the Status column as scripts move from draft
-→ shot → published.
+7-category structure, and now also to funnel stage (see
+`funnel-mapping.md` for stage definitions: TOFU = Awareness, MOFU =
+Consideration, BOFU = Conversion). Use this to see what exists, what's
+on-brief, and what's still a gap. Update the Status column as scripts
+move from draft → shot → published, and set the Stage column on every
+new asset before writing it (see funnel-mapping.md's "before writing"
+checklist).
 
 ---
 
 ## Category 1: Architecture & Construction
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| Veedu Kattum Payanam (8-episode series) | `01-architecture-construction/veedu-kattum-payanam-series/episode-1.md` ... `episode-8.md` | **Ready — script done, CTA fixed, positioning corrected** | Process-education, case-driven, authoritative voice. Ep7 CTA routes to Category 6/Urban Mark Interior since it's kitchen/wardrobe content. Positioning pass: removed hands-on site-engineer/QC-technician actions (personally checking cement dates, testing steel, holding a plumb bob, testing earthing with a multimeter, cutting plywood samples) per brief's explicit "not a contractor/civil engineer/site engineer" instruction. Rengadurai now mandates quality-certification systems and personally reviews reports/certificates to make the call — his site engineers/consultants do the physical testing. See each episode's VOICE NOTE for what changed. |
-| Series outline | `01-architecture-construction/veedu-kattum-payanam-series/series-outline.md` | Ready | Canonical titles + episode table |
-| Production/shoot plan | `01-architecture-construction/veedu-kattum-payanam-series/production-plan.md` | Ready | Shoot order (presenter track vs B-roll track), still valid post-reframe |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| Veedu Kattum Payanam (8-episode series) | `01-architecture-construction/veedu-kattum-payanam-series/episode-1.md` ... `episode-8.md` | **Ready — script done, CTA fixed, positioning corrected** | MOFU | Process-education, case-driven, authoritative voice. Ep7 CTA routes to Category 6/Urban Mark Interior since it's kitchen/wardrobe content. Positioning pass: removed hands-on site-engineer/QC-technician actions (personally checking cement dates, testing steel, holding a plumb bob, testing earthing with a multimeter, cutting plywood samples) per brief's explicit "not a contractor/civil engineer/site engineer" instruction. Rengadurai now mandates quality-certification systems and personally reviews reports/certificates to make the call — his site engineers/consultants do the physical testing. See each episode's VOICE NOTE for what changed. |
+| Series outline | `01-architecture-construction/veedu-kattum-payanam-series/series-outline.md` | Ready | — | Canonical titles + episode table |
+| Production/shoot plan | `01-architecture-construction/veedu-kattum-payanam-series/production-plan.md` | Ready | — | Shoot order (presenter track vs B-roll track), still valid post-reframe |
 
 **Gap:** none of the brief's 5 named proof projects (Palavakkam villa,
 Nolambur villa, Mandaveli house, etc.) have a dedicated script yet — see
@@ -21,47 +25,53 @@ Category 2 below.
 
 ## Category 2: Project Case Studies
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| — | `02-project-case-studies/README.md` | **GAP** | No scripts exist. This is the brief's highest-trust format — needs real facts (client context, design challenge, decisions made) for one of the 5 named projects before a script can be written. Cannot be drafted from placeholders without fabricating project specifics. |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| — | `02-project-case-studies/README.md` | **GAP** | BOFU (target) | No scripts exist. This is the brief's highest-trust format and the highest-leverage BOFU asset available — needs real facts (client context, design challenge, decisions made) for one of the 5 named projects before a script can be written. Cannot be drafted from placeholders without fabricating project specifics. |
 
 ## Category 3: Interiors
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| VKP Episode 7 (Modular Kitchen & Wardrobe) | `01-architecture-construction/veedu-kattum-payanam-series/episode-7.md` | Partial | Covers kitchen/wardrobe only, within the construction series, not standalone interiors content |
-| Why expensive interiors look cheap | `03-interiors/why-expensive-interiors-look-cheap-script.md` | **Ready — CTA aligned** | 9-10 min standalone. Space planning, lighting-as-a-system, storage/circulation, material/finish coordination, timeless vs trendy choices for resale value. Composite/generic client cases (not named real projects — that's Category 2's job). CTA routes to Urban Mark Interior. |
-| — | `03-interiors/README.md` | Partial | Apartment/villa/commercial case-study content (needs real project facts, same constraint as Category 2) still not covered |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| VKP Episode 7 (Modular Kitchen & Wardrobe) | `01-architecture-construction/veedu-kattum-payanam-series/episode-7.md` | Partial | MOFU | Covers kitchen/wardrobe only, within the construction series, not standalone interiors content |
+| Why expensive interiors look cheap | `03-interiors/why-expensive-interiors-look-cheap-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Space planning, lighting-as-a-system, storage/circulation, material/finish coordination, timeless vs trendy choices for resale value. Composite/generic client cases (not named real projects — that's Category 2's job). CTA routes to Urban Mark Interior. |
+| — | `03-interiors/README.md` | Partial | BOFU (target) | Apartment/villa/commercial case-study content (needs real project facts, same constraint as Category 2) still not covered |
 
 ## Category 4: NRI Homebuilding And Remote Trust
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| NRI legacy home script | `04-nri-homebuilding/nri-legacy-home-script.md` | **Ready — CTA fixed to "DM CONSULT"** | Covers remote trust systems, procurement verification, legal diligence, boutique-architect positioning |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| NRI legacy home script | `04-nri-homebuilding/nri-legacy-home-script.md` | **Ready — CTA fixed to "DM CONSULT"** | MOFU | Covers remote trust systems, procurement verification, legal diligence, boutique-architect positioning |
 
 ## Category 5: Landowner And JV Education
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| Land banking / JV development script | `05-landowner-jv/land-banking-jv-development-script.md` | **Ready — CTA fixed to Square Mount Development Partners** | Covers JV mechanics, share ratio negotiation, developer vetting, highest-and-best-use, agreement structure |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| Land banking / JV development script | `05-landowner-jv/land-banking-jv-development-script.md` | **Ready — CTA fixed to Square Mount Development Partners** | MOFU | Covers JV mechanics, share ratio negotiation, developer vetting, highest-and-best-use, agreement structure |
 
 ## Category 6: Real Estate Investment Intelligence
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| Evaluating a real estate investment (framework) | `06-real-estate-investment/evaluating-real-estate-investment-script.md` | **Ready — CTA aligned** | 9-10 min standalone. Covers apartment vs land vs plotted development, yield vs appreciation, liquidity/resale risk, title/approval/loanability/litigation risk, a 4-pillar "safe asset" framework, brief REITs mention. No return promises, per brief tone constraint. |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| Evaluating a real estate investment (framework) | `06-real-estate-investment/evaluating-real-estate-investment-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Covers apartment vs land vs plotted development, yield vs appreciation, liquidity/resale risk, title/approval/loanability/litigation risk, a 4-pillar "safe asset" framework, brief REITs mention. No return promises, per brief tone constraint. |
 
 ## Category 7: Founder Journey And Authority
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| — | `07-founder-journey/README.md` | **GAP** | No founder-story content yet (why he split brands, 10-year lessons, acre-scale land development lessons, 5-year vision) |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| — | `07-founder-journey/README.md` | **GAP** | TOFU (target) | No founder-story content yet (why he split brands, 10-year lessons, acre-scale land development lessons, 5-year vision). Naturally TOFU-leaning — relatable, broad-appeal — so this should be scripted short once input is available, not as another long-form MOFU deep-dive. Fixing this closes a category gap and the TOFU gap at once. |
+
+## Short-Form (TOFU) — brief §10
+
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| — | — | **GAP** | TOFU | No Shorts/Reels scripts exist at all. Brief §10 already lists ready-to-use hooks ("A 1 crore home can still fail if planning is wrong," "Never give your land for JV before checking this," etc.) — these are fully draftable now, no dependency on real project facts or founder input. Currently the single biggest funnel-stage gap. See `funnel-mapping.md`. |
 
 ## Positioning (adjacent — not one of the 7 named categories)
 
-| Asset | Path | Status | Notes |
-|---|---|---|---|
-| Why HNW clients shouldn't self-manage construction | `positioning/hnw-project-management-script.md` | Ready — CTA fixed | Sales-adjacent positioning piece for full-service project management. Closest fit is Category 1, but it's really a standalone authority/positioning video. |
+| Asset | Path | Status | Stage | Notes |
+|---|---|---|---|---|
+| Why HNW clients shouldn't self-manage construction | `positioning/hnw-project-management-script.md` | Ready — CTA fixed | BOFU | Sales-adjacent positioning piece for full-service project management. Closest fit is Category 1, but it's really a standalone authority/positioning video. Our only BOFU asset besides the (blocked) Category 2 case studies. |
 
 ## Legacy Archive (mass-market — do not use as-is)
 
@@ -93,6 +103,14 @@ treatment as VKP got), not just a CTA fix, before reuse. Not done yet.
 | 6. Real Estate Investment | ✅ One script ready |
 | 7. Founder Journey | ❌ Gap |
 
+## Funnel Balance Summary (see `funnel-mapping.md` for full detail)
+
+| Stage | Status |
+|---|---|
+| TOFU (Awareness) | ❌ **Empty** — no short-form scripts exist; biggest single gap right now |
+| MOFU (Consideration) | ✅ Strong — 6 of 7 ready scripts live here |
+| BOFU (Conversion) | ⚠️ Thin — only the positioning piece; Project Case Studies would be the strongest BOFU asset once unblocked |
+
 ## Not Yet Done (repo-wide, applies to everything above)
 
 - **No content packaging.** Per brief §13, every asset should become a
@@ -102,5 +120,9 @@ treatment as VKP got), not just a CTA fix, before reuse. Not done yet.
 - **No platform-specific adaptations.** Brief §11 wants different angles
   per platform (IG = hook, YouTube = depth, LinkedIn = professional,
   X = sharp opinion). Not built yet for any asset.
+- **No TOFU content at all.** See Funnel Balance Summary above — this is
+  now the top priority gap, and unlike the two remaining category gaps,
+  it doesn't require any external input to close (brief §10 hooks are
+  ready to script).
 - **Monthly content calendar.** The brief specifies quotas (§15) but there
   is no scheduling/calendar document mapping scripts to publish dates.

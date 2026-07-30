@@ -30,7 +30,8 @@ Category 2 below.
 | Asset | Path | Status | Notes |
 |---|---|---|---|
 | VKP Episode 7 (Modular Kitchen & Wardrobe) | `01-architecture-construction/veedu-kattum-payanam-series/episode-7.md` | Partial | Covers kitchen/wardrobe only, within the construction series, not standalone interiors content |
-| — | `03-interiors/README.md` | **GAP** | No dedicated apartment/villa/commercial interiors case-study content yet |
+| Why expensive interiors look cheap | `03-interiors/why-expensive-interiors-look-cheap-script.md` | **Ready — CTA aligned** | 9-10 min standalone. Space planning, lighting-as-a-system, storage/circulation, material/finish coordination, timeless vs trendy choices for resale value. Composite/generic client cases (not named real projects — that's Category 2's job). CTA routes to Urban Mark Interior. |
+| — | `03-interiors/README.md` | Partial | Apartment/villa/commercial case-study content (needs real project facts, same constraint as Category 2) still not covered |
 
 ## Category 4: NRI Homebuilding And Remote Trust
 
@@ -86,7 +87,7 @@ treatment as VKP got), not just a CTA fix, before reuse. Not done yet.
 |---|---|
 | 1. Architecture & Construction | ✅ Strong (8-episode series + positioning piece) |
 | 2. Project Case Studies | ❌ Gap — needs real project facts from client |
-| 3. Interiors | ⚠️ Partial — one episode only, no dedicated content |
+| 3. Interiors | ✅ One standalone + one VKP episode |
 | 4. NRI Homebuilding | ✅ One script ready |
 | 5. Landowner/JV | ✅ One script ready |
 | 6. Real Estate Investment | ✅ One script ready |

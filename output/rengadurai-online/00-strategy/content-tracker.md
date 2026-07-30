@@ -43,6 +43,7 @@ Category 2 below.
 | Asset | Path | Status | Stage | Notes |
 |---|---|---|---|---|
 | NRI legacy home script | `04-nri-homebuilding/nri-legacy-home-script.md` | **Ready — CTA fixed to "DM CONSULT"** | MOFU | Covers remote trust systems, procurement verification, legal diligence, boutique-architect positioning |
+| How NRIs lose money in construction | `04-nri-homebuilding/how-nris-lose-money-in-construction-script.md` | **Ready — CTA aligned** | MOFU | 9-10 min standalone. Deliberately different texture from the legacy-home script and from the recent run of "X factors I check" videos -- structured as 5 loss patterns (no itemized quote, full advance/no milestones, no independent representation, no documentation trail, title verification skipped), each paired with its fix. Sets up a future TOFU pairing with the still-unwritten "This is why NRIs lose money in construction" short. |
 
 ## Category 5: Landowner And JV Education
 

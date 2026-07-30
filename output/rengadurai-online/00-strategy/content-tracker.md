@@ -65,7 +65,8 @@ Category 2 below.
 
 | Asset | Path | Status | Stage | Notes |
 |---|---|---|---|---|
-| — | — | **GAP** | TOFU | No Shorts/Reels scripts exist at all. Brief §10 already lists ready-to-use hooks ("A 1 crore home can still fail if planning is wrong," "Never give your land for JV before checking this," etc.) — these are fully draftable now, no dependency on real project facts or founder input. Currently the single biggest funnel-stage gap. See `funnel-mapping.md`. |
+| 3 things I check before accepting a premium villa project | `tofu-short-form/3-checks-before-accepting-villa-project-short.md` | **Ready** | TOFU | 45-55 sec, first script in the TOFU batch. Soft "Follow" CTA only, no brand/enquiry mention. First real application of the funnel-mapping stage checklist. |
+| Remaining brief §10 hooks (5 more) | — | **GAP** | TOFU | "A 1 crore home can still fail if planning is wrong," "Never give your land for JV before checking this," "This is why NRIs lose money in construction," "Why cheap contractors become expensive," "This is what makes a villa feel premium," "Before buying a 1 crore apartment, check this first" — all fully draftable now, listed at the bottom of the villa-project short script. |
 
 ## Positioning (adjacent — not one of the 7 named categories)
 
@@ -107,7 +108,7 @@ treatment as VKP got), not just a CTA fix, before reuse. Not done yet.
 
 | Stage | Status |
 |---|---|
-| TOFU (Awareness) | ❌ **Empty** — no short-form scripts exist; biggest single gap right now |
+| TOFU (Awareness) | ⚠️ Started — 1 of 6 planned short-form scripts ready |
 | MOFU (Consideration) | ✅ Strong — 6 of 7 ready scripts live here |
 | BOFU (Conversion) | ⚠️ Thin — only the positioning piece; Project Case Studies would be the strongest BOFU asset once unblocked |
 

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const CONTACT = "mailto:hello@closebook.example?subject=Free%20Books%20Health%20Check";
 
 const steps = [
@@ -164,6 +166,7 @@ export default function BookkeeperPage() {
             <a href="#duties" className="hover:text-ink">What Juno does</a>
             <a href="#pricing" className="hover:text-ink">Pricing</a>
             <a href="#faq" className="hover:text-ink">FAQ</a>
+            <Link href="/bookkeeper/demo" className="hover:text-ink">Demo</Link>
           </nav>
           <a
             href={CONTACT}
@@ -197,12 +200,12 @@ export default function BookkeeperPage() {
             >
               Get a free Books Health Check
             </a>
-            <a
-              href="#how"
+            <Link
+              href="/bookkeeper/demo"
               className="rounded-lg border border-line bg-card px-6 py-3 text-center font-medium hover:border-ink-soft"
             >
-              See how it works
-            </a>
+              Try the live demo
+            </Link>
           </div>
           <p className="mt-4 text-sm text-ink-soft">Works with QuickBooks Online and Xero.</p>
         </div>

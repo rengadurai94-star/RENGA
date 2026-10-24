@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --cb-ink: #0f1f1a;
+  --cb-ink-soft: #3d4f48;
+  --cb-paper: #f7f5ef;
+  --cb-card: #ffffff;
+  --cb-line: #e3dfd3;
+  --cb-green: #1f7a55;
+  --cb-green-deep: #145a3e;
+  --cb-mint: #dff2e8;
+  --cb-amber: #b7791f;
+}
+
+@theme inline {
+  --color-ink: var(--cb-ink);
+  --color-ink-soft: var(--cb-ink-soft);
+  --color-paper: var(--cb-paper);
+  --color-card: var(--cb-card);
+  --color-line: var(--cb-line);
+  --color-green: var(--cb-green);
+  --color-green-deep: var(--cb-green-deep);
+  --color-mint: var(--cb-mint);
+  --color-amber: var(--cb-amber);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--cb-paper);
+}
+
+body {
+  background: var(--cb-paper);
+  color: var(--cb-ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

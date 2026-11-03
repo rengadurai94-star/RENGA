@@ -97,4 +97,31 @@ Audience coverage per month: at least 4 pieces for NRIs, 3 for landowners, 3 for
 | R14 | Ezhil Enclave land signals | Early signals of a premium location |
 | R15 | Villa walkthrough + testimonial | Proof |
 
+### Month 1 — December 2026 (`output/content-plan/2026-12/`)
+Theme: "Before you sign anything" (NRI homecoming + year-end).
+| ID | Topic | Core angle |
+|---|---|---|
+| LF1 | NRIs: 7 things to finish in your December trip | Why-before-where, FEMA, docs, specific PoA, decision rights, milestone pay, monsoon site visit |
+| LF2 | Land documents as a marriage alliance | Sale deed, parent docs, EC, patta, FMB, approvals, ground check, red flags |
+| LF3 | Real cost of building vs per-sq.ft rate | 8 cost layers + change orders |
+| LF4 | Announcement vs appreciation | AIIMS Madurai timeline, 6 project stages, two-buyer story, 5 verification questions |
+| R01 | First question I ask every client | Life in 15 years before drawings |
+| R02 | GPA = blank cheque | Specific PoA |
+| R03 | NRIs can't buy farmhouses | FEMA bar + inheritance exception |
+| R04 | Appa's old house | Structure, plot potential, family |
+| R05 | Clean EC ≠ safe land | EC limits |
+| R06 | "DTCP approved" brochure | Verify number, plot on plan, approval copy |
+| R07 | Ezhil Enclave buyer checklist | 6 questions for any developer |
+| R08 | Glass elevation in Madurai heat | Solar gain, shading |
+| R09 | Thinnai and mutram | Traditional climate design today |
+| R10 | Comparing contractor quotes | Common spec sheet |
+| R11 | Spot 5 living-room mistakes | Glare, circulation, ceiling, lighting, storage |
+| R12 | Design for family in 15 years | Ageing, flexible rooms, lift space |
+| R13 | "Metro varudhu sir" | Stage check |
+| R14 | Year-end property health check | EC, patta, tax, PoA, docs, nominee |
+| R15 | Relatives' free advice | Rent, corner plot, "floor later" |
+
+**Devices introduced:** PLOT TWIST card; characters Broker Bala, WhatsApp Mama, Adjust Anna. Reuse them, but vary their jokes.
+**Parked for later months:** NRI capital gains and TDS (needs a CA guest), Ezhil Enclave long-form case study (needs intake facts), Chennai-specific content, vaasthu vs design (confirm the client's stance first).
+
 Add each new month's 19 topics here after delivery.

@@ -76,6 +76,8 @@ Same as Instagram plus a pinned post with a WhatsApp click-to-chat button. Faceb
 | Investor | "Land vs Villa vs Apartment: ₹1 Cr Comparison Sheet" | **INVEST** |
 | Interior client (₹10–15 L+) | "Interior Budget Planner: Where to Spend, Where to Save" | **INTERIOR** |
 
+**Keywords already used in the model scripts** (`output/rengadurai-model-scripts.md`): **HOME** (architect + developer + advisor), **ASSET** (REIT / investment choice), **LAND** (idle land, 1-acre evaluation), **JV** (joint venture offers), **PROPERTY** (exit decisions), **PLOT** and **EZHIL** (Ezhil Enclave enquiries). Set up an auto-DM for each, and route PLOT/EZHIL straight to the sales team since they are project enquiries, not advisory leads.
+
 ### 3.2 Funnel
 ```
 Content (reel / video / post)

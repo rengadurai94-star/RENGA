@@ -3,6 +3,8 @@
 The working brief for the monthly content package. Read this before every "CREATE NEXT MONTH'S CONTENT" run.
 
 **Monthly deliverable:** 4 YouTube long-form scripts + 15 Instagram Reel scripts = 19 original pieces.
+
+**Workflow (client instruction, Nov 2026):** Topics first, scripts second. Present topic options (topic, angle, hook, audience) and wait for approval. Write full scripts only for approved topics. Reel scripts follow the approved model-script format: Title → Duration → Format → Location → Visuals (bullets) → HOOK + spoken script.
 **Sources of truth:** `output/rengadurai-brand-playbook.md` (strategy), `output/rengadurai-model-scripts.md` (approved voice), this file (client profile, voice rules, topic ledger), `intake.md` (open questions and story bank).
 
 ---

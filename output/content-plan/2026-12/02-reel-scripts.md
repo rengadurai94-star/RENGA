@@ -1,5 +1,7 @@
 # December 2026 — Instagram Reel Scripts (15)
 
+> **STATUS: Draft rejected by the client.** The reel scripts and their structure need rework. They will be rewritten only after the topics are approved, using the model-script format. Kept for reference; don't send to production.
+
 **Rules applied to every reel**
 - Spoken script ≤ ~140 words, so it fits 45–60s at a natural Tanglish pace (fixes the Month 0 overrun).
 - The hook lands in the first 1–3 seconds, before any logo or intro.

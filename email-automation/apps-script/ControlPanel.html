@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <?!= include_('Styles') ?>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab active" data-p="overview">Overview</div>
+    <div class="tab" data-p="campaigns">Campaigns</div>
+    <div class="tab" data-p="new">New</div>
+    <div class="tab" data-p="contacts">Contacts</div>
+    <div class="tab" data-p="settings">Settings</div>
+  </div>
+  <div id="msg" class="msg"></div>
+
+  <!-- ================= OVERVIEW ================= -->
+  <div class="pane active" id="p-overview">
+    <div id="alerts"></div>
+    <div class="tiles" id="tiles"><div class="small"><span class="spinner"></span> Loading…</div></div>
+    <h3>Quick actions</h3>
+    <button onclick="google.script.run.uiOpenEditor('')">✏️ Edit email content</button>
+    <button onclick="google.script.run.uiOpenImport()">📥 Import contacts</button>
+    <button class="secondary" onclick="act('uiRunNow', [], 'Scheduler run finished.')">▶️ Run now</button>
+    <button class="secondary" onclick="load()">🔄 Refresh</button>
+    <p class="small" id="foot"></p>
+  </div>
+
+  <!-- ================= CAMPAIGNS ================= -->
+  <div class="pane" id="p-campaigns">
+    <div id="clist"></div>
+  </div>
+
+  <!-- ================= NEW CAMPAIGN ================= -->
+  <div class="pane" id="p-new">
+    <h2>Create a campaign</h2>
+    <label>Campaign name</label>
+    <input type="text" id="n-name" placeholder="e.g. 20-year buildings – Nov 2026">
+    <label>Email content <span class="hint">(only "Ready" content can be started)</span></label>
+    <select id="n-content"></select>
+    <button class="secondary" onclick="google.script.run.uiOpenEditor(val('n-content'))">Open in editor / preview</button>
+    <label>Send to</label>
+    <select id="n-target" onchange="toggleTag()">
+      <option value="ALL">All contacts (eligible only)</option>
+      <option value="SELECTED">Only ticked contacts (Select column)</option>
+      <option value="TAG">Contacts with a tag…</option>
+    </select>
+    <input type="text" id="n-tag" placeholder="Tag name, e.g. test" style="display:none;margin-top:4px">
+    <div class="small" id="n-taginfo"></div>
+    <div class="row">
+      <div><label>Start date</label><input type="date" id="n-start"></div>
+      <div><label>End date <span class="hint">(optional)</span></label><input type="date" id="n-end"></div>
+    </div>
+    <div class="row">
+      <div><label>Daily limit</label><input type="number" id="n-limit" min="1"></div>
+      <div><label>Start sending at</label><input type="time" id="n-time"></div>
+    </div>
+    <label>Sending days</label>
+    <div class="days" id="n-days"></div>
+    <p class="small">Unsubscribed, bounced, "Do Not Contact" and suppressed contacts are excluded automatically. Each contact receives this campaign at most once.</p>
+    <button class="good" onclick="createCampaign(false)">Save as draft</button>
+    <button onclick="createCampaign(true)">Create &amp; start</button>
+  </div>
+
+  <!-- ================= CONTACTS ================= -->
+  <div class="pane" id="p-contacts">
+    <h2>Contacts</h2>
+    <div id="cstats" class="small"></div>
+    <button onclick="google.script.run.uiOpenImport()">📥 Import CSV / Excel</button>
+    <button class="secondary" onclick="act('uiValidateContacts', [], 'Contacts validated.')">Validate &amp; assign IDs</button>
+    <h3>Add one contact</h3>
+    <label>Email address</label><input type="email" id="a-email">
+    <label>Company name</label><input type="text" id="a-company">
+    <div class="row">
+      <div><label>Contact person</label><input type="text" id="a-person"></div>
+      <div><label>Building</label><input type="text" id="a-building"></div>
+    </div>
+    <label>Tags <span class="hint">(comma separated)</span></label><input type="text" id="a-tags">
+    <button onclick="addContact()">Add contact</button>
+    <p class="small">To edit or delete contacts, use the <b>Contacts</b> sheet directly (tick <b>Select</b> then menu → Contacts → Delete ticked contacts).</p>
+  </div>
+
+  <!-- ================= SETTINGS ================= -->
+  <div class="pane" id="p-settings">
+    <h2>Sending settings</h2>
+    <div class="row">
+      <div><label>Default daily limit</label><input type="number" id="s-DEFAULT_DAILY_LIMIT" min="1"></div>
+      <div><label>Global daily cap</label><input type="number" id="s-GLOBAL_DAILY_CAP" min="1"></div>
+    </div>
+    <div class="row">
+      <div><label>Default start time</label><input type="time" id="s-DEFAULT_SEND_TIME"></div>
+      <div><label>Stop sending at</label><input type="time" id="s-SENDING_WINDOW_END"></div>
+    </div>
+    <label>Default sending days</label><div class="days" id="s-days"></div>
+    <div class="row">
+      <div><label>Emails per run</label><input type="number" id="s-MAX_EMAILS_PER_RUN" min="1" max="20"></div>
+      <div><label>Run every (min)</label><select id="s-SCHEDULER_INTERVAL_MINUTES"><option>5</option><option>10</option><option>15</option><option>30</option></select></div>
+    </div>
+    <div class="row">
+      <div><label>Min. days between emails to same contact</label><input type="number" id="s-MIN_DAYS_BETWEEN_EMAILS" min="0"></div>
+      <div><label>Quota reserve</label><input type="number" id="s-QUOTA_RESERVE" min="0"></div>
+    </div>
+    <h3>Testing</h3>
+    <label><input type="checkbox" id="s-TEST_MODE"> Test mode (all campaign emails go to the test address)</label>
+    <label>Test address <span class="hint">(empty = you)</span></label><input type="email" id="s-TEST_RECIPIENT">
+    <h3>Unsubscribe</h3>
+    <label><input type="checkbox" id="s-ADD_UNSUBSCRIBE_FOOTER"> Add unsubscribe footer below my email (recommended)</label>
+    <label>Unsubscribe web-app URL <span class="hint">(see setup guide)</span></label>
+    <input type="text" id="s-UNSUBSCRIBE_WEB_APP_URL" placeholder="https://script.google.com/macros/s/…/exec">
+    <label><input type="checkbox" id="s-PROCESS_INBOX"> Detect bounces &amp; "unsubscribe" replies automatically</label>
+    <label>Notifications to <span class="hint">(empty = you)</span></label><input type="email" id="s-NOTIFY_EMAIL">
+    <p></p>
+    <button onclick="saveSettings()">Save settings</button>
+    <p class="small">All other settings are in the <b>Settings</b> sheet. Times are Dubai time (Asia/Dubai).</p>
+  </div>
+
+<script>
+  var DATA = null;
+  var DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+  document.querySelectorAll('.tab').forEach(function (t) {
+    t.onclick = function () {
+      document.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('active'); });
+      document.querySelectorAll('.pane').forEach(function (x) { x.classList.remove('active'); });
+      t.classList.add('active');
+      document.getElementById('p-' + t.dataset.p).classList.add('active');
+    };
+  });
+
+  function el(id) { return document.getElementById(id); }
+  function val(id) { return el(id).value; }
+  function esc(s) { return String(s === null || s === undefined ? '' : s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function show(text, kind) { var m = el('msg'); m.className = 'msg ' + (kind || 'ok'); m.textContent = text; if (kind !== 'err') setTimeout(function () { if (m.textContent === text) m.className = 'msg'; }, 9000); }
+  function busy(on) { document.querySelectorAll('button').forEach(function (b) { b.disabled = on; }); }
+
+  function act(fn, args, okText) {
+    busy(true); show('Working…', 'info');
+    var r = google.script.run.withSuccessHandler(function (res) {
+      busy(false);
+      var t = okText;
+      if (typeof res === 'string') t = res;
+      else if (res && res.sent !== undefined) t = res.skipped === 'locked' ? 'Another run is in progress — try again shortly.' : 'Run finished: ' + res.sent + ' sent, ' + res.retry + ' retry, ' + res.failed + ' failed, ' + res.skipped + ' skipped.';
+      show(t, 'ok'); load();
+    }).withFailureHandler(function (e) { busy(false); show(e.message || String(e), 'err'); });
+    r[fn].apply(r, args);
+  }
+
+  function daysBoxes(containerId, selected) {
+    var sel = String(selected || '').split(/[,\s]+/);
+    el(containerId).innerHTML = DAYS.map(function (d) {
+      return '<label><input type="checkbox" value="' + d + '"' + (sel.indexOf(d) >= 0 ? ' checked' : '') + '> ' + d + '</label>';
+    }).join('');
+  }
+  function daysValue(containerId) {
+    return Array.prototype.slice.call(el(containerId).querySelectorAll('input:checked')).map(function (i) { return i.value; }).join(',');
+  }
+
+  function load() {
+    google.script.run.withSuccessHandler(render).withFailureHandler(function (e) { show(e.message, 'err'); }).uiGetPanelData();
+  }
+
+  function render(d) {
+    DATA = d;
+    var m = d.metrics, h = d.health;
+    var tiles = [
+      ['Total contacts', m.totalContacts], ['Emails sent', m.totalSent], ['Pending', m.pending], ['Failed / bounced', m.failed],
+      ['Unsubscribed', m.unsubscribed], ['Active campaigns', m.active + m.scheduled], ['Completed campaigns', m.completed],
+      ['Sent today', m.sentToday + ' / ' + m.globalCap], ['Completion', m.completionPct + '%'], ['Gmail quota left', m.quotaLeft]
+    ];
+    el('tiles').innerHTML = tiles.map(function (t) { return '<div class="tile"><div class="v">' + esc(t[1]) + '</div><div class="l">' + esc(t[0]) + '</div></div>'; }).join('');
+    var a = [];
+    if (!h.triggersOk) a.push('<div class="alert bad">⚠️ Cloud automation is not installed. Menu → System → Install / repair cloud automation.</div>');
+    if (h.testMode) a.push('<div class="alert">🧪 TEST MODE is ON — campaign emails go only to the test address.</div>');
+    if (h.errors24) a.push('<div class="alert bad">' + h.errors24 + ' error(s) in the last 24h — see the Error Log sheet.</div>');
+    if (!h.webAppConfigured) a.push('<div class="alert">Unsubscribe uses "reply to unsubscribe". Deploy the web app for one-click links (setup guide, step 6).</div>');
+    var notReady = d.contents.filter(function (c) { return c.status !== 'Ready'; }).length;
+    if (d.contents.length && notReady === d.contents.length) a.push('<div class="alert">Your email content is still a Draft. Open the editor, preview, send yourself a test, then save it as <b>Ready</b>.</div>');
+    el('alerts').innerHTML = a.join('');
+    el('foot').textContent = 'Sending account: ' + d.owner + ' · Last scheduler run: ' + (h.lastRun || '—') + ' · ' + d.tz;
+
+    // campaigns
+    el('clist').innerHTML = d.campaigns.length ? d.campaigns.map(campaignCard).join('') : '<p class="small">No campaigns yet. Use the <b>New</b> tab.</p>';
+
+    // new campaign form
+    el('n-content').innerHTML = d.contents.map(function (c) { return '<option value="' + esc(c.id) + '">' + esc(c.id + ' · ' + c.name + ' (' + c.status + ')') + '</option>'; }).join('') || '<option value="">— create content first —</option>';
+    if (!el('n-start').value) el('n-start').value = d.defaults.today;
+    if (!el('n-limit').value) el('n-limit').value = d.defaults.dailyLimit;
+    if (!el('n-time').value) el('n-time').value = d.defaults.sendTime;
+    if (!el('n-days').innerHTML) daysBoxes('n-days', d.defaults.sendingDays);
+    el('n-taginfo').textContent = 'Ticked contacts: ' + d.selected + (Object.keys(d.tags).length ? ' · Tags: ' + Object.keys(d.tags).map(function (t) { return t + ' (' + d.tags[t] + ')'; }).join(', ') : '');
+
+    el('cstats').innerHTML = esc(m.totalContacts) + ' contacts · ' + esc(m.unsubscribed) + ' unsubscribed · ' + esc(m.noPermission) + ' without permission';
+
+    // settings
+    var s = d.settings;
+    ['DEFAULT_DAILY_LIMIT','GLOBAL_DAILY_CAP','DEFAULT_SEND_TIME','SENDING_WINDOW_END','MAX_EMAILS_PER_RUN','SCHEDULER_INTERVAL_MINUTES','MIN_DAYS_BETWEEN_EMAILS','QUOTA_RESERVE','TEST_RECIPIENT','UNSUBSCRIBE_WEB_APP_URL','NOTIFY_EMAIL'].forEach(function (k) {
+      if (el('s-' + k) && document.activeElement !== el('s-' + k)) el('s-' + k).value = s[k] === undefined ? '' : s[k];
+    });
+    ['TEST_MODE','ADD_UNSUBSCRIBE_FOOTER','PROCESS_INBOX'].forEach(function (k) { el('s-' + k).checked = /^(yes|true|y|on|1)$/i.test(String(s[k])); });
+    daysBoxes('s-days', s.DEFAULT_SENDING_DAYS);
+  }
+
+  function campaignCard(c) {
+    var btns = [];
+    if (c.status === 'Draft') btns.push('<button class="good" onclick="cAct(\'' + c.id + '\',\'start\')">▶ Start</button>', '<button class="secondary" onclick="delDraft(\'' + c.id + '\')">Delete</button>');
+    if (c.status === 'Active' || c.status === 'Scheduled') btns.push('<button class="warn" onclick="cAct(\'' + c.id + '\',\'pause\')">⏸ Pause</button>');
+    if (c.status === 'Paused') btns.push('<button class="good" onclick="cAct(\'' + c.id + '\',\'resume\')">⏯ Resume</button>');
+    if (['Active','Scheduled','Paused'].indexOf(c.status) >= 0) btns.push('<button class="secondary" onclick="cAct(\'' + c.id + '\',\'addContacts\')">+ New contacts</button>', '<button class="danger" onclick="cAct(\'' + c.id + '\',\'stop\')">⛔ Stop</button>');
+    var editable = ['Draft','Active','Scheduled','Paused'].indexOf(c.status) >= 0;
+    return '<div class="card"><div><b>' + esc(c.id) + '</b> · ' + esc(c.name) + ' <span class="badge b-' + esc(c.status) + '">' + esc(c.status) + '</span></div>' +
+      '<div class="progress"><div style="width:' + Number(c.progress || 0) + '%"></div></div>' +
+      '<div class="small">' + esc(c.sent) + ' sent · ' + esc(c.pending) + ' pending · ' + esc(c.failed) + ' failed · ' + esc(c.skipped) + ' skipped · ' + esc(c.progress) + '% done<br>' +
+      'Today ' + esc(c.sentToday) + '/' + esc(c.dailyLimit) + ' · ' + esc(c.sendTime) + ' · ' + esc(c.sendingDays) + '<br>' +
+      'Content ' + esc(c.contentId) + ' · Target ' + esc(c.target) + ' · Start ' + esc(c.startDate) + (c.endDate ? ' · End ' + esc(c.endDate) : '') + (c.estFinish ? ' · Est. finish ' + esc(c.estFinish) : '') + '</div>' +
+      '<div style="margin-top:6px">' + btns.join('') + '</div>' +
+      (editable ? '<details style="margin-top:6px"><summary class="small">Change limit / time / days</summary>' +
+        '<div class="row"><div><label>Daily limit</label><input type="number" min="1" id="e-limit-' + c.id + '" value="' + esc(c.dailyLimit) + '"></div>' +
+        '<div><label>Start time</label><input type="time" id="e-time-' + c.id + '" value="' + esc(c.sendTime) + '"></div></div>' +
+        '<label>Sending days</label><div class="days" id="e-days-' + c.id + '"></div>' +
+        '<div class="row"><div><label>Start date</label><input type="date" id="e-start-' + c.id + '" value="' + esc(c.startDate) + '"></div>' +
+        '<div><label>End date</label><input type="date" id="e-end-' + c.id + '" value="' + esc(c.endDate) + '"></div></div>' +
+        '<button onclick="saveCampaign(\'' + c.id + '\')">Save changes</button></details>' : '') +
+      '</div>';
+  }
+
+  document.addEventListener('toggle', function (e) {
+    var d = e.target.querySelector && e.target.querySelector('.days');
+    if (d && !d.innerHTML) {
+      var id = d.id.replace('e-days-', '');
+      var c = DATA.campaigns.filter(function (x) { return x.id === id; })[0];
+      daysBoxes(d.id, c ? c.sendingDays : '');
+    }
+  }, true);
+
+  function cAct(id, action) {
+    if (action === 'stop' && !confirm('Stop ' + id + ' permanently? Remaining recipients are cancelled. (Use Pause to continue later.)')) return;
+    if (action === 'start' && !confirm('Start ' + id + ' now? Emails will be sent automatically according to its schedule.')) return;
+    act('uiCampaignAction', [id, action], 'Done.');
+  }
+  function delDraft(id) { if (confirm('Delete draft ' + id + '?')) act('uiDeleteDraft', [id], 'Draft deleted.'); }
+  function saveCampaign(id) {
+    act('uiUpdateCampaign', [id, { dailyLimit: val('e-limit-' + id), sendTime: val('e-time-' + id), sendingDays: daysValue('e-days-' + id), startDate: val('e-start-' + id), endDate: val('e-end-' + id) }], 'Campaign updated.');
+  }
+
+  function toggleTag() { el('n-tag').style.display = val('n-target') === 'TAG' ? 'block' : 'none'; }
+
+  function createCampaign(startNow) {
+    var target = val('n-target');
+    if (target === 'TAG') { if (!val('n-tag').trim()) return show('Enter a tag name.', 'err'); target = 'TAG:' + val('n-tag').trim(); }
+    var form = { name: val('n-name'), contentId: val('n-content'), target: target, startDate: val('n-start'), endDate: val('n-end'), dailyLimit: val('n-limit'), sendTime: val('n-time'), sendingDays: daysValue('n-days') };
+    if (startNow && !confirm('Create and start this campaign now?')) return;
+    busy(true); show('Creating…', 'info');
+    google.script.run.withSuccessHandler(function (id) {
+      if (!startNow) { busy(false); show('Draft ' + id + ' created. Start it from the Campaigns tab.'); el('n-name').value = ''; load(); return; }
+      google.script.run.withSuccessHandler(function (r) { busy(false); show(id + ': ' + r); el('n-name').value = ''; load(); })
+        .withFailureHandler(function (e) { busy(false); show('Draft ' + id + ' created but not started:\n' + e.message, 'err'); load(); })
+        .uiCampaignAction(id, 'start');
+    }).withFailureHandler(function (e) { busy(false); show(e.message, 'err'); }).uiCreateCampaign(form);
+  }
+
+  function addContact() {
+    act('uiAddContact', [{ email: val('a-email'), company: val('a-company'), person: val('a-person'), building: val('a-building'), tags: val('a-tags') }], 'Contact added.');
+    ['a-email','a-company','a-person','a-building','a-tags'].forEach(function (i) { el(i).value = ''; });
+  }
+
+  function saveSettings() {
+    var o = {};
+    ['DEFAULT_DAILY_LIMIT','GLOBAL_DAILY_CAP','DEFAULT_SEND_TIME','SENDING_WINDOW_END','MAX_EMAILS_PER_RUN','SCHEDULER_INTERVAL_MINUTES','MIN_DAYS_BETWEEN_EMAILS','QUOTA_RESERVE','TEST_RECIPIENT','UNSUBSCRIBE_WEB_APP_URL','NOTIFY_EMAIL'].forEach(function (k) { o[k] = val('s-' + k); });
+    ['TEST_MODE','ADD_UNSUBSCRIBE_FOOTER','PROCESS_INBOX'].forEach(function (k) { o[k] = el('s-' + k).checked ? 'Yes' : 'No'; });
+    o.DEFAULT_SENDING_DAYS = daysValue('s-days');
+    act('uiSaveSettings', [o], 'Settings saved.');
+  }
+
+  load();
+  // Auto-refresh every minute, but never while you are typing or editing.
+  setInterval(function () {
+    var active = document.querySelector('.tab.active').dataset.p;
+    var editing = document.querySelector('details[open]') || /INPUT|SELECT|TEXTAREA/.test((document.activeElement || {}).tagName || '');
+    if (!document.hidden && !editing && (active === 'overview' || active === 'campaigns')) load();
+  }, 60000);
+</script>
+</body>
+</html>

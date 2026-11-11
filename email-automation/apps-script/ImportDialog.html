@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <?!= include_('Styles') ?>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <h2>Import contacts from a file</h2>
+  <p>Choose a <b>.csv</b>, <b>.xlsx</b> or <b>.xls</b> file. The first sheet is imported.<br>
+  <span class="small">Recognised columns (any order, any of these names): <b>Email</b> (required), Company, Contact Person / Name, Building, Tags, Permission, Notes. A file with only one column of emails works too.</span></p>
+  <input type="file" id="file" accept=".csv,.xlsx,.xls,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel">
+  <div id="info" class="small" style="margin-top:8px"></div>
+  <label>Add a tag to every imported contact <span class="hint">(optional, e.g. "management-companies")</span></label>
+  <input type="text" id="tag">
+  <div style="margin-top:12px">
+    <button id="go" onclick="doImport()" disabled>Import</button>
+    <button class="secondary" onclick="google.script.host.close()">Close</button>
+  </div>
+  <div id="msg" class="msg"></div>
+  <p class="small">Invalid addresses, duplicates (already in Contacts) and addresses on the Suppression List are skipped automatically. Imported contacts get Permission = "Business Contact" unless the file says otherwise (change the default in Settings).</p>
+<script>
+  var ROWS = null, NAME = '';
+  function el(id) { return document.getElementById(id); }
+  function show(t, k) { var m = el('msg'); m.className = 'msg ' + (k || 'ok'); m.textContent = t; }
+
+  el('file').onchange = function (ev) {
+    var f = ev.target.files[0];
+    ROWS = null; el('go').disabled = true;
+    if (!f) return;
+    NAME = f.name;
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      try {
+        var wb;
+        if (/\.csv$/i.test(f.name)) wb = XLSX.read(e.target.result, { type: 'string', raw: true });
+        else wb = XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
+        var ws = wb.Sheets[wb.SheetNames[0]];
+        ROWS = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '', raw: false, blankrows: false })
+          .map(function (r) { return r.map(function (v) { return String(v); }); });
+        var emails = ROWS.filter(function (r) { return r.join(' ').indexOf('@') > 0; }).length;
+        el('info').textContent = f.name + ': ' + ROWS.length + ' rows, about ' + emails + ' contain an email address. Sheet: "' + wb.SheetNames[0] + '".';
+        el('go').disabled = !ROWS.length;
+      } catch (err) {
+        show('Could not read the file: ' + err.message, 'err');
+      }
+    };
+    if (/\.csv$/i.test(f.name)) reader.readAsText(f, 'UTF-8'); else reader.readAsArrayBuffer(f);
+  };
+
+  function doImport() {
+    if (!ROWS) return;
+    var rows = ROWS;
+    var tag = el('tag').value.trim();
+    if (tag) {
+      // add a Tags column (or fill an existing one) on the client side
+      var header = rows[0].map(function (h) { return String(h).toLowerCase(); });
+      var hasHeader = header.some(function (h) { return /e-?mail/.test(h); });
+      if (hasHeader) {
+        var ti = header.findIndex(function (h) { return /tag/.test(h); });
+        rows = rows.map(function (r, i) {
+          r = r.slice();
+          if (ti < 0) r.push(i === 0 ? 'Tags' : tag);
+          else if (i > 0) r[ti] = r[ti] ? r[ti] + ', ' + tag : tag;
+          return r;
+        });
+      } else {
+        var ec = rows[0].findIndex(function (v) { return String(v).indexOf('@') > 0; });
+        rows = [rows[0].map(function (v, i) { return i === ec ? 'Email' : 'Column ' + (i + 1); }).concat(['Tags'])]
+          .concat(rows.map(function (r) { return r.concat([tag]); }));
+      }
+    }
+    el('go').disabled = true; show('Importing…', 'info');
+    google.script.run.withSuccessHandler(function (t) { show('Import finished.\n' + t); })
+      .withFailureHandler(function (e) { el('go').disabled = false; show(e.message, 'err'); })
+      .uiImportRows(rows, NAME);
+  }
+</script>
+</body>
+</html>

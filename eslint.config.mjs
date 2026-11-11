@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Google Apps Script project (not part of the Next.js app)
+    "email-automation/**",
   ]),
 ]);
 

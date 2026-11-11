@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <style>
+    body { margin: 0; background: #f4f6f8; font-family: Arial, Helvetica, sans-serif; color: #202124; }
+    .card { max-width: 460px; margin: 56px auto; background: #fff; border-radius: 12px; padding: 32px 28px; box-shadow: 0 2px 12px rgba(0,0,0,.08); text-align: center; }
+    h1 { font-size: 21px; margin: 0 0 12px; color: #0b2545; }
+    p { font-size: 15px; line-height: 1.55; color: #3c4043; }
+    button { margin-top: 12px; background: #c5221f; color: #fff; border: 0; border-radius: 8px; padding: 12px 22px; font-size: 15px; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: default; }
+    .ok { color: #1e8e3e; }
+    .muted { font-size: 12px; color: #80868b; margin-top: 22px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <? if (state === 'confirm') { ?>
+      <div id="ask">
+        <h1>Unsubscribe from our emails?</h1>
+        <p>Click the button below and <b><?= masked ?></b> will not receive any further emails from us.</p>
+        <button id="btn" onclick="go()">Yes, unsubscribe me</button>
+      </div>
+      <div id="done" style="display:none">
+        <h1 class="ok">You have been unsubscribed ✔</h1>
+        <p>We're sorry to see you go. <b id="who"></b> has been removed from our mailing list.</p>
+      </div>
+      <p id="err" style="color:#c5221f;display:none"></p>
+      <script>
+        function go() {
+          var b = document.getElementById('btn');
+          b.disabled = true; b.textContent = 'Please wait…';
+          google.script.run
+            .withSuccessHandler(function (m) {
+              document.getElementById('ask').style.display = 'none';
+              document.getElementById('who').textContent = m;
+              document.getElementById('done').style.display = 'block';
+            })
+            .withFailureHandler(function (e) {
+              b.disabled = false; b.textContent = 'Yes, unsubscribe me';
+              var x = document.getElementById('err'); x.textContent = 'Sorry, something went wrong. Please reply to our email with "Unsubscribe" instead.'; x.style.display = 'block';
+            })
+            .webConfirmUnsubscribe(<?= e ?>, <?= t ?>, <?= c ?>);
+        }
+      </script>
+    <? } else { ?>
+      <h1>Link not valid</h1>
+      <p>This unsubscribe link is incomplete or has expired. To stop receiving our emails, simply reply to any of our emails with the word <b>Unsubscribe</b>.</p>
+    <? } ?>
+    <p class="muted">Email preferences</p>
+  </div>
+</body>
+</html>

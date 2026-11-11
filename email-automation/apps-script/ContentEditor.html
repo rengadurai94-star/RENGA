@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <?!= include_('Styles') ?>
+  <style>
+    body { padding: 10px 14px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    #preview { border: 1px solid var(--border); border-radius: 8px; height: 560px; overflow: auto; padding: 10px; background: #fafbfc; }
+    textarea.body { height: 210px; }
+    .top { display: flex; gap: 8px; align-items: flex-end; }
+    .top > div { flex: 1; }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div><label>Content</label><select id="pick" onchange="loadContent(this.value)"></select></div>
+    <div style="flex:0 0 auto"><button class="secondary" onclick="newContent()">+ New content</button></div>
+  </div>
+  <div id="msg" class="msg"></div>
+  <div class="grid">
+    <div>
+      <label>Content name <span class="hint">(for you only)</span></label>
+      <input type="text" id="name">
+      <label>Email Subject</label>
+      <input type="text" id="subject">
+      <div class="row">
+        <div><label>Sender Name</label><input type="text" id="senderName"></div>
+        <div><label>Reply-To Email</label><input type="email" id="replyTo"></div>
+      </div>
+      <div class="row">
+        <div><label>Format</label><select id="format"><option>HTML</option><option>Plain Text</option></select></div>
+        <div><label>Status</label><select id="status"><option>Draft</option><option>Ready</option></select></div>
+      </div>
+      <label>HTML Email Content <span class="hint">(paste HTML; used when Format = HTML)</span></label>
+      <textarea id="htmlBody" class="body code" spellcheck="false"></textarea>
+      <label>Plain Text Body <span class="hint">(shown by email apps that don't display HTML; used alone when Format = Plain Text)</span></label>
+      <textarea id="plainBody" class="body"></textarea>
+      <label>Email Signature <span class="hint">(plain text or HTML; added below the body)</span></label>
+      <textarea id="signature" style="height:110px"></textarea>
+      <div style="margin-top:10px">
+        <button class="good" onclick="save()">💾 Save</button>
+        <button class="secondary" onclick="preview()">👁 Preview</button>
+        <input type="email" id="testTo" placeholder="test address (empty = you)" style="width:200px;display:inline-block">
+        <button onclick="sendTest()">✉️ Send test email</button>
+      </div>
+      <p class="small">Your text is stored and sent exactly as written — nothing is generated or rewritten. Only your signature and the unsubscribe footer are added below it. Optional merge fields: {{Company Name}}, {{Contact Person|Property Manager}}, {{Building Name}}.</p>
+    </div>
+    <div>
+      <label>Preview <span class="hint">(save first to preview the latest version)</span></label>
+      <div id="preview"><p class="small">Click Preview.</p></div>
+    </div>
+  </div>
+<script>
+  var CURRENT = '';
+  var INITIAL = <?= initialId ?>;
+  var FIELDS = ['name','subject','senderName','replyTo','format','status','htmlBody','plainBody','signature'];
+  function el(id) { return document.getElementById(id); }
+  function show(t, k) { var m = el('msg'); m.className = 'msg ' + (k || 'ok'); m.textContent = t; }
+  function busy(on) { document.querySelectorAll('button').forEach(function (b) { b.disabled = on; }); }
+
+  function list(selectId) {
+    google.script.run.withSuccessHandler(function (items) {
+      el('pick').innerHTML = items.map(function (c) { return '<option value="' + c.id + '">' + c.id + ' · ' + c.name.replace(/</g, '&lt;') + ' (' + c.status + ')</option>'; }).join('') + '<option value="">— new content —</option>';
+      var id = selectId !== undefined ? selectId : (INITIAL || (items[0] && items[0].id) || '');
+      el('pick').value = id;
+      loadContent(id);
+    }).uiListContent();
+  }
+
+  function loadContent(id) {
+    CURRENT = id || '';
+    if (!id) { FIELDS.forEach(function (f) { el(f).value = ''; }); el('format').value = 'HTML'; el('status').value = 'Draft'; el('preview').innerHTML = ''; return; }
+    google.script.run.withSuccessHandler(function (c) {
+      if (!c) return;
+      FIELDS.forEach(function (f) { el(f).value = c[f] || ''; });
+      preview();
+    }).uiGetContent(id);
+  }
+
+  function newContent() { el('pick').value = ''; loadContent(''); }
+
+  function collect() { var o = { id: CURRENT }; FIELDS.forEach(function (f) { o[f] = el(f).value; }); return o; }
+
+  function save(cb) {
+    busy(true); show('Saving…', 'info');
+    google.script.run.withSuccessHandler(function (id) {
+      busy(false); show('Saved as ' + id + ' (' + el('status').value + ').');
+      CURRENT = id; list(id);
+      if (cb) cb(id);
+    }).withFailureHandler(function (e) { busy(false); show(e.message, 'err'); }).uiSaveContent(collect());
+  }
+
+  function preview() {
+    if (!CURRENT) { el('preview').innerHTML = '<p class="small">Save the content first.</p>'; return; }
+    google.script.run.withSuccessHandler(function (html) {
+      var f = document.createElement('iframe');
+      f.style.cssText = 'width:100%;height:540px;border:0;background:#fff';
+      f.setAttribute('sandbox', '');
+      f.srcdoc = '<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="margin:8px">' + html + '</body></html>';
+      el('preview').innerHTML = ''; el('preview').appendChild(f);
+    }).withFailureHandler(function (e) { show(e.message, 'err'); }).uiPreviewHtml(CURRENT);
+  }
+
+  function sendTest() {
+    save(function (id) {
+      busy(true); show('Sending test…', 'info');
+      google.script.run.withSuccessHandler(function (to) { busy(false); show('Test email sent to ' + to + '. Check the inbox (and spam folder).'); })
+        .withFailureHandler(function (e) { busy(false); show(e.message, 'err'); }).uiSendTest(id, el('testTo').value);
+    });
+  }
+
+  list();
+</script>
+</body>
+</html>

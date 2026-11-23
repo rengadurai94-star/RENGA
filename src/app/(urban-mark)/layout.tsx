@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
-import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
-import CustomCursor from "@/components/CustomCursor";
-import Nav from "@/components/Nav";
-import Preloader from "@/components/Preloader";
+import "./urban-mark.css";
+import SmoothScroll from "@/components/urban-mark/SmoothScroll";
+import CustomCursor from "@/components/urban-mark/CustomCursor";
+import Nav from "@/components/urban-mark/Nav";
+import Preloader from "@/components/urban-mark/Preloader";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",

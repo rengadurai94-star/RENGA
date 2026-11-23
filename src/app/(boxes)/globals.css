@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fbfaf7;
+  --color-bone: #f4f1eb;
+  --color-sand: #e9e4db;
+  --color-stone: #d2cbc0;
+  --color-taupe: #9d968c;
+  --color-ash: #6f6a64;
+  --color-charcoal: #2b2a28;
+  --color-ink: #1c1b1a;
+  --color-bronze: #a27b52;
+  --color-bronze-light: #c9a77c;
+  --color-bronze-dark: #7a5a3a;
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-inter-tight), "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+
+  --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-paper);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Scroll is locked during the intro, unit focus and interior walkthrough */
+html.boxes-locked,
+html.boxes-locked body {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+::selection {
+  background: var(--color-bronze);
+  color: var(--color-paper);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tracking-label {
+  letter-spacing: 0.24em;
+}
+
+.tracking-brand {
+  letter-spacing: 0.42em;
+}
+
+/* Floating glass panel */
+.boxes-panel {
+  background: color-mix(in oklab, var(--color-paper) 82%, transparent);
+  backdrop-filter: blur(18px) saturate(1.1);
+  -webkit-backdrop-filter: blur(18px) saturate(1.1);
+  border: 1px solid color-mix(in oklab, var(--color-stone) 70%, transparent);
+  box-shadow: 0 30px 80px -40px rgba(43, 42, 40, 0.35);
+}
+
+.boxes-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.36rem 0.75rem;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal);
+  background: color-mix(in oklab, var(--color-paper) 88%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-stone) 80%, transparent);
+  box-shadow: 0 10px 30px -18px rgba(28, 27, 26, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.boxes-pill-active {
+  background: var(--color-charcoal);
+  color: var(--color-paper);
+  border-color: var(--color-charcoal);
+  transform: translateY(-3px);
+}
+
+.boxes-vignette {
+  background: radial-gradient(120% 90% at 60% 45%, transparent 55%, rgba(60, 52, 44, 0.12) 100%);
+}
+
+.hairline {
+  border-color: color-mix(in oklab, var(--color-stone) 75%, transparent);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 999px;
+  background: var(--color-charcoal);
+  color: var(--color-paper);
+  padding: 0.95rem 1.6rem;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  transition: background 0.4s var(--ease-luxe), transform 0.4s var(--ease-luxe);
+}
+.btn-primary:hover {
+  background: var(--color-bronze-dark);
+}
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklab, var(--color-charcoal) 25%, transparent);
+  padding: 0.9rem 1.4rem;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  transition: border-color 0.4s var(--ease-luxe), background 0.4s var(--ease-luxe);
+}
+.btn-ghost:hover {
+  border-color: var(--color-charcoal);
+  background: color-mix(in oklab, var(--color-paper) 60%, transparent);
+}
+
+.focus-ring:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-bronze);
+  outline-offset: 3px;
+}
+
+.tbc {
+  color: var(--color-taupe);
+  font-style: italic;
+}
+
+@keyframes boxes-scroll-line {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+.animate-scroll-line {
+  animation: boxes-scroll-line 2.2s var(--ease-luxe) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll-line {
+    animation: none;
+  }
+}
+
+/* ?capture=1 — hide every overlay so stills can be captured from the model */
+html.boxes-capture body > :not(#boxes-stage):not(#explore) {
+  display: none !important;
+}

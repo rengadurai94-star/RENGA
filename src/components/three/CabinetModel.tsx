@@ -100,7 +100,9 @@ export function CabinetModel({
       const o = partRefs.current.get(p.id);
       if (!o) continue;
       const k = s.explode * 0.55;
-      o.position.set(p.pos[0] + (p.pos[0] - cx) * k, p.pos[1] + (p.pos[1] - cy) * k, p.pos[2] + (p.pos[2] - cz) * k);
+      // Never push a panel through the floor.
+      const y = Math.max(p.size[1] / 2, p.pos[1] + (p.pos[1] - cy) * k);
+      o.position.set(p.pos[0] + (p.pos[0] - cx) * k, y, p.pos[2] + (p.pos[2] - cz) * k);
     }
   });
 

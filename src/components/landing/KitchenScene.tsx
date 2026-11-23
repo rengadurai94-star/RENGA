@@ -104,31 +104,29 @@ function PlanOverlay({ visible }: { visible: boolean }) {
       <Line points={[[W + o, 10, 0], [W + o, 10, L]]} color={color} lineWidth={1.2} />
       <Line points={[[W + o - 80, 10, 0], [W + o + 80, 10, 0]]} color={color} lineWidth={1.2} />
       <Line points={[[W + o - 80, 10, L], [W + o + 80, 10, L]]} color={color} lineWidth={1.2} />
-      {visible && (
-        <>
-          <Html position={[W / 2, 10, -o - 120]} center zIndexRange={[10, 0]}>
+      {/* Html labels stay mounted (React 19 + drei root unmount issue); hidden via CSS. */}
+      <>
+          <Html position={[W / 2, 10, -o - 120]} center zIndexRange={[10, 0]} style={{ display: visible ? undefined : "none" }}>
             <span className="whitespace-nowrap rounded-full bg-charcoal px-3 py-1 text-[11px] font-semibold tracking-wide text-ivory">
               Wall A · 3600 mm
             </span>
           </Html>
-          <Html position={[W + o + 120, 10, L / 2]} center zIndexRange={[10, 0]}>
+          <Html position={[W + o + 120, 10, L / 2]} center zIndexRange={[10, 0]} style={{ display: visible ? undefined : "none" }}>
             <span className="whitespace-nowrap rounded-full bg-charcoal px-3 py-1 text-[11px] font-semibold tracking-wide text-ivory">
               Wall B · 3000 mm
             </span>
           </Html>
-          <Html position={[W / 2, 10, L * 0.72]} center zIndexRange={[10, 0]}>
+          <Html position={[W / 2, 10, L * 0.72]} center zIndexRange={[10, 0]} style={{ display: visible ? undefined : "none" }}>
             <span className="whitespace-nowrap rounded-full border border-olive/40 bg-ivory/90 px-3 py-1 text-[11px] font-medium text-olive">
               Wall A remaining: 0 mm · Wall B remaining: 500 mm
             </span>
           </Html>
-        </>
-      )}
+      </>
     </group>
   );
 }
 
 function Annotations({ visible, mobile }: { visible: boolean; mobile: boolean }) {
-  if (!visible) return null;
   const items: { pos: [number, number, number]; label: string; detail: string }[] = [
     { pos: [900, 1010, 380], label: "Carcass", detail: "18mm BWP plywood" },
     { pos: [1180, 640, 1330], label: "Shutter", detail: "HDHMR + matte laminate" },
@@ -136,8 +134,13 @@ function Annotations({ visible, mobile }: { visible: boolean; mobile: boolean })
   ];
   return (
     <>
-      {(mobile ? items.slice(0, 1) : items).map((it) => (
-        <Html key={it.label} position={it.pos} zIndexRange={[10, 0]}>
+      {items.map((it, i) => (
+        <Html
+          key={it.label}
+          position={it.pos}
+          zIndexRange={[10, 0]}
+          style={{ display: visible && (!mobile || i === 0) ? undefined : "none" }}
+        >
           <div className="pointer-events-none flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-olive ring-4 ring-olive/20" />
             <span className="whitespace-nowrap rounded-md bg-ivory/95 px-2.5 py-1.5 text-[11px] leading-tight shadow-sm">

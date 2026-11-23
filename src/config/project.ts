@@ -269,32 +269,32 @@ export const project = {
 
   gallery: [
     {
-      src: "/assets/images/gallery/exterior-day.jpg",
+      src: "assets/images/gallery/exterior-day.jpg",
       title: "The tower",
       caption: "Procedural model — exterior, afternoon light",
     },
     {
-      src: "/assets/images/gallery/floor-cutaway.jpg",
+      src: "assets/images/gallery/floor-cutaway.jpg",
       title: "Exploded floor",
       caption: "Four residences around the central core",
     },
     {
-      src: "/assets/images/gallery/interior-living.jpg",
+      src: "assets/images/gallery/interior-living.jpg",
       title: "Living room",
       caption: "Conceptual interior — Unit C",
     },
     {
-      src: "/assets/images/gallery/interior-bedroom.jpg",
+      src: "assets/images/gallery/interior-bedroom.jpg",
       title: "Master bedroom",
       caption: "Conceptual interior — Unit D",
     },
     {
-      src: "/assets/images/gallery/interior-kitchen.jpg",
+      src: "assets/images/gallery/interior-kitchen.jpg",
       title: "Kitchen",
       caption: "Conceptual interior — Unit B",
     },
     {
-      src: "/assets/images/gallery/dollhouse.jpg",
+      src: "assets/images/gallery/dollhouse.jpg",
       title: "Dollhouse view",
       caption: "Conceptual layout — Unit D",
     },

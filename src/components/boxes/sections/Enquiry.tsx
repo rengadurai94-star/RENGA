@@ -76,6 +76,13 @@ export default function Enquiry() {
     setErrors(errs);
     if (Object.keys(errs).length) return;
     setStatus("sending");
+    if (process.env.NEXT_PUBLIC_STATIC_PREVIEW === "1") {
+      // Static preview has no server: validate only, nothing is sent or stored.
+      setMessage("PREVIEW — not sent");
+      setStatus("sent");
+      form.reset();
+      return;
+    }
     try {
       const res = await fetch("/api/enquiry", {
         method: "POST",

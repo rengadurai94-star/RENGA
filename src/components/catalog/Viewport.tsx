@@ -5,7 +5,6 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
   Environment,
   Grid,
-  Html,
   Lightformer,
   Line,
   OrbitControls,
@@ -21,6 +20,7 @@ import {
   SquareStack,
 } from "lucide-react";
 import { CabinetModel } from "@/components/three/CabinetModel";
+import { LabelOverlay, LabelProjector, type ScreenLabel } from "@/components/three/ScreenLabels";
 import { PRODUCT_MAP } from "@/lib/catalog/products";
 import { FRONT_T, COUNTER_T } from "@/lib/geometry/cabinet";
 import { configCode } from "@/lib/pricing/engine";
@@ -93,45 +93,16 @@ function CameraFramer() {
   return null;
 }
 
-/**
- * drei <Html> creates its own React root; unmounting it mid-render throws under
- * React 19, so labels stay mounted and are hidden instead.
- */
-function DimLabel({
-  position,
-  visible,
-  children,
-}: {
-  position: THREE.Vector3Tuple;
-  visible: boolean;
-  children: React.ReactNode;
-}) {
-  return (
-    <Html
-      position={position}
-      center
-      zIndexRange={[20, 0]}
-      style={{ display: visible ? undefined : "none" }}
-    >
-      <span className="pointer-events-none whitespace-nowrap rounded-full bg-charcoal px-2.5 py-1 text-[11px] font-semibold tabular-nums tracking-wide text-ivory shadow-sm">
-        {children}
-      </span>
-    </Html>
-  );
-}
-
 function Dimensions({
   w,
   h,
   d,
-  unit,
   onCounter,
   visible,
 }: {
   w: number;
   h: number;
   d: number;
-  unit: LengthUnit;
   onCounter: boolean;
   visible: boolean;
 }) {
@@ -167,9 +138,6 @@ function Dimensions({
         color={col}
         lineWidth={1.4}
       />
-      <DimLabel visible={visible} position={[w / 2, 2, zf + o + 70]}>
-        W {formatLength(w, unit)}
-      </DimLabel>
       {/* height — up the front-left edge */}
       <Line
         points={[
@@ -195,9 +163,6 @@ function Dimensions({
         color={col}
         lineWidth={1.4}
       />
-      <DimLabel visible={visible} position={[-o - 20, topY / 2, zf]}>
-        H {formatLength(h, unit)}
-      </DimLabel>
       {/* depth — along the right side at floor level */}
       <Line
         points={[
@@ -223,15 +188,35 @@ function Dimensions({
         color={col}
         lineWidth={1.4}
       />
-      <DimLabel visible={visible} position={[w + o + 60, 2, d / 2]}>
-        D {formatLength(d, unit)}
-      </DimLabel>
     </group>
   );
 }
 
+/** W / H / D labels in world metres; the cabinet is centred on the origin. */
+function dimensionLabels(
+  c: { width: number; height: number; depth: number },
+  unit: LengthUnit,
+  onCounter: boolean,
+  visible: boolean,
+): ScreenLabel[] {
+  const o = 90;
+  const zf = c.depth + FRONT_T;
+  const topY = c.height + (onCounter ? COUNTER_T : 0);
+  const w = (x: number, y: number, z: number): THREE.Vector3Tuple => [(x - c.width / 2) * S, y * S, (z - c.depth / 2) * S];
+  const pill = (t: string) => (
+    <span className="whitespace-nowrap rounded-full bg-charcoal px-2.5 py-1 text-[11px] font-semibold tabular-nums tracking-wide text-ivory shadow-sm">
+      {t}
+    </span>
+  );
+  return [
+    { id: "dim-w", position: w(c.width / 2, 2, zf + o + 70), visible, content: pill(`W ${formatLength(c.width, unit)}`) },
+    { id: "dim-h", position: w(-o - 20, topY / 2, zf), visible, content: pill(`H ${formatLength(c.height, unit)}`) },
+    { id: "dim-d", position: w(c.width + o + 60, 2, c.depth / 2), visible, content: pill(`D ${formatLength(c.depth, unit)}`) },
+  ];
+}
+
 function Stage() {
-  const { config, open, explode, countertop, showDims, unit } =
+  const { config, open, explode, countertop, showDims } =
     useConfigurator();
   const product = PRODUCT_MAP[config.sku];
   const canCounter = product.mount === "floor" && config.height <= 1000;
@@ -249,7 +234,6 @@ function Stage() {
           w={config.width}
           h={config.height}
           d={config.depth}
-          unit={unit}
           onCounter={countertop && canCounter}
         />
       </group>
@@ -291,10 +275,13 @@ function ToolButton({
 }
 
 export default function Viewport() {
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const unit = useConfigurator((s) => s.unit);
   const { config, open, explode, countertop, showDims, view, toggle, setView } =
     useConfigurator();
   const product = PRODUCT_MAP[config.sku];
   const canCounter = product.mount === "floor" && config.height <= 1000;
+  const labels = dimensionLabels(config, unit, countertop && canCounter, showDims && !explode);
 
   return (
     <div className="@container relative h-full w-full overflow-hidden bg-[#efeae0]">
@@ -367,7 +354,9 @@ export default function Viewport() {
           maxPolarAngle={Math.PI / 2 - 0.01}
         />
         <CameraFramer />
+        <LabelProjector labels={labels} overlayRef={overlayRef} />
       </Canvas>
+      <LabelOverlay labels={labels} overlayRef={overlayRef} />
 
       {/* Toolbars — wrap onto two rows in narrow viewports */}
       <div className="pointer-events-none absolute inset-x-3 top-3 flex flex-wrap items-start justify-between gap-2 md:inset-x-4 md:top-4">

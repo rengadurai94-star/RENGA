@@ -28,10 +28,14 @@ export function CatalogApp({ initialSku }: { initialSku?: string }) {
 
   // Keep the URL shareable without triggering navigation.
   useEffect(() => {
-    const url = new URL(window.location.href);
-    if (url.searchParams.get("sku") !== sku) {
-      url.searchParams.set("sku", sku);
-      window.history.replaceState(null, "", url);
+    try {
+      const url = new URL(window.location.href);
+      if (url.searchParams.get("sku") !== sku) {
+        url.searchParams.set("sku", sku);
+        window.history.replaceState(null, "", url);
+      }
+    } catch {
+      // Sandboxed hosts (e.g. the standalone demo) may forbid URL changes.
     }
   }, [sku]);
 

@@ -2,10 +2,11 @@
 
 import { useEffect, useMemo, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Environment, Html, Lightformer, Line } from "@react-three/drei";
+import { Environment, Lightformer, Line } from "@react-three/drei";
 import type { MotionValue } from "framer-motion";
 import * as THREE from "three";
 import { PlacedCabinet, RoomShell } from "@/components/three/RoomShell";
+import { LabelOverlay, LabelProjector, type ScreenLabel } from "@/components/three/ScreenLabels";
 import { DEMO_HOOD, DEMO_PLACEMENTS, DEMO_ROOM } from "@/lib/room/demo-kitchen";
 import { wallOrigin, wallRotation } from "@/lib/room/layout";
 
@@ -104,57 +105,11 @@ function PlanOverlay({ visible }: { visible: boolean }) {
       <Line points={[[W + o, 10, 0], [W + o, 10, L]]} color={color} lineWidth={1.2} />
       <Line points={[[W + o - 80, 10, 0], [W + o + 80, 10, 0]]} color={color} lineWidth={1.2} />
       <Line points={[[W + o - 80, 10, L], [W + o + 80, 10, L]]} color={color} lineWidth={1.2} />
-      {/* Html labels stay mounted (React 19 + drei root unmount issue); hidden via CSS. */}
-      <>
-          <Html position={[W / 2, 10, -o - 120]} center zIndexRange={[10, 0]} style={{ display: visible ? undefined : "none" }}>
-            <span className="whitespace-nowrap rounded-full bg-charcoal px-3 py-1 text-[11px] font-semibold tracking-wide text-ivory">
-              Wall A · 3600 mm
-            </span>
-          </Html>
-          <Html position={[W + o + 120, 10, L / 2]} center zIndexRange={[10, 0]} style={{ display: visible ? undefined : "none" }}>
-            <span className="whitespace-nowrap rounded-full bg-charcoal px-3 py-1 text-[11px] font-semibold tracking-wide text-ivory">
-              Wall B · 3000 mm
-            </span>
-          </Html>
-          <Html position={[W / 2, 10, L * 0.72]} center zIndexRange={[10, 0]} style={{ display: visible ? undefined : "none" }}>
-            <span className="whitespace-nowrap rounded-full border border-olive/40 bg-ivory/90 px-3 py-1 text-[11px] font-medium text-olive">
-              Wall A remaining: 0 mm · Wall B remaining: 500 mm
-            </span>
-          </Html>
-      </>
     </group>
   );
 }
 
-function Annotations({ visible, mobile }: { visible: boolean; mobile: boolean }) {
-  const items: { pos: [number, number, number]; label: string; detail: string }[] = [
-    { pos: [900, 1010, 380], label: "Carcass", detail: "18mm BWP plywood" },
-    { pos: [1180, 640, 1330], label: "Shutter", detail: "HDHMR + matte laminate" },
-    { pos: [640, 330, 1050], label: "Runners", detail: "Soft-close, full extension" },
-  ];
-  return (
-    <>
-      {items.map((it, i) => (
-        <Html
-          key={it.label}
-          position={it.pos}
-          zIndexRange={[10, 0]}
-          style={{ display: visible && (!mobile || i === 0) ? undefined : "none" }}
-        >
-          <div className="pointer-events-none flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-olive ring-4 ring-olive/20" />
-            <span className="whitespace-nowrap rounded-md bg-ivory/95 px-2.5 py-1.5 text-[11px] leading-tight shadow-sm">
-              <b className="block font-display text-[12px] text-charcoal">{it.label}</b>
-              <span className="text-grey">{it.detail}</span>
-            </span>
-          </div>
-        </Html>
-      ))}
-    </>
-  );
-}
-
-function Kitchen({ step, colour, mobile }: { step: number; colour: string | null; mobile: boolean }) {
+function Kitchen({ step, colour }: { step: number; colour: string | null }) {
   const spread = step === 1;
   const focus = step === 2;
   const counts: Record<string, number> = {};
@@ -183,9 +138,46 @@ function Kitchen({ step, colour, mobile }: { step: number; colour: string | null
       })}
       <Hood />
       <PlanOverlay visible={step === 3} />
-      <Annotations visible={focus} mobile={mobile} />
     </group>
   );
+}
+
+const pill = "whitespace-nowrap rounded-full bg-charcoal px-3 py-1 text-[11px] font-semibold tracking-wide text-ivory";
+
+/** Plan dimensions (step 3) and component callouts (step 2), positioned in metres. */
+function sceneLabels(step: number, mobile: boolean): ScreenLabel[] {
+  const W = DEMO_ROOM.width;
+  const L = DEMO_ROOM.length;
+  const o = 260;
+  const plan = step === 3;
+  const focus = step === 2;
+  const m = (x: number, y: number, z: number): THREE.Vector3Tuple => [x * S, y * S, z * S];
+  const callout = (label: string, detail: string) => (
+    <div className="flex items-center gap-2">
+      <span className="h-2 w-2 rounded-full bg-olive ring-4 ring-olive/20" />
+      <span className="whitespace-nowrap rounded-md bg-ivory/95 px-2.5 py-1.5 text-[11px] leading-tight shadow-sm">
+        <b className="block font-display text-[12px] text-charcoal">{label}</b>
+        <span className="text-grey">{detail}</span>
+      </span>
+    </div>
+  );
+  return [
+    { id: "wall-a", position: m(W / 2, 10, -o - 120), visible: plan, content: <span className={pill}>Wall A · {W} mm</span> },
+    { id: "wall-b", position: m(W + o + 120, 10, L / 2), visible: plan, content: <span className={pill}>Wall B · {L} mm</span> },
+    {
+      id: "remaining",
+      position: m(W / 2, 10, L * 0.72),
+      visible: plan,
+      content: (
+        <span className="whitespace-nowrap rounded-full border border-olive/40 bg-ivory/90 px-3 py-1 text-[11px] font-medium text-olive">
+          Wall A remaining: 0 mm · Wall B remaining: 500 mm
+        </span>
+      ),
+    },
+    { id: "carcass", position: m(900, 1010, 380), anchor: "left", visible: focus, content: callout("Carcass", "18mm BWP plywood") },
+    { id: "shutter", position: m(1180, 640, 1330), anchor: "left", visible: focus && !mobile, content: callout("Shutter", "HDHMR + matte laminate") },
+    { id: "runners", position: m(640, 330, 1050), anchor: "left", visible: focus && !mobile, content: callout("Runners", "Soft-close, full extension") },
+  ];
 }
 
 export default function KitchenScene({
@@ -201,7 +193,10 @@ export default function KitchenScene({
   mobile: boolean;
   active: boolean;
 }) {
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const labels = sceneLabels(step, mobile);
   return (
+    <>
     <Canvas
       shadows="percentage"
       dpr={[1, 1.75]}
@@ -233,9 +228,12 @@ export default function KitchenScene({
         <Lightformer intensity={0.8} position={[-5, 2, 0]} rotation-y={Math.PI / 2} scale={[6, 3, 1]} />
         <Lightformer intensity={0.5} position={[5, 2, 2]} rotation-y={-Math.PI / 2} scale={[6, 3, 1]} color="#f1e6d4" />
       </Environment>
-      <Kitchen step={step} colour={colour} mobile={mobile} />
+      <Kitchen step={step} colour={colour} />
       <CameraRig progress={progress} mobile={mobile} />
       <ViewOffset mobile={mobile} />
+      <LabelProjector labels={labels} overlayRef={overlayRef} />
     </Canvas>
+    <LabelOverlay labels={labels} overlayRef={overlayRef} />
+    </>
   );
 }

@@ -75,8 +75,15 @@ export default function BoxesExperience() {
     };
 
     // Timeline scrubbed by scroll: journey.floor travels 0 -> FLOORS, then a free tail.
+    const syncActiveFloor = () => {
+      const st = useBoxes.getState();
+      const f = Math.round(journey.floor);
+      if (st.activeFloor !== f && st.mode === "explore") useBoxes.setState({ activeFloor: f, hoveredUnit: null });
+    };
     const tl = gsap.timeline({
       defaults: { ease: "none" },
+      // fires while the scrubbed tween catches up, so the active floor always matches the 3D
+      onUpdate: syncActiveFloor,
       scrollTrigger: {
         trigger: el,
         start: "top top",
@@ -85,8 +92,7 @@ export default function BoxesExperience() {
         invalidateOnRefresh: true,
         onUpdate: (self) => {
           const st = useBoxes.getState();
-          const f = Math.round(journey.floor);
-          if (st.activeFloor !== f && st.mode === "explore") useBoxes.setState({ activeFloor: f, hoveredUnit: null });
+          syncActiveFloor();
           const past = self.progress > stopFrac() * (FLOORS + 0.45);
           if (past !== st.pastJourney) useBoxes.setState({ pastJourney: past });
         },

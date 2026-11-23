@@ -15,27 +15,42 @@ export default function IntroOverlay() {
 
   useEffect(() => {
     if (!ready) return;
-    const id = window.setTimeout(() => setShowText(true), 2300);
+    const id = window.setTimeout(() => setShowText(true), 1200);
     return () => window.clearTimeout(id);
   }, [ready]);
 
   useEffect(() => {
     if (!ready || entered) return;
+    // Scrolling is locked during the intro, so treat any scroll intent as "enter"
+    // (otherwise the page feels frozen to visitors who scroll instead of clicking).
+    const go = () => enterExperience();
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Enter" && showText) enterExperience();
+      if (["Enter", " ", "ArrowDown", "PageDown"].includes(e.key)) go();
+    };
+    const onWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaY) > 4) go();
+    };
+    let touchY = 0;
+    const onTouchStart = (e: TouchEvent) => void (touchY = e.touches[0]?.clientY ?? 0);
+    const onTouchMove = (e: TouchEvent) => {
+      if (Math.abs((e.touches[0]?.clientY ?? 0) - touchY) > 30) go();
     };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [ready, entered, showText]);
+    window.addEventListener("wheel", onWheel, { passive: true });
+    window.addEventListener("touchstart", onTouchStart, { passive: true });
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("wheel", onWheel);
+      window.removeEventListener("touchstart", onTouchStart);
+      window.removeEventListener("touchmove", onTouchMove);
+    };
+  }, [ready, entered]);
 
   return (
     <AnimatePresence>
       {ready && !entered && (
-        <motion.div
-          key="intro"
-          className="fixed inset-0 z-40"
-          exit={{ opacity: 0, transition: { duration: 0.9, ease } }}
-        >
+        <motion.div key="intro" className="fixed inset-0 z-40" exit={{ opacity: 0, transition: { duration: 0.9, ease } }}>
           {/* mist that burns off as the clouds part */}
           <motion.div
             className="pointer-events-none absolute inset-0 bg-gradient-to-b from-paper via-paper/90 to-paper/60"

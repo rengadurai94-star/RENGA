@@ -101,7 +101,7 @@ class StageErrorBoundary extends Component<{ children: ReactNode }, { error: Err
 export default function Stage() {
   const mode = useBoxes((s) => s.mode);
   const inJourney = useBoxes((s) => s.inJourney);
-  const [dpr, setDpr] = useState<number>(() => Math.min(window.devicePixelRatio || 1, 1.75));
+  const [dpr, setDpr] = useState<number>(() => Math.min(window.devicePixelRatio || 1, useBoxes.getState().lowPower ? 1.25 : 1.6));
 
   useEffect(() => {
     // Build heavy procedural geometry up-front so the first frame is quick.
@@ -144,8 +144,22 @@ export default function Stage() {
           <Environment resolution={256} frames={1} environmentIntensity={0.7}>
             <Lightformer form="rect" intensity={2.2} color="#fff4e6" position={[0, 30, -60]} scale={[140, 40, 1]} />
             <Lightformer form="rect" intensity={1.1} color="#e4ecf2" position={[0, 90, 0]} rotation-x={Math.PI / 2} scale={[200, 200, 1]} />
-            <Lightformer form="rect" intensity={0.9} color="#f2ebe0" position={[-80, 20, 40]} rotation-y={Math.PI / 2} scale={[120, 30, 1]} />
-            <Lightformer form="rect" intensity={0.6} color="#d9cfc2" position={[80, 10, 40]} rotation-y={-Math.PI / 2} scale={[120, 20, 1]} />
+            <Lightformer
+              form="rect"
+              intensity={0.9}
+              color="#f2ebe0"
+              position={[-80, 20, 40]}
+              rotation-y={Math.PI / 2}
+              scale={[120, 30, 1]}
+            />
+            <Lightformer
+              form="rect"
+              intensity={0.6}
+              color="#d9cfc2"
+              position={[80, 10, 40]}
+              rotation-y={-Math.PI / 2}
+              scale={[120, 20, 1]}
+            />
             <mesh scale={600}>
               <sphereGeometry args={[1, 32, 16]} />
               <meshBasicMaterial color="#d8d3cb" side={THREE.BackSide} />

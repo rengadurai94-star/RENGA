@@ -49,9 +49,21 @@ export default function BoxesExperience() {
   const ready = useBoxes((s) => s.ready);
   useDeepLink();
 
-  // WebGL capability check
+  // WebGL capability check, low-power detection and a loading failsafe
   useEffect(() => {
-    if (!hasWebGL()) useBoxes.setState({ webgl: "unsupported", ready: true, progress: 1, entered: true, mode: "explore" });
+    if (!hasWebGL()) {
+      useBoxes.setState({ webgl: "unsupported", ready: true, progress: 1, entered: true, mode: "explore" });
+      return;
+    }
+    const nav = navigator as Navigator & { deviceMemory?: number };
+    const touch = window.matchMedia("(pointer: coarse)").matches;
+    if (touch || (nav.hardwareConcurrency ?? 8) <= 4 || (nav.deviceMemory ?? 8) <= 4) useBoxes.setState({ lowPower: true });
+    // Never leave visitors on the loading screen: after 15s show the page even if
+    // the GPU is still compiling (the scene keeps loading behind the intro).
+    const id = window.setTimeout(() => {
+      if (!useBoxes.getState().ready) useBoxes.setState({ ready: true, progress: 1 });
+    }, 15000);
+    return () => window.clearTimeout(id);
   }, []);
 
   // Smooth scrolling + scroll-driven journey

@@ -1,44 +1,40 @@
-import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
-import CustomCursor from "@/components/CustomCursor";
-import Nav from "@/components/Nav";
-import Preloader from "@/components/Preloader";
+import { Header } from "@/components/layout/Header";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Urban Mark Interior — Design Beyond Walls",
+  title: {
+    default: "BOXES — Design Your Space. Down to Every Detail.",
+    template: "%s · BOXES",
+  },
   description:
-    "Urban Mark Interior is a premium interior design studio crafting luxury residential, villa, apartment, commercial, retail, and hospitality interiors.",
+    "Explore modular kitchen and furniture components, customise every detail and visualise your space in 3D before you order.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  themeColor: "#f4f0e8",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable} h-full`}>
-      <body className="min-h-full bg-black text-warm antialiased">
-        <Preloader />
-        <CustomCursor />
-        <Nav />
-        <SmoothScroll>{children}</SmoothScroll>
+    <html lang="en" className={`${manrope.variable} ${inter.variable}`}>
+      <body className="min-h-screen bg-ivory text-charcoal antialiased">
+        <Header />
+        {children}
       </body>
     </html>
   );

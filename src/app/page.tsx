@@ -1,26 +1,18 @@
-import CinematicJourney from "@/components/sections/CinematicJourney";
-import WhoWeAre from "@/components/sections/WhoWeAre";
-import Expertise from "@/components/sections/Expertise";
-import Philosophy from "@/components/sections/Philosophy";
-import Projects from "@/components/sections/Projects";
-import Materials from "@/components/sections/Materials";
-import Process from "@/components/sections/Process";
-import Testimonials from "@/components/sections/Testimonials";
-import Consultation from "@/components/sections/Consultation";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/layout/Footer";
+import { FinalCta, HowItWorks, SampleTeaser } from "@/components/landing/Sections";
+import { Walkthrough } from "@/components/landing/Walkthrough";
 
 export default function Home() {
   return (
-    <main className="relative">
-      <CinematicJourney />
-      <WhoWeAre />
-      <Expertise />
-      <Philosophy />
-      <Projects />
-      <Materials />
-      <Process />
-      <Testimonials />
-      <Consultation />
+    <main>
+      {/* 01–06: hero + scroll-driven 3D walkthrough */}
+      <Walkthrough />
+      {/* 07 */}
+      <HowItWorks />
+      {/* 08 */}
+      <SampleTeaser />
+      {/* 09 */}
+      <FinalCta />
       <Footer />
     </main>
   );

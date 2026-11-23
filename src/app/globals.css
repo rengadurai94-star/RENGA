@@ -1,30 +1,50 @@
 @import "tailwindcss";
 
+/*
+ * BOXES design tokens
+ * Warm ivory · charcoal · soft grey · muted olive · natural wood
+ */
 :root {
-  --color-matte-black: #0a0a0a;
-  --color-charcoal: #17171a;
-  --color-charcoal-2: #1f1f22;
-  --color-warm-white: #f4efe6;
-  --color-warm-white-dim: #d9d2c4;
-  --color-gold: #c3a76a;
-  --color-gold-bright: #e2c98f;
-  --color-gold-dim: #8a774f;
+  --ivory: #f4f0e8;
+  --ivory-2: #ebe5d9;
+  --ivory-3: #e0d9cb;
+  --paper: #faf8f3;
+  --charcoal: #1d1d1b;
+  --charcoal-2: #2a2a27;
+  --charcoal-3: #3b3b37;
+  --grey: #8d8a82;
+  --grey-2: #b9b5ac;
+  --grey-3: #d6d2c9;
+  --olive: #5e6344;
+  --olive-2: #7c8160;
+  --olive-3: #c9cbb4;
+  --wood: #b5895c;
+  --wood-2: #8a6240;
 
-  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-arch: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @theme inline {
-  --color-black: var(--color-matte-black);
-  --color-charcoal: var(--color-charcoal);
-  --color-charcoal-2: var(--color-charcoal-2);
-  --color-warm: var(--color-warm-white);
-  --color-warm-dim: var(--color-warm-white-dim);
-  --color-gold: var(--color-gold);
-  --color-gold-bright: var(--color-gold-bright);
-  --color-gold-dim: var(--color-gold-dim);
+  --color-ivory: var(--ivory);
+  --color-ivory-2: var(--ivory-2);
+  --color-ivory-3: var(--ivory-3);
+  --color-paper: var(--paper);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-2: var(--charcoal-2);
+  --color-charcoal-3: var(--charcoal-3);
+  --color-grey: var(--grey);
+  --color-grey-2: var(--grey-2);
+  --color-grey-3: var(--grey-3);
+  --color-olive: var(--olive);
+  --color-olive-2: var(--olive-2);
+  --color-olive-3: var(--olive-3);
+  --color-wood: var(--wood);
+  --color-wood-2: var(--wood-2);
 
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-manrope);
   --font-sans: var(--font-inter);
+
+  --ease-arch: var(--ease-arch);
 }
 
 * {
@@ -32,74 +52,91 @@
 }
 
 html {
-  background: var(--color-matte-black);
-  color-scheme: dark;
+  background: var(--ivory);
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--color-matte-black);
-  color: var(--color-warm-white);
+  background: var(--ivory);
+  color: var(--charcoal);
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  overflow-x: hidden;
-  cursor: default;
+  font-feature-settings: "ss01", "cv11";
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 }
 
 ::selection {
-  background: var(--color-gold);
-  color: var(--color-matte-black);
+  background: var(--olive);
+  color: var(--ivory);
 }
 
-/* hide native scrollbar; Lenis drives the scroll */
-html {
-  scrollbar-width: none;
-}
-html::-webkit-scrollbar {
-  display: none;
+:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 2px;
 }
 
-.font-display {
-  font-family: var(--font-fraunces), Georgia, serif;
+/* Fine architectural grid used behind sections */
+.arch-grid {
+  background-image:
+    linear-gradient(to right, rgb(29 29 27 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(29 29 27 / 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
-.tracking-editorial {
-  letter-spacing: 0.28em;
+.arch-grid-dark {
+  background-image:
+    linear-gradient(to right, rgb(244 240 232 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(244 240 232 / 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
-/* film-grain overlay used across placeholder media */
-.grain {
-  position: relative;
-}
-.grain::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.35;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  background-size: 160px 160px;
+/* Thin scrollbars inside app panels */
+.thin-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey-3) transparent;
 }
 
-.hairline {
-  border: 1px solid rgba(195, 167, 106, 0.35);
+/* Range input styling for configurator sliders */
+input[type="range"].boxes-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: var(--grey-3);
+  border-radius: 2px;
+}
+input[type="range"].boxes-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--charcoal);
+  border: 3px solid var(--ivory);
+  box-shadow: 0 0 0 1px var(--charcoal);
+  cursor: pointer;
+}
+input[type="range"].boxes-range::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--charcoal);
+  border: 3px solid var(--ivory);
+  box-shadow: 0 0 0 1px var(--charcoal);
+  cursor: pointer;
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 32s linear infinite;
-}
-
-.no-scrollbar {
-  scrollbar-width: none;
-}
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
 }

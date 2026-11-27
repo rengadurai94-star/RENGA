@@ -69,6 +69,9 @@ Projects list.
   specifications and location.
 - **Data:** `src/data/sp-residency.ts` reads `public/images/sp-residency/manifest.json` and
   `sp-residency/analysis/project-information.json`. Both files are generated, so neither is edited by hand.
+- **3D model:** `/projects/sp-residency/model` is an interactive viewer (React Three Fiber). It loads
+  the GLBs in `public/models/sp-residency/`, which are generated from the brochure floor plans by
+  `sp-residency/3d/build_model.py`.
 - **Visual package:** the brochure analysis, reference library, prompt pack, 3D spec and rebuild
   scripts are in `sp-residency/`; start with `sp-residency/README.md`.
 - **Before going live:** all imagery is the developer's brochure renders (`approval: "pending"`).

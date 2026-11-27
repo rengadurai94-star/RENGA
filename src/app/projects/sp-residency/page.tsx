@@ -265,6 +265,55 @@ export default function SpResidencyPage() {
         <SpFloorPlans typical={typical} units={spUnits} />
       </section>
 
+      {/* ------------------------------------------------------------------ 3D model */}
+      <section id="model" className="relative px-6 pb-28 md:px-16 md:pb-40">
+        <div className="grid items-center gap-12 border-t border-warm/10 pt-20 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
+          <div>
+            <ScrollReveal>
+              <Eyebrow>Interactive 3D Model</Eyebrow>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <h2 className="font-display mt-6 text-4xl italic leading-tight text-warm md:text-5xl">
+                Walk the floors before they are built.
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <p className="mt-6 max-w-md text-sm leading-relaxed text-warm/60">
+                A conceptual model built from the brochure&rsquo;s own floor plans: explode the building floor by
+                floor, select any home, then step into a dollhouse view of each unit type.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.3}>
+              <Link
+                href="/projects/sp-residency/model"
+                className="mt-10 inline-block rounded-full border border-gold bg-gold-bright/5 px-8 py-4 text-xs uppercase tracking-editorial text-gold-bright transition-colors hover:bg-gold-bright/15"
+              >
+                Open the 3D model →
+              </Link>
+            </ScrollReveal>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { src: "/images/sp-residency/model/sp-model-building.webp", w: 1600, h: 1179, alt: "Exploded 3D model of the building, floors 1 to 4 with walls extruded from the brochure plan" },
+              { src: "/images/sp-residency/model/sp-model-unit-a.webp", w: 1600, h: 1091, alt: "3D cut-away model of Unit A, a three-bedroom home" },
+            ].map((img, i) => (
+              <ScrollReveal key={img.src} delay={i * 0.1}>
+                <Link href="/projects/sp-residency/model" className="group block overflow-hidden bg-[#0b0b0c]">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={img.w}
+                    height={img.h}
+                    sizes="(max-width: 1024px) 46vw, 30vw"
+                    className="h-auto w-full transition-transform duration-700 group-hover:scale-105"
+                  />
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ------------------------------------------------------------------ specifications */}
       <section id="specifications" className="relative px-6 py-28 md:px-16 md:py-32">
         <ScrollReveal>

@@ -1,0 +1,613 @@
+{
+  "model": "SP Residency (Shan Poornam Residence) - conceptual 3D model",
+  "accuracy": "CONCEPTUAL - geometry extruded from brochure plan rasters; not for construction",
+  "printed_inputs": {
+    "floor_to_floor_ft": 10.0,
+    "unit_carpet_areas_sqft": {
+      "A": 1500,
+      "B": 957,
+      "C": 1003,
+      "D": 1472,
+      "E": 846,
+      "F": 1486
+    },
+    "typical_hall_ft": "28'4\" x 11' (A, D, F)"
+  },
+  "assumed_parameters": {
+    "stilt_floor_to_floor_ft": 10.0,
+    "slab_thickness_ft": 0.5,
+    "parapet_height_ft": 3.5,
+    "parapet_thickness_ft": 0.75
+  },
+  "method": [
+    "Wall pixels = neutral dark grey in the brochure plan (max channel < 100, chroma < 16).",
+    "Morphological opening removes room-label text; corridor inlay bands removed on the typical plan.",
+    "Walls decomposed into axis-aligned blocks on a ~1 inch grid and extruded to slab-soffit height.",
+    "Unit scale from printed carpet area; typical-floor scale from the printed hall sizes.",
+    "Floor surfaces carry the brochure plan image (finishes and furniture as drawn)."
+  ],
+  "known_limitations": [
+    "Brochure plans are not drawn exactly to scale: enclosed rooms deviate up to ~8% from printed sizes.",
+    "Dark built-ins (kitchen counters, wardrobe hatching) extrude like walls.",
+    "Door and window openings are shown as gaps; no doors, glazing or sills are modelled.",
+    "Facades (louvres, frames, pylon) are not modelled - see the brochure renders.",
+    "Stilt columns, terrace amenities and the 5th-floor plan are not in the brochure as drawings."
+  ],
+  "building": {
+    "file": "SPR_building_conceptual.glb",
+    "footprint_m": [
+      24.75,
+      33.27
+    ],
+    "footprint_ft_derived": [
+      81.2,
+      109.1
+    ],
+    "typical_px_per_ft": 7.55,
+    "floor_to_floor_m": 3.048,
+    "stilt_floor_to_floor_m": 3.048,
+    "slab_m": 0.1524,
+    "wall_height_m": 2.8956,
+    "height_to_terrace_m": 18.288,
+    "parapet_m": 1.067,
+    "levels": [
+      {
+        "id": "L00",
+        "name": "Stilt",
+        "elevation_m": 0.0,
+        "content": "slab + stair/lift core",
+        "note": "Stilt plan exists only as a 3D illustration (p10); columns not modelled"
+      },
+      {
+        "id": "L01",
+        "name": "Floor 1",
+        "elevation_m": 3.048,
+        "content": "typical floor (p15)"
+      },
+      {
+        "id": "L02",
+        "name": "Floor 2",
+        "elevation_m": 6.096,
+        "content": "typical floor (p15)"
+      },
+      {
+        "id": "L03",
+        "name": "Floor 3",
+        "elevation_m": 9.144,
+        "content": "typical floor (p15)"
+      },
+      {
+        "id": "L04",
+        "name": "Floor 4",
+        "elevation_m": 12.192,
+        "content": "typical floor (p15)"
+      },
+      {
+        "id": "L05",
+        "name": "Floor 5",
+        "elevation_m": 15.24,
+        "content": "ghost massing - plan not in brochure (4 BHK + 3 BHK)"
+      },
+      {
+        "id": "L06",
+        "name": "Terrace",
+        "elevation_m": 18.288,
+        "content": "slab + parapet (amenity layout in brochure p13 is an illustration only)"
+      }
+    ],
+    "unit_regions_m": {
+      "C": [
+        [
+          -11.849,
+          -15.906,
+          -1.312,
+          -7.67
+        ]
+      ],
+      "B": [
+        [
+          -12.374,
+          -7.67,
+          -1.312,
+          -1.05
+        ],
+        [
+          -11.849,
+          -1.05,
+          -6.237,
+          2.826
+        ]
+      ],
+      "A": [
+        [
+          -12.253,
+          3.674,
+          -1.312,
+          16.148
+        ]
+      ],
+      "D": [
+        [
+          0.989,
+          -16.633,
+          11.687,
+          -4.4
+        ]
+      ],
+      "E": [
+        [
+          0.989,
+          -4.4,
+          12.374,
+          3.432
+        ]
+      ],
+      "F": [
+        [
+          0.989,
+          3.674,
+          12.374,
+          16.148
+        ]
+      ]
+    },
+    "core_region_m": [
+      -6.237,
+      -1.13,
+      -1.312,
+      3.472
+    ],
+    "corridor_clear_width_ft_derived": 7.0,
+    "wall_blocks_per_floor": 1438,
+    "triangles_per_typical_floor": 15178
+  },
+  "units": [
+    {
+      "key": "A",
+      "configuration": "3 BHK",
+      "file": "SPR_unit_A_conceptual.glb",
+      "carpet_sqft": 1500,
+      "px_per_ft": 21.033,
+      "scale_method": "printed carpet area",
+      "size_m": [
+        11.74,
+        13.67
+      ],
+      "wall_height_m": 2.896,
+      "wall_blocks": 247,
+      "spot_checks": [
+        {
+          "room": "Bedroom-1",
+          "printed_ft": [
+            12,
+            12
+          ],
+          "measured_ft": [
+            12.27,
+            13.03
+          ],
+          "deviation_pct": [
+            2.2,
+            8.6
+          ]
+        }
+      ],
+      "triangles": 2626,
+      "sbu_sqft": 1764,
+      "balcony_sqft": 142.8,
+      "facing": "East Facing Flat Vastu",
+      "position": "South-west corner (west row, south end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dims": "12' x 12'"
+        },
+        {
+          "name": "Bedroom-2",
+          "dims": "12' x 12'6\""
+        },
+        {
+          "name": "Bedroom-3",
+          "dims": "14' x 12'4\""
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-3)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dims": "28'4\" x 11'"
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dims": "10' x 12'4\""
+        },
+        {
+          "name": "Service",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Balcony (hall, west)",
+          "dims": "7'1\" x 10'8\""
+        },
+        {
+          "name": "Balcony (Bedroom-3, south)",
+          "dims": "10'6\" x 3'6\""
+        },
+        {
+          "name": "Balcony (kitchen side, south)",
+          "dims": "10'6\" x 3'6\""
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "configuration": "2 BHK",
+      "file": "SPR_unit_B_conceptual.glb",
+      "carpet_sqft": 957,
+      "px_per_ft": 24.967,
+      "scale_method": "printed carpet area",
+      "size_m": [
+        12.0,
+        11.29
+      ],
+      "wall_height_m": 2.896,
+      "wall_blocks": 246,
+      "spot_checks": [
+        {
+          "room": "Bedroom-1",
+          "printed_ft": [
+            13,
+            11
+          ],
+          "measured_ft": [
+            11.54,
+            13.26
+          ],
+          "deviation_pct": [
+            4.9,
+            2.0
+          ]
+        }
+      ],
+      "triangles": 2568,
+      "sbu_sqft": 1125,
+      "balcony_sqft": 68.3,
+      "facing": "East Facing Flat Vastu",
+      "position": "West row, between Unit C and the staircase",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dims": "13' x 11'"
+        },
+        {
+          "name": "Bedroom-2",
+          "dims": "11' x 11'"
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dims": "28'4\" x 10'7\""
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dims": "13' x 7'"
+        },
+        {
+          "name": "Service",
+          "dims": "4'6\" x 7'2\""
+        },
+        {
+          "name": "Balcony (hall, west)",
+          "dims": "7'1\" x 9'4\""
+        }
+      ]
+    },
+    {
+      "key": "C",
+      "configuration": "2 BHK",
+      "file": "SPR_unit_C_conceptual.glb",
+      "carpet_sqft": 1003,
+      "px_per_ft": 26.789,
+      "scale_method": "printed carpet area",
+      "size_m": [
+        11.34,
+        9.75
+      ],
+      "wall_height_m": 2.896,
+      "wall_blocks": 248,
+      "spot_checks": [
+        {
+          "room": "Bedroom-1",
+          "printed_ft": [
+            13,
+            11.42
+          ],
+          "measured_ft": [
+            11.46,
+            12.95
+          ],
+          "deviation_pct": [
+            0.3,
+            -0.4
+          ]
+        },
+        {
+          "room": "Bedroom-2",
+          "printed_ft": [
+            13,
+            12
+          ],
+          "measured_ft": [
+            12.8,
+            12.84
+          ],
+          "deviation_pct": [
+            6.7,
+            -1.2
+          ]
+        }
+      ],
+      "triangles": 2600,
+      "sbu_sqft": 1179,
+      "balcony_sqft": 23.6,
+      "facing": "East Facing Flat Vastu",
+      "position": "North-west corner (west row, north end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dims": "13' x 11'5\""
+        },
+        {
+          "name": "Bedroom-2",
+          "dims": "13' x 12'"
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dims": "16' x 18'8\""
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dims": "11'6\" x 7'5\""
+        },
+        {
+          "name": "Service",
+          "dims": "4'6\" x 5'"
+        },
+        {
+          "name": "Balcony (Bedroom-1, north)",
+          "dims": "7'3\" x 4'"
+        }
+      ]
+    },
+    {
+      "key": "D",
+      "configuration": "3 BHK",
+      "file": "SPR_unit_D_conceptual.glb",
+      "carpet_sqft": 1472,
+      "px_per_ft": 20.899,
+      "scale_method": "printed carpet area",
+      "size_m": [
+        12.15,
+        13.67
+      ],
+      "wall_height_m": 2.896,
+      "wall_blocks": 221,
+      "spot_checks": [],
+      "triangles": 2378,
+      "sbu_sqft": 1731,
+      "balcony_sqft": 144.4,
+      "facing": "West Facing Flat Vastu",
+      "position": "North-east corner (east row, north end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dims": "12' x 11'5\""
+        },
+        {
+          "name": "Bedroom-2",
+          "dims": "12' x 11'5\""
+        },
+        {
+          "name": "Bedroom-3",
+          "dims": "13' x 14'"
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-3)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dims": "28'4\" x 11'"
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dims": "10' x 12'"
+        },
+        {
+          "name": "Service",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Balcony (Bedroom-1, north)",
+          "dims": "8'10\" x 4'"
+        },
+        {
+          "name": "Balcony (Bedroom-2, north)",
+          "dims": "11'4\" x 4'"
+        },
+        {
+          "name": "Balcony (hall, east)",
+          "dims": "7'1\" x 11'"
+        }
+      ]
+    },
+    {
+      "key": "E",
+      "configuration": "2 BHK",
+      "file": "SPR_unit_E_conceptual.glb",
+      "carpet_sqft": 846,
+      "px_per_ft": 25.363,
+      "scale_method": "printed carpet area",
+      "size_m": [
+        11.68,
+        7.79
+      ],
+      "wall_height_m": 2.896,
+      "wall_blocks": 199,
+      "spot_checks": [
+        {
+          "room": "Bedroom-2",
+          "printed_ft": [
+            10,
+            11.25
+          ],
+          "measured_ft": [
+            10.53,
+            11.75
+          ],
+          "deviation_pct": [
+            5.3,
+            4.4
+          ]
+        }
+      ],
+      "triangles": 2062,
+      "sbu_sqft": 995,
+      "balcony_sqft": 72.0,
+      "facing": "West Facing Flat Vastu",
+      "position": "East row, between Units D and F",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dims": "12' x 13'"
+        },
+        {
+          "name": "Bedroom-2",
+          "dims": "10' x 11'3\""
+        },
+        {
+          "name": "Bathroom 1",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom 2",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dims": "10' x 11'"
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dims": "8' x 8'"
+        },
+        {
+          "name": "Balcony (kitchen/dining, east)",
+          "dims": "6'5\" x 12'"
+        }
+      ]
+    },
+    {
+      "key": "F",
+      "configuration": "3 BHK",
+      "file": "SPR_unit_F_conceptual.glb",
+      "carpet_sqft": 1486,
+      "px_per_ft": 21.176,
+      "scale_method": "printed carpet area",
+      "size_m": [
+        12.29,
+        13.54
+      ],
+      "wall_height_m": 2.896,
+      "wall_blocks": 218,
+      "spot_checks": [],
+      "triangles": 2288,
+      "sbu_sqft": 1747,
+      "balcony_sqft": 143.3,
+      "facing": "West Facing Flat Vastu",
+      "position": "South-east corner (east row, south end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dims": "12' x 12'"
+        },
+        {
+          "name": "Bedroom-2",
+          "dims": "12' x 12'"
+        },
+        {
+          "name": "Bedroom-3",
+          "dims": "14' x 12'4\""
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Bathroom (Bedroom-3)",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dims": "28'4\" x 11'"
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dims": "10' x 12'4\""
+        },
+        {
+          "name": "Service",
+          "dims": "4'6\" x 8'"
+        },
+        {
+          "name": "Balcony (hall, east)",
+          "dims": "7'1\" x 10'8\""
+        },
+        {
+          "name": "Balcony (Bedroom-3, south)",
+          "dims": "10'6\" x 3'6\""
+        },
+        {
+          "name": "Balcony (kitchen side, south)",
+          "dims": "10'6\" x 3'6\""
+        }
+      ]
+    }
+  ]
+}

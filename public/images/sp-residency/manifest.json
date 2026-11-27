@@ -1,0 +1,977 @@
+{
+  "project": "Shan Poornam Residence (SP Residency)",
+  "location": "Visalakshipuram, Madurai",
+  "builtOn": "2026-11-27",
+  "builtBy": "sp-residency/scripts/build_web_assets.py",
+  "statusLegend": {
+    "original": "Brochure render, format-converted only",
+    "generated": "AI-enhanced from a brochure reference (see sp-residency/prompts)"
+  },
+  "approvalLegend": {
+    "pending": "Awaiting client sign-off and developer usage permission",
+    "approved": "Cleared for publication",
+    "rejected": "Do not publish"
+  },
+  "usageNote": "All images are artists' impressions owned by the developer (ENS Development / SKR Elite Properties). Obtain written permission before going live.",
+  "assets": [
+    {
+      "id": "sp-exterior-day-3q",
+      "filename": "exterior/sp-exterior-day-3q.webp",
+      "src": "/images/sp-residency/exterior/sp-exterior-day-3q.webp",
+      "category": "exterior",
+      "sourceBrochurePages": [
+        4
+      ],
+      "referenceId": "R01",
+      "referenceFile": "sp-residency/reference/exterior/p04-exterior-day-three-quarter-perspective.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 2263,
+      "height": 1273,
+      "bytes": 438686,
+      "alt": "Shan Poornam Residence in daylight: white-framed bays, copper-toned vertical louvres and the SP monogram pylon",
+      "caption": "Three-quarter view from the street",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "project-hero",
+        "project-intro",
+        "home-projects-list"
+      ]
+    },
+    {
+      "id": "sp-front-elevation-night",
+      "filename": "elevation/sp-front-elevation-night.webp",
+      "src": "/images/sp-residency/elevation/sp-front-elevation-night.webp",
+      "category": "elevation",
+      "sourceBrochurePages": [
+        26,
+        27
+      ],
+      "referenceId": "R04",
+      "referenceFile": "sp-residency/reference/elevation/p26-front-elevation-night.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 and downscaled - no content change",
+      "approval": "pending",
+      "width": 2400,
+      "height": 1591,
+      "bytes": 140036,
+      "alt": "Front elevation of Shan Poornam Residence at night, stilt plus five floors with rooftop garden",
+      "caption": "Front elevation at blue hour",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "project-intro",
+        "cinematic:06"
+      ]
+    },
+    {
+      "id": "sp-entrance-security-cabin",
+      "filename": "entrance/sp-entrance-security-cabin.webp",
+      "src": "/images/sp-residency/entrance/sp-entrance-security-cabin.webp",
+      "category": "entrance",
+      "sourceBrochurePages": [
+        11
+      ],
+      "referenceId": "R03",
+      "referenceFile": "sp-residency/reference/exterior/p11-entrance-security-cabin-night.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 1105,
+      "height": 622,
+      "bytes": 75794,
+      "alt": "Illuminated security cabin with Shan Poornam Residence signage at the stilt parking entrance",
+      "caption": "Arrival - the security cabin",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "cinematic:01"
+      ],
+      "resolutionNote": "Native 1105px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-entrance-frontage",
+      "filename": "entrance/sp-entrance-frontage.webp",
+      "src": "/images/sp-residency/entrance/sp-entrance-frontage.webp",
+      "category": "entrance",
+      "sourceBrochurePages": [
+        26
+      ],
+      "referenceId": "R34",
+      "referenceFile": "sp-residency/reference/elevation/p26-entrance-frontage-crop.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 1400,
+      "height": 600,
+      "bytes": 66394,
+      "alt": "Street frontage with security cabin, boom barrier and timber-look compound wall at dusk",
+      "caption": "Street frontage",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "project-intro"
+      ]
+    },
+    {
+      "id": "sp-lobby",
+      "filename": "lobby/sp-lobby.webp",
+      "src": "/images/sp-residency/lobby/sp-lobby.webp",
+      "category": "lobby",
+      "sourceBrochurePages": [
+        11
+      ],
+      "referenceId": "R18",
+      "referenceFile": "sp-residency/reference/amenities/p11-private-lobby.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 769,
+      "height": 433,
+      "bytes": 23000,
+      "alt": "Private lobby with travertine-look panels, mustard and ivory bucket chairs and a woven rattan pendant",
+      "caption": "The private lobby",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "cinematic:02"
+      ],
+      "resolutionNote": "Native 769px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-lobby-library-lounge",
+      "filename": "lobby/sp-lobby-library-lounge.webp",
+      "src": "/images/sp-residency/lobby/sp-lobby-library-lounge.webp",
+      "category": "lobby",
+      "sourceBrochurePages": [
+        25
+      ],
+      "referenceId": "R19",
+      "referenceFile": "sp-residency/reference/amenities/p25-lobby-library-lounge.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 774,
+      "height": 435,
+      "bytes": 20158,
+      "alt": "Lobby lounge with charcoal leather sofas, a backlit walnut bookshelf and travertine-look wall panels",
+      "caption": "Lobby lounge and library",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "amenities"
+      ],
+      "resolutionNote": "Native 774px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-living-dining",
+      "filename": "living/sp-living-dining.webp",
+      "src": "/images/sp-residency/living/sp-living-dining.webp",
+      "category": "living",
+      "sourceBrochurePages": [
+        25
+      ],
+      "referenceId": "R14",
+      "referenceFile": "sp-residency/reference/living-room/p25-living-dining-hall-view.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 777,
+      "height": 437,
+      "bytes": 20918,
+      "alt": "Apartment hall with fluted walnut TV wall, light grey sofa and the dining zone by a curtained window",
+      "caption": "Living and dining hall",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "cinematic:03",
+        "dining"
+      ],
+      "resolutionNote": "Native 777px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-master-bedroom",
+      "filename": "bedrooms/sp-master-bedroom.webp",
+      "src": "/images/sp-residency/bedrooms/sp-master-bedroom.webp",
+      "category": "bedrooms",
+      "sourceBrochurePages": [
+        24
+      ],
+      "referenceId": "R16",
+      "referenceFile": "sp-residency/reference/master-bedroom/p24-bedroom-tropical-leaf-feature-wall.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 1012,
+      "height": 1065,
+      "bytes": 59270,
+      "alt": "Bedroom with a tropical-leaf mural above walnut panelling, cream headboard and wide-plank walnut floor",
+      "caption": "The bedroom",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "cinematic:04"
+      ],
+      "resolutionNote": "Native 1012px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-balcony",
+      "filename": "balcony/sp-balcony.webp",
+      "src": "/images/sp-residency/balcony/sp-balcony.webp",
+      "category": "balcony",
+      "sourceBrochurePages": [
+        24
+      ],
+      "referenceId": "R17",
+      "referenceFile": "sp-residency/reference/balcony/p24-balcony-sit-out.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 763,
+      "height": 429,
+      "bytes": 53362,
+      "alt": "Balcony sit-out with two beige lounge chairs on brass frames, wall planters and a white baluster railing",
+      "caption": "The balcony sit-out",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "cinematic:05"
+      ],
+      "resolutionNote": "Native 763px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-corridor",
+      "filename": "amenities/sp-corridor.webp",
+      "src": "/images/sp-residency/amenities/sp-corridor.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        24
+      ],
+      "referenceId": "R25",
+      "referenceFile": "sp-residency/reference/amenities/p24-typical-floor-corridor.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 519,
+      "height": 519,
+      "bytes": 15122,
+      "alt": "Residential corridor with grey granite floor, black inlay bands and brass ring pendants",
+      "caption": "Typical-floor corridor",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "amenities"
+      ],
+      "resolutionNote": "Native 519px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-management-office",
+      "filename": "amenities/sp-management-office.webp",
+      "src": "/images/sp-residency/amenities/sp-management-office.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        11
+      ],
+      "referenceId": "R20",
+      "referenceFile": "sp-residency/reference/amenities/p11-management-office.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 872,
+      "height": 456,
+      "bytes": 24176,
+      "alt": "Management office with fluted grey wall panel, white desk and backlit walnut bookshelf",
+      "caption": "Management office",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "amenities"
+      ],
+      "resolutionNote": "Native 872px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-coworking",
+      "filename": "amenities/sp-coworking.webp",
+      "src": "/images/sp-residency/amenities/sp-coworking.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        11
+      ],
+      "referenceId": "R21",
+      "referenceFile": "sp-residency/reference/amenities/p11-coworking-study-room.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 703,
+      "height": 439,
+      "bytes": 16584,
+      "alt": "Co-working room with three workstations, light oak cabinets and black mesh chairs",
+      "caption": "Co-working / study room",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "amenities"
+      ],
+      "resolutionNote": "Native 703px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-gym-cardio",
+      "filename": "amenities/sp-gym-cardio.webp",
+      "src": "/images/sp-residency/amenities/sp-gym-cardio.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        12
+      ],
+      "referenceId": "R22",
+      "referenceFile": "sp-residency/reference/amenities/p12-gym-cardio-zone.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 736,
+      "height": 520,
+      "bytes": 34356,
+      "alt": "Terrace gym cardio zone with ellipticals and treadmills along a sunlit glazed wall",
+      "caption": "Gym - cardio",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "amenities"
+      ],
+      "resolutionNote": "Native 736px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-gym-strength",
+      "filename": "amenities/sp-gym-strength.webp",
+      "src": "/images/sp-residency/amenities/sp-gym-strength.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        12
+      ],
+      "referenceId": "R23",
+      "referenceFile": "sp-residency/reference/amenities/p12-gym-strength-zone.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 705,
+      "height": 498,
+      "bytes": 33226,
+      "alt": "Terrace gym strength zone with mural, benches and Swiss balls",
+      "caption": "Gym - strength",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "amenities"
+      ],
+      "resolutionNote": "Native 705px wide - shown framed, not full-bleed. Tier-0 upscale or the matching enhancement prompt is recommended."
+    },
+    {
+      "id": "sp-rooftop-lounge",
+      "filename": "amenities/sp-rooftop-lounge.webp",
+      "src": "/images/sp-residency/amenities/sp-rooftop-lounge.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        12
+      ],
+      "referenceId": "R24",
+      "referenceFile": "sp-residency/reference/amenities/p12-rooftop-lounge.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 1447,
+      "height": 814,
+      "bytes": 126904,
+      "alt": "Rooftop lounge on a timber deck with BBQ counter, dining tables and tropical planters",
+      "caption": "Rooftop lounge",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "amenities"
+      ]
+    },
+    {
+      "id": "sp-stilt-plan-3d",
+      "filename": "amenities/sp-stilt-plan-3d.webp",
+      "src": "/images/sp-residency/amenities/sp-stilt-plan-3d.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        10
+      ],
+      "referenceId": "R05",
+      "referenceFile": "sp-residency/reference/floor-plans/p10-stilt-floor-plan-3d.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 2339,
+      "height": 1279,
+      "bytes": 105308,
+      "alt": "3D cut-away of the stilt floor showing parking, lobby block, playground and security cabin",
+      "caption": "Stilt floor - parking and lobby amenities",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-terrace-plan-3d",
+      "filename": "amenities/sp-terrace-plan-3d.webp",
+      "src": "/images/sp-residency/amenities/sp-terrace-plan-3d.webp",
+      "category": "amenities",
+      "sourceBrochurePages": [
+        13
+      ],
+      "referenceId": "R06",
+      "referenceFile": "sp-residency/reference/floor-plans/p13-terrace-floor-plan-3d.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 and downscaled - no content change",
+      "approval": "pending",
+      "width": 2400,
+      "height": 1682,
+      "bytes": 116280,
+      "alt": "3D cut-away of the terrace with rooftop lounge, BBQ, gym and yoga lawn",
+      "caption": "Terrace - wellness and leisure",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-plan-typical",
+      "filename": "floor-plans/sp-typical-floor-plan.webp",
+      "src": "/images/sp-residency/floor-plans/sp-typical-floor-plan.webp",
+      "category": "floor-plans",
+      "sourceBrochurePages": [
+        15
+      ],
+      "referenceId": "R07",
+      "referenceFile": "sp-residency/reference/floor-plans/p15-typical-floor-plan.jpg",
+      "status": "original",
+      "processing": "Soft-mask applied for transparency (corner 'TYPE'/'FLOOR PLAN' badge masked out), trimmed, WebP q90 - plan content unchanged",
+      "approval": "pending",
+      "width": 872,
+      "height": 866,
+      "bytes": 75562,
+      "alt": "Typical floor plan with units A to F around a central corridor",
+      "caption": "Typical floor (1st-4th)",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-plan-a",
+      "filename": "floor-plans/sp-unit-a-3bhk.webp",
+      "src": "/images/sp-residency/floor-plans/sp-unit-a-3bhk.webp",
+      "category": "floor-plans",
+      "sourceBrochurePages": [
+        16
+      ],
+      "referenceId": "R08",
+      "referenceFile": "sp-residency/reference/floor-plans/p16-unit-type-a-3bhk.jpg",
+      "status": "original",
+      "processing": "Soft-mask applied for transparency (corner 'TYPE'/'FLOOR PLAN' badge masked out), trimmed, WebP q90 - plan content unchanged",
+      "approval": "pending",
+      "width": 1024,
+      "height": 944,
+      "bytes": 70316,
+      "alt": "Unit Type A, 3 BHK floor plan",
+      "caption": "Unit A - 3 BHK",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-plan-b",
+      "filename": "floor-plans/sp-unit-b-2bhk.webp",
+      "src": "/images/sp-residency/floor-plans/sp-unit-b-2bhk.webp",
+      "category": "floor-plans",
+      "sourceBrochurePages": [
+        16,
+        17
+      ],
+      "referenceId": "R09",
+      "referenceFile": "sp-residency/reference/floor-plans/p17-unit-type-b-2bhk.jpg",
+      "status": "original",
+      "processing": "Soft-mask applied for transparency (corner 'TYPE'/'FLOOR PLAN' badge masked out), trimmed, WebP q90 - plan content unchanged",
+      "approval": "pending",
+      "width": 1442,
+      "height": 978,
+      "bytes": 59230,
+      "alt": "Unit Type B, 2 BHK floor plan",
+      "caption": "Unit B - 2 BHK",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-plan-c",
+      "filename": "floor-plans/sp-unit-c-2bhk.webp",
+      "src": "/images/sp-residency/floor-plans/sp-unit-c-2bhk.webp",
+      "category": "floor-plans",
+      "sourceBrochurePages": [
+        18
+      ],
+      "referenceId": "R10",
+      "referenceFile": "sp-residency/reference/floor-plans/p18-unit-type-c-2bhk.jpg",
+      "status": "original",
+      "processing": "Soft-mask applied for transparency (corner 'TYPE'/'FLOOR PLAN' badge masked out), trimmed, WebP q90 - plan content unchanged",
+      "approval": "pending",
+      "width": 1142,
+      "height": 858,
+      "bytes": 69524,
+      "alt": "Unit Type C, 2 BHK floor plan",
+      "caption": "Unit C - 2 BHK",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-plan-d",
+      "filename": "floor-plans/sp-unit-d-3bhk.webp",
+      "src": "/images/sp-residency/floor-plans/sp-unit-d-3bhk.webp",
+      "category": "floor-plans",
+      "sourceBrochurePages": [
+        18,
+        19
+      ],
+      "referenceId": "R11",
+      "referenceFile": "sp-residency/reference/floor-plans/p19-unit-type-d-3bhk.jpg",
+      "status": "original",
+      "processing": "Soft-mask applied for transparency (corner 'TYPE'/'FLOOR PLAN' badge masked out), trimmed, WebP q90 - plan content unchanged",
+      "approval": "pending",
+      "width": 1343,
+      "height": 1016,
+      "bytes": 80108,
+      "alt": "Unit Type D, 3 BHK floor plan",
+      "caption": "Unit D - 3 BHK",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-plan-e",
+      "filename": "floor-plans/sp-unit-e-2bhk.webp",
+      "src": "/images/sp-residency/floor-plans/sp-unit-e-2bhk.webp",
+      "category": "floor-plans",
+      "sourceBrochurePages": [
+        20
+      ],
+      "referenceId": "R12",
+      "referenceFile": "sp-residency/reference/floor-plans/p20-unit-type-e-2bhk.jpg",
+      "status": "original",
+      "processing": "Soft-mask applied for transparency (corner 'TYPE'/'FLOOR PLAN' badge masked out), trimmed, WebP q90 - plan content unchanged",
+      "approval": "pending",
+      "width": 1084,
+      "height": 705,
+      "bytes": 55724,
+      "alt": "Unit Type E, 2 BHK floor plan",
+      "caption": "Unit E - 2 BHK",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-plan-f",
+      "filename": "floor-plans/sp-unit-f-3bhk.webp",
+      "src": "/images/sp-residency/floor-plans/sp-unit-f-3bhk.webp",
+      "category": "floor-plans",
+      "sourceBrochurePages": [
+        20,
+        21
+      ],
+      "referenceId": "R13",
+      "referenceFile": "sp-residency/reference/floor-plans/p21-unit-type-f-3bhk.jpg",
+      "status": "original",
+      "processing": "Soft-mask applied for transparency (corner 'TYPE'/'FLOOR PLAN' badge masked out), trimmed, WebP q90 - plan content unchanged",
+      "approval": "pending",
+      "width": 1394,
+      "height": 1025,
+      "bytes": 74492,
+      "alt": "Unit Type F, 3 BHK floor plan",
+      "caption": "Unit F - 3 BHK",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "floor-plans"
+      ]
+    },
+    {
+      "id": "sp-location-map",
+      "filename": "location/sp-location-map.webp",
+      "src": "/images/sp-residency/location/sp-location-map.webp",
+      "category": "location",
+      "sourceBrochurePages": [
+        7
+      ],
+      "referenceId": "R28",
+      "referenceFile": "sp-residency/reference/location/p07-location-map.jpg",
+      "status": "original",
+      "processing": "Converted to WebP q82 - no content change",
+      "approval": "pending",
+      "width": 2284,
+      "height": 1615,
+      "bytes": 105352,
+      "alt": "Location map of Shan Poornam Residence in Visalakshipuram, Madurai, with 1-5 km rings",
+      "caption": "Location map",
+      "credit": "Artist's impression - Shan Poornam Residence brochure, ENS Development / SKR Elite Properties",
+      "websiteUsage": [
+        "location"
+      ]
+    }
+  ],
+  "emptyCategories": {
+    "kitchen": "No kitchen render in the brochure (prompt KIT-00 blocked pending a design brief).",
+    "pooja": "No pooja room anywhere in the brochure (POO-00 blocked).",
+    "bathrooms": "No bathroom render in the brochure (BTH-00 blocked pending a design brief).",
+    "dining": "No standalone dining render; the dining zone appears in living/sp-living-dining.webp."
+  },
+  "notPublished": {
+    "R02": "245 px dusk thumbnail - too small for web; lighting reference for EXT-04 only",
+    "R15": "230 px dining crop - too small for web; the dining zone is shown in sp-living-dining",
+    "R26": "Amenity icon sheet - rendered as live text on the page instead",
+    "R27": "Distance table - rendered as live data on the page instead"
+  },
+  "plannedGeneratedAssets": [
+    {
+      "promptId": "EXT-01",
+      "title": "Main front elevation - night (enhanced)",
+      "category": "elevation",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "elevation/sp-front-elevation-night-enhanced.webp"
+    },
+    {
+      "promptId": "EXT-02",
+      "title": "Main front elevation - daylight relight",
+      "category": "elevation",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "medium",
+      "plannedFile": "elevation/sp-front-elevation-day.webp"
+    },
+    {
+      "promptId": "EXT-03",
+      "title": "Three-quarter perspective - day (enhanced)",
+      "category": "exterior",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "exterior/sp-exterior-day-3q-enhanced.webp"
+    },
+    {
+      "promptId": "EXT-04",
+      "title": "Three-quarter perspective - dusk",
+      "category": "exterior",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "medium",
+      "plannedFile": "exterior/sp-exterior-dusk-3q.webp"
+    },
+    {
+      "promptId": "EXT-05",
+      "title": "Side elevation",
+      "category": "elevation",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "blocked",
+      "plannedFile": null
+    },
+    {
+      "promptId": "EXT-06",
+      "title": "Building entrance - security cabin (enhanced)",
+      "category": "entrance",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "entrance/sp-entrance-security-cabin-enhanced.webp"
+    },
+    {
+      "promptId": "EXT-07",
+      "title": "Entrance frontage - dusk (enhanced crop)",
+      "category": "entrance",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "entrance/sp-entrance-frontage-dusk.webp"
+    },
+    {
+      "promptId": "EXT-08",
+      "title": "Apartment lobby (enhanced)",
+      "category": "lobby",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "lobby/sp-lobby-enhanced.webp"
+    },
+    {
+      "promptId": "EXT-09",
+      "title": "Lobby lounge / library (enhanced)",
+      "category": "lobby",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "lobby/sp-lobby-library-lounge-enhanced.webp"
+    },
+    {
+      "promptId": "EXT-10",
+      "title": "Parking & access - stilt cut-away (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-stilt-plan-3d-enhanced.webp"
+    },
+    {
+      "promptId": "EXT-11",
+      "title": "Parking & access - eye-level stilt drive (NEW VIEW)",
+      "category": "entrance",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "high",
+      "plannedFile": null
+    },
+    {
+      "promptId": "EXT-12",
+      "title": "Terrace & amenities - terrace cut-away (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-terrace-plan-3d-enhanced.webp"
+    },
+    {
+      "promptId": "EXT-13",
+      "title": "Aerial perspective - high oblique (NEW VIEW)",
+      "category": "exterior",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "high",
+      "plannedFile": null
+    },
+    {
+      "promptId": "LIV-01",
+      "title": "Living - main wide view (enhanced)",
+      "category": "living",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "living/sp-living-main.webp"
+    },
+    {
+      "promptId": "LIV-02",
+      "title": "Living - secondary three-quarter view",
+      "category": "living",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "medium",
+      "plannedFile": "living/sp-living-secondary.webp"
+    },
+    {
+      "promptId": "LIV-03",
+      "title": "Living - material detail",
+      "category": "living",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "living/sp-living-detail.webp"
+    },
+    {
+      "promptId": "DIN-01",
+      "title": "Dining - main view toward the window",
+      "category": "dining",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "medium",
+      "plannedFile": "dining/sp-dining-main.webp"
+    },
+    {
+      "promptId": "DIN-02",
+      "title": "Dining - secondary / detail",
+      "category": "dining",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "blocked",
+      "plannedFile": null
+    },
+    {
+      "promptId": "BED-01",
+      "title": "Master bedroom - main wide view (enhanced)",
+      "category": "bedrooms",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "bedrooms/sp-master-bedroom-main.webp"
+    },
+    {
+      "promptId": "BED-02",
+      "title": "Master bedroom - secondary three-quarter view",
+      "category": "bedrooms",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "medium",
+      "plannedFile": "bedrooms/sp-master-bedroom-secondary.webp"
+    },
+    {
+      "promptId": "BED-03",
+      "title": "Master bedroom - material detail",
+      "category": "bedrooms",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "bedrooms/sp-master-bedroom-detail.webp"
+    },
+    {
+      "promptId": "BAL-01",
+      "title": "Balcony - main view (enhanced)",
+      "category": "balcony",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "balcony/sp-balcony-main.webp"
+    },
+    {
+      "promptId": "BAL-02",
+      "title": "Balcony - secondary view along the sit-out",
+      "category": "balcony",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "medium",
+      "plannedFile": "balcony/sp-balcony-secondary.webp"
+    },
+    {
+      "promptId": "BAL-03",
+      "title": "Balcony - material detail",
+      "category": "balcony",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "balcony/sp-balcony-detail.webp"
+    },
+    {
+      "promptId": "COR-01",
+      "title": "Corridor - main view (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-corridor-main.webp"
+    },
+    {
+      "promptId": "COR-02",
+      "title": "Corridor - landscape web format",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "medium",
+      "plannedFile": "amenities/sp-corridor-wide.webp"
+    },
+    {
+      "promptId": "COR-03",
+      "title": "Corridor - material detail",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-corridor-detail.webp"
+    },
+    {
+      "promptId": "AME-01",
+      "title": "Management office (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-management-office.webp"
+    },
+    {
+      "promptId": "AME-02",
+      "title": "Co-working / study room (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-coworking.webp"
+    },
+    {
+      "promptId": "AME-03",
+      "title": "Gym - cardio zone (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-gym-cardio.webp"
+    },
+    {
+      "promptId": "AME-04",
+      "title": "Gym - strength zone (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-gym-strength.webp"
+    },
+    {
+      "promptId": "AME-05",
+      "title": "Rooftop lounge (enhanced)",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-rooftop-lounge.webp"
+    },
+    {
+      "promptId": "AME-06",
+      "title": "Rooftop lounge - material detail",
+      "category": "amenities",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "amenities/sp-rooftop-detail.webp"
+    },
+    {
+      "promptId": "AME-07",
+      "title": "Lobby - material detail",
+      "category": "lobby",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "low",
+      "plannedFile": "lobby/sp-lobby-detail.webp"
+    },
+    {
+      "promptId": "KIT-00",
+      "title": "Kitchen",
+      "category": "kitchen",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "blocked",
+      "plannedFile": null
+    },
+    {
+      "promptId": "BTH-00",
+      "title": "Bathroom",
+      "category": "bathrooms",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "blocked",
+      "plannedFile": null
+    },
+    {
+      "promptId": "POO-00",
+      "title": "Pooja room",
+      "category": "pooja",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "blocked",
+      "plannedFile": null
+    },
+    {
+      "promptId": "BED-90",
+      "title": "Secondary bedrooms / wardrobes",
+      "category": "bedrooms",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "blocked",
+      "plannedFile": null
+    },
+    {
+      "promptId": "LOC-00",
+      "title": "Location visualisation",
+      "category": "location",
+      "status": "not-generated",
+      "approval": "pending",
+      "risk": "blocked",
+      "plannedFile": null
+    }
+  ]
+}

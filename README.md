@@ -58,3 +58,18 @@ To swap in real media later:
   viewports: scroll-driven animations, pinned sections, animated counters,
   hover states, nav overlay open/close, magnetic buttons/custom cursor,
   horizontal testimonial scroll — no console errors observed
+
+## Project: SP Residency (Shan Poornam Residence, Madurai)
+
+The first real project on the site, at `/projects/sp-residency`. It is linked from the home-page
+Projects list.
+
+- **Page:** `src/app/projects/sp-residency/page.tsx`, with components in `src/components/sp-residency/`.
+  It has an exterior intro, a pinned interior walkthrough, amenities, interactive floor plans,
+  specifications and location.
+- **Data:** `src/data/sp-residency.ts` reads `public/images/sp-residency/manifest.json` and
+  `sp-residency/analysis/project-information.json`. Both files are generated, so neither is edited by hand.
+- **Visual package:** the brochure analysis, reference library, prompt pack, 3D spec and rebuild
+  scripts are in `sp-residency/`; start with `sp-residency/README.md`.
+- **Before going live:** all imagery is the developer's brochure renders (`approval: "pending"`).
+  Confirm usage rights first.

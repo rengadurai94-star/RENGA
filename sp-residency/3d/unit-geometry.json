@@ -1,0 +1,592 @@
+{
+  "_about": "Room schedule per unit for conceptual 3D modelling. Brochure dimensions are as printed; metric values are derived (1 ft = 0.3048 m). NOT construction-accurate - see 3d/modelling-specification.md.",
+  "floor_to_floor_ft": 10,
+  "floor_to_floor_m_derived": 3.048,
+  "units": {
+    "A": {
+      "configuration": "3 BHK",
+      "carpet_area_sqft": 1500,
+      "flat_entry": "E",
+      "position": "South-west corner (west row, south end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dimensions_as_printed": "12' x 12'",
+          "dim_a_ft_derived": 12.0,
+          "dim_b_ft_derived": 12.0,
+          "dim_a_m_derived": 3.658,
+          "dim_b_m_derived": 3.658,
+          "area_sqft_derived": 144.0
+        },
+        {
+          "name": "Bedroom-2",
+          "dimensions_as_printed": "12' x 12'6\"",
+          "dim_a_ft_derived": 12.0,
+          "dim_b_ft_derived": 12.5,
+          "dim_a_m_derived": 3.658,
+          "dim_b_m_derived": 3.81,
+          "area_sqft_derived": 150.0
+        },
+        {
+          "name": "Bedroom-3",
+          "dimensions_as_printed": "14' x 12'4\"",
+          "dim_a_ft_derived": 14.0,
+          "dim_b_ft_derived": 12.3333,
+          "dim_a_m_derived": 4.267,
+          "dim_b_m_derived": 3.759,
+          "area_sqft_derived": 172.7
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-3)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dimensions_as_printed": "28'4\" x 11'",
+          "dim_a_ft_derived": 28.3333,
+          "dim_b_ft_derived": 11.0,
+          "dim_a_m_derived": 8.636,
+          "dim_b_m_derived": 3.353,
+          "area_sqft_derived": 311.7
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dimensions_as_printed": "10' x 12'4\"",
+          "dim_a_ft_derived": 10.0,
+          "dim_b_ft_derived": 12.3333,
+          "dim_a_m_derived": 3.048,
+          "dim_b_m_derived": 3.759,
+          "area_sqft_derived": 123.3
+        },
+        {
+          "name": "Service",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Balcony (hall, west)",
+          "dimensions_as_printed": "7'1\" x 10'8\"",
+          "dim_a_ft_derived": 7.0833,
+          "dim_b_ft_derived": 10.6667,
+          "dim_a_m_derived": 2.159,
+          "dim_b_m_derived": 3.251,
+          "area_sqft_derived": 75.6
+        },
+        {
+          "name": "Balcony (Bedroom-3, south)",
+          "dimensions_as_printed": "10'6\" x 3'6\"",
+          "dim_a_ft_derived": 10.5,
+          "dim_b_ft_derived": 3.5,
+          "dim_a_m_derived": 3.2,
+          "dim_b_m_derived": 1.067,
+          "area_sqft_derived": 36.8
+        },
+        {
+          "name": "Balcony (kitchen side, south)",
+          "dimensions_as_printed": "10'6\" x 3'6\"",
+          "dim_a_ft_derived": 10.5,
+          "dim_b_ft_derived": 3.5,
+          "dim_a_m_derived": 3.2,
+          "dim_b_m_derived": 1.067,
+          "area_sqft_derived": 36.8
+        }
+      ],
+      "sum_of_labelled_room_areas_excl_balconies_sqft_derived": 1045.7
+    },
+    "B": {
+      "configuration": "2 BHK",
+      "carpet_area_sqft": 957,
+      "flat_entry": "E",
+      "position": "West row, between Unit C and the staircase",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dimensions_as_printed": "13' x 11'",
+          "dim_a_ft_derived": 13.0,
+          "dim_b_ft_derived": 11.0,
+          "dim_a_m_derived": 3.962,
+          "dim_b_m_derived": 3.353,
+          "area_sqft_derived": 143.0
+        },
+        {
+          "name": "Bedroom-2",
+          "dimensions_as_printed": "11' x 11'",
+          "dim_a_ft_derived": 11.0,
+          "dim_b_ft_derived": 11.0,
+          "dim_a_m_derived": 3.353,
+          "dim_b_m_derived": 3.353,
+          "area_sqft_derived": 121.0
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dimensions_as_printed": "28'4\" x 10'7\"",
+          "dim_a_ft_derived": 28.3333,
+          "dim_b_ft_derived": 10.5833,
+          "dim_a_m_derived": 8.636,
+          "dim_b_m_derived": 3.226,
+          "area_sqft_derived": 299.9
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dimensions_as_printed": "13' x 7'",
+          "dim_a_ft_derived": 13.0,
+          "dim_b_ft_derived": 7.0,
+          "dim_a_m_derived": 3.962,
+          "dim_b_m_derived": 2.134,
+          "area_sqft_derived": 91.0
+        },
+        {
+          "name": "Service",
+          "dimensions_as_printed": "4'6\" x 7'2\"",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 7.1667,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.184,
+          "area_sqft_derived": 32.3
+        },
+        {
+          "name": "Balcony (hall, west)",
+          "dimensions_as_printed": "7'1\" x 9'4\"",
+          "dim_a_ft_derived": 7.0833,
+          "dim_b_ft_derived": 9.3333,
+          "dim_a_m_derived": 2.159,
+          "dim_b_m_derived": 2.845,
+          "area_sqft_derived": 66.1
+        }
+      ],
+      "sum_of_labelled_room_areas_excl_balconies_sqft_derived": 759.2
+    },
+    "C": {
+      "configuration": "2 BHK",
+      "carpet_area_sqft": 1003,
+      "flat_entry": "E",
+      "position": "North-west corner (west row, north end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dimensions_as_printed": "13' x 11'5\"",
+          "dim_a_ft_derived": 13.0,
+          "dim_b_ft_derived": 11.4167,
+          "dim_a_m_derived": 3.962,
+          "dim_b_m_derived": 3.48,
+          "area_sqft_derived": 148.4
+        },
+        {
+          "name": "Bedroom-2",
+          "dimensions_as_printed": "13' x 12'",
+          "dim_a_ft_derived": 13.0,
+          "dim_b_ft_derived": 12.0,
+          "dim_a_m_derived": 3.962,
+          "dim_b_m_derived": 3.658,
+          "area_sqft_derived": 156.0
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dimensions_as_printed": "16' x 18'8\"",
+          "dim_a_ft_derived": 16.0,
+          "dim_b_ft_derived": 18.6667,
+          "dim_a_m_derived": 4.877,
+          "dim_b_m_derived": 5.69,
+          "area_sqft_derived": 298.7
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dimensions_as_printed": "11'6\" x 7'5\"",
+          "dim_a_ft_derived": 11.5,
+          "dim_b_ft_derived": 7.4167,
+          "dim_a_m_derived": 3.505,
+          "dim_b_m_derived": 2.261,
+          "area_sqft_derived": 85.3
+        },
+        {
+          "name": "Service",
+          "dimensions_as_printed": "4'6\" x 5'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 5.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 1.524,
+          "area_sqft_derived": 22.5
+        },
+        {
+          "name": "Balcony (Bedroom-1, north)",
+          "dimensions_as_printed": "7'3\" x 4'",
+          "dim_a_ft_derived": 7.25,
+          "dim_b_ft_derived": 4.0,
+          "dim_a_m_derived": 2.21,
+          "dim_b_m_derived": 1.219,
+          "area_sqft_derived": 29.0
+        }
+      ],
+      "sum_of_labelled_room_areas_excl_balconies_sqft_derived": 782.9
+    },
+    "D": {
+      "configuration": "3 BHK",
+      "carpet_area_sqft": 1472,
+      "flat_entry": "W",
+      "position": "North-east corner (east row, north end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dimensions_as_printed": "12' x 11'5\"",
+          "dim_a_ft_derived": 12.0,
+          "dim_b_ft_derived": 11.4167,
+          "dim_a_m_derived": 3.658,
+          "dim_b_m_derived": 3.48,
+          "area_sqft_derived": 137.0
+        },
+        {
+          "name": "Bedroom-2",
+          "dimensions_as_printed": "12' x 11'5\"",
+          "dim_a_ft_derived": 12.0,
+          "dim_b_ft_derived": 11.4167,
+          "dim_a_m_derived": 3.658,
+          "dim_b_m_derived": 3.48,
+          "area_sqft_derived": 137.0
+        },
+        {
+          "name": "Bedroom-3",
+          "dimensions_as_printed": "13' x 14'",
+          "dim_a_ft_derived": 13.0,
+          "dim_b_ft_derived": 14.0,
+          "dim_a_m_derived": 3.962,
+          "dim_b_m_derived": 4.267,
+          "area_sqft_derived": 182.0
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-3)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dimensions_as_printed": "28'4\" x 11'",
+          "dim_a_ft_derived": 28.3333,
+          "dim_b_ft_derived": 11.0,
+          "dim_a_m_derived": 8.636,
+          "dim_b_m_derived": 3.353,
+          "area_sqft_derived": 311.7
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dimensions_as_printed": "10' x 12'",
+          "dim_a_ft_derived": 10.0,
+          "dim_b_ft_derived": 12.0,
+          "dim_a_m_derived": 3.048,
+          "dim_b_m_derived": 3.658,
+          "area_sqft_derived": 120.0
+        },
+        {
+          "name": "Service",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Balcony (Bedroom-1, north)",
+          "dimensions_as_printed": "8'10\" x 4'",
+          "dim_a_ft_derived": 8.8333,
+          "dim_b_ft_derived": 4.0,
+          "dim_a_m_derived": 2.692,
+          "dim_b_m_derived": 1.219,
+          "area_sqft_derived": 35.3
+        },
+        {
+          "name": "Balcony (Bedroom-2, north)",
+          "dimensions_as_printed": "11'4\" x 4'",
+          "dim_a_ft_derived": 11.3333,
+          "dim_b_ft_derived": 4.0,
+          "dim_a_m_derived": 3.454,
+          "dim_b_m_derived": 1.219,
+          "area_sqft_derived": 45.3
+        },
+        {
+          "name": "Balcony (hall, east)",
+          "dimensions_as_printed": "7'1\" x 11'",
+          "dim_a_ft_derived": 7.0833,
+          "dim_b_ft_derived": 11.0,
+          "dim_a_m_derived": 2.159,
+          "dim_b_m_derived": 3.353,
+          "area_sqft_derived": 77.9
+        }
+      ],
+      "sum_of_labelled_room_areas_excl_balconies_sqft_derived": 1031.7
+    },
+    "E": {
+      "configuration": "2 BHK",
+      "carpet_area_sqft": 846,
+      "flat_entry": "W",
+      "position": "East row, between Units D and F",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dimensions_as_printed": "12' x 13'",
+          "dim_a_ft_derived": 12.0,
+          "dim_b_ft_derived": 13.0,
+          "dim_a_m_derived": 3.658,
+          "dim_b_m_derived": 3.962,
+          "area_sqft_derived": 156.0
+        },
+        {
+          "name": "Bedroom-2",
+          "dimensions_as_printed": "10' x 11'3\"",
+          "dim_a_ft_derived": 10.0,
+          "dim_b_ft_derived": 11.25,
+          "dim_a_m_derived": 3.048,
+          "dim_b_m_derived": 3.429,
+          "area_sqft_derived": 112.5
+        },
+        {
+          "name": "Bathroom 1",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom 2",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dimensions_as_printed": "10' x 11'",
+          "dim_a_ft_derived": 10.0,
+          "dim_b_ft_derived": 11.0,
+          "dim_a_m_derived": 3.048,
+          "dim_b_m_derived": 3.353,
+          "area_sqft_derived": 110.0
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dimensions_as_printed": "8' x 8'",
+          "dim_a_ft_derived": 8.0,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 2.438,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 64.0
+        },
+        {
+          "name": "Balcony (kitchen/dining, east)",
+          "dimensions_as_printed": "6'5\" x 12'",
+          "dim_a_ft_derived": 6.4167,
+          "dim_b_ft_derived": 12.0,
+          "dim_a_m_derived": 1.956,
+          "dim_b_m_derived": 3.658,
+          "area_sqft_derived": 77.0
+        }
+      ],
+      "sum_of_labelled_room_areas_excl_balconies_sqft_derived": 514.5
+    },
+    "F": {
+      "configuration": "3 BHK",
+      "carpet_area_sqft": 1486,
+      "flat_entry": "W",
+      "position": "South-east corner (east row, south end)",
+      "rooms": [
+        {
+          "name": "Bedroom-1",
+          "dimensions_as_printed": "12' x 12'",
+          "dim_a_ft_derived": 12.0,
+          "dim_b_ft_derived": 12.0,
+          "dim_a_m_derived": 3.658,
+          "dim_b_m_derived": 3.658,
+          "area_sqft_derived": 144.0
+        },
+        {
+          "name": "Bedroom-2",
+          "dimensions_as_printed": "12' x 12'",
+          "dim_a_ft_derived": 12.0,
+          "dim_b_ft_derived": 12.0,
+          "dim_a_m_derived": 3.658,
+          "dim_b_m_derived": 3.658,
+          "area_sqft_derived": 144.0
+        },
+        {
+          "name": "Bedroom-3",
+          "dimensions_as_printed": "14' x 12'4\"",
+          "dim_a_ft_derived": 14.0,
+          "dim_b_ft_derived": 12.3333,
+          "dim_a_m_derived": 4.267,
+          "dim_b_m_derived": 3.759,
+          "area_sqft_derived": 172.7
+        },
+        {
+          "name": "Bathroom (Bedroom-1)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-2)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Bathroom (Bedroom-3)",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Hall (living + dining)",
+          "dimensions_as_printed": "28'4\" x 11'",
+          "dim_a_ft_derived": 28.3333,
+          "dim_b_ft_derived": 11.0,
+          "dim_a_m_derived": 8.636,
+          "dim_b_m_derived": 3.353,
+          "area_sqft_derived": 311.7
+        },
+        {
+          "name": "Kitchen (incl. utility)",
+          "dimensions_as_printed": "10' x 12'4\"",
+          "dim_a_ft_derived": 10.0,
+          "dim_b_ft_derived": 12.3333,
+          "dim_a_m_derived": 3.048,
+          "dim_b_m_derived": 3.759,
+          "area_sqft_derived": 123.3
+        },
+        {
+          "name": "Service",
+          "dimensions_as_printed": "4'6\" x 8'",
+          "dim_a_ft_derived": 4.5,
+          "dim_b_ft_derived": 8.0,
+          "dim_a_m_derived": 1.372,
+          "dim_b_m_derived": 2.438,
+          "area_sqft_derived": 36.0
+        },
+        {
+          "name": "Balcony (hall, east)",
+          "dimensions_as_printed": "7'1\" x 10'8\"",
+          "dim_a_ft_derived": 7.0833,
+          "dim_b_ft_derived": 10.6667,
+          "dim_a_m_derived": 2.159,
+          "dim_b_m_derived": 3.251,
+          "area_sqft_derived": 75.6
+        },
+        {
+          "name": "Balcony (Bedroom-3, south)",
+          "dimensions_as_printed": "10'6\" x 3'6\"",
+          "dim_a_ft_derived": 10.5,
+          "dim_b_ft_derived": 3.5,
+          "dim_a_m_derived": 3.2,
+          "dim_b_m_derived": 1.067,
+          "area_sqft_derived": 36.8
+        },
+        {
+          "name": "Balcony (kitchen side, south)",
+          "dimensions_as_printed": "10'6\" x 3'6\"",
+          "dim_a_ft_derived": 10.5,
+          "dim_b_ft_derived": 3.5,
+          "dim_a_m_derived": 3.2,
+          "dim_b_m_derived": 1.067,
+          "area_sqft_derived": 36.8
+        }
+      ],
+      "sum_of_labelled_room_areas_excl_balconies_sqft_derived": 1039.7
+    }
+  }
+}

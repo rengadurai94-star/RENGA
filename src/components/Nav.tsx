@@ -2,17 +2,18 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import MagneticButton from "./MagneticButton";
 
 const LINKS = [
-  { label: "Studio", href: "#who-we-are" },
-  { label: "Expertise", href: "#expertise" },
-  { label: "Philosophy", href: "#philosophy" },
-  { label: "Projects", href: "#projects" },
-  { label: "Materials", href: "#materials" },
-  { label: "Process", href: "#process" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#consultation" },
+  { label: "Studio", href: "/#who-we-are" },
+  { label: "Expertise", href: "/#expertise" },
+  { label: "Philosophy", href: "/#philosophy" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Materials", href: "/#materials" },
+  { label: "Process", href: "/#process" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/#consultation" },
 ];
 
 export default function Nav() {
@@ -21,13 +22,13 @@ export default function Nav() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-6 md:px-12 md:py-8">
-        <a
-          href="#top"
+        <Link
+          href="/#top"
           className="font-display text-sm tracking-editorial text-warm md:text-base"
         >
           URBAN MARK
           <span className="text-gold-bright"> INTERIOR</span>
-        </a>
+        </Link>
 
         <button
           aria-label="Toggle menu"
@@ -74,7 +75,7 @@ export default function Nav() {
             </nav>
             <div className="mt-12">
               <MagneticButton
-                href="#consultation"
+                href="/#consultation"
                 onClick={() => setOpen(false)}
                 className="rounded-full border border-gold px-8 py-4 text-xs uppercase tracking-editorial text-gold-bright"
               >

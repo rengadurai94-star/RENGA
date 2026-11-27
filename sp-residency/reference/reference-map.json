@@ -1,0 +1,789 @@
+{
+  "project": "Shan Poornam Residence (SP Residence / SP Residency) by ENS",
+  "source_pdf": "source/SPR-Brochure-11-05-2026.pdf",
+  "source_pdf_pages": 36,
+  "generated_by": "scripts/build_reference_library.py",
+  "references": [
+    {
+      "id": "R01",
+      "category": "exterior",
+      "file": "reference/exterior/p04-exterior-day-three-quarter-perspective.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        4
+      ],
+      "pdf_object_id": 30,
+      "pdfimages_name": "img-004-002.jpg",
+      "width": 2263,
+      "height": 1273,
+      "sha1": "c43cadcc6e14",
+      "feature": "Main building - front (road-facing, south per p15 north arrow) facade + side facade (inferred west), three-quarter view, daylight",
+      "design_details": "Stilt + 5 residential floors. White projecting 'picture-frame' bay boxes (5 stacked) with wood-tone soffits; full-height warm copper/teak-tone vertical louvre fins; warm-grey painted walls; sandstone/travertine-look vertical pylon carrying the teal 'SP' sun monogram at the parapet; MS vertical-bar balcony handrails; white UPVC windows; cascading planters at mid-floor ledges; rubble-stone compound wall (left) and timber-look panel compound wall/gates; mature trees.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R02",
+      "category": "exterior",
+      "file": "reference/exterior/p28-exterior-dusk-three-quarter-thumbnail.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        28
+      ],
+      "pdf_object_id": 324,
+      "pdfimages_name": "img-028-047.jpg",
+      "width": 245,
+      "height": 207,
+      "sha1": "14996a89e6fb",
+      "feature": "Same three-quarter viewpoint as R01 at dusk (portfolio thumbnail on the developer page)",
+      "design_details": "Only 245x207 px - usable as a lighting/time-of-day reference only, not as a geometry source. Shows warm interior glow, purple-pink dusk sky, road in foreground, white neighbouring bungalow.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R03",
+      "category": "exterior",
+      "file": "reference/exterior/p11-entrance-security-cabin-night.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        11
+      ],
+      "pdf_object_id": 87,
+      "pdfimages_name": "img-011-007.jpg",
+      "width": 1105,
+      "height": 622,
+      "sha1": "063bce3c2740",
+      "feature": "Building entrance - security cabin at the stilt-level vehicle entry (night)",
+      "design_details": "Glazed cabin with dark fascia carrying illuminated teal 'Shan Poornam Residence by ENS' lettering; timber-slat cladding at base; stilt parking beyond with black/yellow hazard-striped columns and red fire-sprinkler mains on a dark soffit; white bay frames, copper louvres and trailing planters above.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R04",
+      "category": "elevation",
+      "file": "reference/elevation/p26-front-elevation-night.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        26,
+        27
+      ],
+      "pdf_object_id": 473,
+      "pdfimages_name": "img-026-040.jpg",
+      "width": 2704,
+      "height": 1792,
+      "sha1": "33b0c8b71cd9",
+      "feature": "Front (south, road-facing) elevation - orthographic-style view at night",
+      "design_details": "Reads as stilt + 5 floors + terrace with rooftop trees and a tall sign mast at the centre-top. Left: white-framed bay stack; two large copper/teak-tone vertical louvre fields; centre: recessed open slot (south end of the central corridor) with planters/trees at every level; right: balcony stacks, white frames, cascading planters. Ground: timber-look compound wall with boom barriers at both ends of the frontage, illuminated security cabin + signage, stilt parking.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R34",
+      "category": "elevation",
+      "file": "reference/elevation/p26-entrance-frontage-crop.jpg",
+      "kind": "derived-crop",
+      "source_pages": [
+        26
+      ],
+      "pdf_object_id": 473,
+      "pdfimages_name": "img-026-040.jpg",
+      "width": 1400,
+      "height": 600,
+      "sha1": "baaa00c593db",
+      "feature": "Entrance frontage - DERIVED CROP of R04 (security cabin, signage, gate, stilt, lower floors)",
+      "design_details": "Right-hand ground frontage of the night elevation: illuminated security cabin with teal signage, timber-look compound wall, boom barrier, stilt parking entry with hazard-striped columns, the lowest residential floors above. Used as the frontage reference for entrance views.",
+      "is_sp_residency": true,
+      "derived_from": "R04",
+      "crop_geometry": "1400x600+1100+950"
+    },
+    {
+      "id": "R05",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p10-stilt-floor-plan-3d.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        10
+      ],
+      "pdf_object_id": 81,
+      "pdfimages_name": "img-010-004.jpg",
+      "width": 2339,
+      "height": 1279,
+      "sha1": "64407e663376",
+      "feature": "Stilt (ground) floor plan - 3D cut-away, keyed 1-9",
+      "design_details": "1 Private Lobby, 2 Management Office, 3 Co-working/Study, 4 Library, 5 Playground, 6 Garden, 7 Centralised Gasline, 8 Security Cabin, 9 Utilities Area. Two-way central drive aisle, perimeter parking bays (yellow-lined), perimeter landscape strips, two vehicle openings on the south frontage (security cabin at the south-east opening). Car count drawn is illustrative only.",
+      "is_sp_residency": true,
+      "annotated_page_render": "reference/floor-plans/p10-stilt-floor-plan-3d_page-annotated.jpg"
+    },
+    {
+      "id": "R06",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p13-terrace-floor-plan-3d.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        13
+      ],
+      "pdf_object_id": 102,
+      "pdfimages_name": "img-013-013.jpg",
+      "width": 2914,
+      "height": 2042,
+      "sha1": "b7003a36b3c4",
+      "feature": "Terrace floor plan - 3D cut-away, keyed 10-16",
+      "design_details": "10 Games Corner, 11 Gym (enclosed, glazed), 12 BBQ Area, 13 Rooftop Lounge (timber deck), 14 Outdoor Lounge, 15 Terrace Garden, 16 Outdoor Yoga Lawn (artificial turf, loungers). Stone-tile feature wall behind BBQ; open light-well over the central corridor; stair/lift heads.",
+      "is_sp_residency": true,
+      "annotated_page_render": "reference/floor-plans/p13-terrace-floor-plan-3d_page-annotated.jpg"
+    },
+    {
+      "id": "R07",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p15-typical-floor-plan.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        15
+      ],
+      "pdf_object_id": 120,
+      "pdfimages_name": "img-015-015.jpg",
+      "width": 1772,
+      "height": 997,
+      "sha1": "2de0526c80ec",
+      "feature": "Typical floor plan (floors 1-4) - units A-F around a central N-S corridor",
+      "design_details": "West row N->S: C (2BHK), B (2BHK), staircase + lift, A (3BHK). East row N->S: D (3BHK), E (2BHK), F (3BHK). Landscaped courts at both ends of the corridor. Road along the south edge. North arrow points up the page.",
+      "is_sp_residency": true,
+      "alpha_mask_file": "reference/floor-plans/p15-typical-floor-plan_alpha-mask.png",
+      "annotated_page_render": "reference/floor-plans/p15-typical-floor-plan_page-annotated.jpg"
+    },
+    {
+      "id": "R08",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p16-unit-type-a-3bhk.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        16
+      ],
+      "pdf_object_id": 136,
+      "pdfimages_name": "img-016-017.jpg",
+      "width": 1819,
+      "height": 1024,
+      "sha1": "4ee1a4468972",
+      "feature": "Unit Type A - 3 BHK - 1500 sq.ft carpet - east-facing flat entry",
+      "design_details": "Room dimensions and areas: see analysis/project-information.json units.A.",
+      "is_sp_residency": true,
+      "alpha_mask_file": "reference/floor-plans/p16-unit-type-a-3bhk_alpha-mask.png",
+      "annotated_page_render": "reference/floor-plans/p16-unit-type-a-3bhk_page-annotated.jpg"
+    },
+    {
+      "id": "R09",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p17-unit-type-b-2bhk.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        16,
+        17
+      ],
+      "pdf_object_id": 467,
+      "pdfimages_name": "img-017-021.jpg",
+      "width": 1993,
+      "height": 1121,
+      "sha1": "0bc62035b3c3",
+      "feature": "Unit Type B - 2 BHK - 957 sq.ft carpet - east-facing flat entry",
+      "design_details": "Room dimensions and areas: see analysis/project-information.json units.B.",
+      "is_sp_residency": true,
+      "alpha_mask_file": "reference/floor-plans/p17-unit-type-b-2bhk_alpha-mask.png",
+      "annotated_page_render": "reference/floor-plans/p17-unit-type-b-2bhk_page-annotated.jpg"
+    },
+    {
+      "id": "R10",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p18-unit-type-c-2bhk.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        18
+      ],
+      "pdf_object_id": 166,
+      "pdfimages_name": "img-018-023.jpg",
+      "width": 1778,
+      "height": 1000,
+      "sha1": "878f7cc353dc",
+      "feature": "Unit Type C - 2 BHK - 1003 sq.ft carpet - east-facing flat entry",
+      "design_details": "Room dimensions and areas: see analysis/project-information.json units.C.",
+      "is_sp_residency": true,
+      "alpha_mask_file": "reference/floor-plans/p18-unit-type-c-2bhk_alpha-mask.png",
+      "annotated_page_render": "reference/floor-plans/p18-unit-type-c-2bhk_page-annotated.jpg"
+    },
+    {
+      "id": "R11",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p19-unit-type-d-3bhk.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        18,
+        19
+      ],
+      "pdf_object_id": 469,
+      "pdfimages_name": "img-019-027.jpg",
+      "width": 2091,
+      "height": 1176,
+      "sha1": "f0b7e579f863",
+      "feature": "Unit Type D - 3 BHK - 1472 sq.ft carpet - west-facing flat entry",
+      "design_details": "Room dimensions and areas: see analysis/project-information.json units.D.",
+      "is_sp_residency": true,
+      "alpha_mask_file": "reference/floor-plans/p19-unit-type-d-3bhk_alpha-mask.png",
+      "annotated_page_render": "reference/floor-plans/p19-unit-type-d-3bhk_page-annotated.jpg"
+    },
+    {
+      "id": "R12",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p20-unit-type-e-2bhk.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        20
+      ],
+      "pdf_object_id": 196,
+      "pdfimages_name": "img-020-029.jpg",
+      "width": 1474,
+      "height": 829,
+      "sha1": "cf4b8071c2ba",
+      "feature": "Unit Type E - 2 BHK - 846 sq.ft carpet - west-facing flat entry",
+      "design_details": "Room dimensions and areas: see analysis/project-information.json units.E.",
+      "is_sp_residency": true,
+      "alpha_mask_file": "reference/floor-plans/p20-unit-type-e-2bhk_alpha-mask.png",
+      "annotated_page_render": "reference/floor-plans/p20-unit-type-e-2bhk_page-annotated.jpg"
+    },
+    {
+      "id": "R13",
+      "category": "floor-plans",
+      "file": "reference/floor-plans/p21-unit-type-f-3bhk.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        20,
+        21
+      ],
+      "pdf_object_id": 472,
+      "pdfimages_name": "img-021-033.jpg",
+      "width": 2112,
+      "height": 1188,
+      "sha1": "697b4a7c4f52",
+      "feature": "Unit Type F - 3 BHK - 1486 sq.ft carpet - west-facing flat entry",
+      "design_details": "Room dimensions and areas: see analysis/project-information.json units.F.",
+      "is_sp_residency": true,
+      "alpha_mask_file": "reference/floor-plans/p21-unit-type-f-3bhk_alpha-mask.png",
+      "annotated_page_render": "reference/floor-plans/p21-unit-type-f-3bhk_page-annotated.jpg"
+    },
+    {
+      "id": "R14",
+      "category": "living-room",
+      "file": "reference/living-room/p25-living-dining-hall-view.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        25
+      ],
+      "pdf_object_id": 231,
+      "pdfimages_name": "img-025-039.jpg",
+      "width": 777,
+      "height": 437,
+      "sha1": "9fc3213125e1",
+      "feature": "Apartment hall - living zone in foreground, dining zone + window at far end",
+      "design_details": "Long linear hall (matches the 28'4\" x 11' halls of Types A/D/F). Left wall: large-format travertine-look vertical panels with dark-walnut framed openings; right: TV wall in vertical dark-walnut fluting with wall-hung TV, black-metal floor-to-ceiling rod shelving with backlit shelves and brass decor, floating walnut console with smoked fluted-glass shutters. White ceiling, recessed downlights, two white 3-blade ceiling fans, walnut-clad bulkhead dividing living/dining, split AC over the window. Light-grey sofa with grey/brown cushions, grey tub armchair, jute flat-weave rug, white hydrangea centrepiece. Light beige polished large-format floor tiles. White sheers + taupe drapes. Dark-walnut doors and frames.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R15",
+      "category": "dining",
+      "file": "reference/dining/p25-dining-zone-crop.jpg",
+      "kind": "derived-crop",
+      "source_pages": [
+        25
+      ],
+      "pdf_object_id": 231,
+      "pdfimages_name": "img-025-039.jpg",
+      "width": 230,
+      "height": 230,
+      "sha1": "f4c240c84e6a",
+      "feature": "Dining zone - DERIVED CROP of R14 (no standalone dining render exists in the brochure)",
+      "design_details": "Oval/round glass-top dining table with taupe upholstered shell chairs on dark legs and a dried-flower centrepiece, beneath the walnut bulkhead; full-height window with white sheers and taupe drapes opening to a balcony with white vertical balusters; split AC and white ceiling fan above. Low resolution (230 px) - detail reference only. Floor plans show 6-seat rectangular tables (A/B/C/D/F) and a 4-seat round table (E).",
+      "is_sp_residency": true,
+      "derived_from": "R14",
+      "crop_geometry": "230x230+270+90"
+    },
+    {
+      "id": "R16",
+      "category": "master-bedroom",
+      "file": "reference/master-bedroom/p24-bedroom-tropical-leaf-feature-wall.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        24
+      ],
+      "pdf_object_id": 225,
+      "pdfimages_name": "img-024-037.jpg",
+      "width": 1012,
+      "height": 1065,
+      "sha1": "7868bf4d7a9e",
+      "feature": "Bedroom - the only bedroom render in the brochure (treated as master bedroom; brochure does not label it)",
+      "design_details": "Bed wall wraps the corner: dark-walnut panelling to dado height, above it four walnut-framed panels of an illustrated tropical-leaf mural (beige/ochre/brown, one leopard-spotted leaf) with concealed cove light; cream upholstered headboard, taupe bedding, rust cushions; walnut bedside units with brass-base lamps (white shades); dark wide-plank walnut-look floor; grey/ivory textured rug; tan leather lounge chair with throw by the window; walnut box niches on the left wall; white sheers + taupe drapes; white 3-blade ceiling fan; recessed downlights.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R17",
+      "category": "balcony",
+      "file": "reference/balcony/p24-balcony-sit-out.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        24
+      ],
+      "pdf_object_id": 223,
+      "pdfimages_name": "img-024-035.jpg",
+      "width": 763,
+      "height": 429,
+      "sha1": "586e8002ec67",
+      "feature": "Balcony / sit-out - extracted original is wider than the crop printed on page 24",
+      "design_details": "Honey-toned wood-look floor tiles; travertine-look wall cladding both sides; sculptural face-mask wall art; wall-mounted wood-tone planter boxes with trailing greens; two beige upholstered lounge chairs on slim brass frames with mustard cushions; round fluted pedestal side table; white MS vertical-baluster handrail with flat top rail; charcoal soffit; view to a neighbouring building and trees.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R18",
+      "category": "amenities",
+      "file": "reference/amenities/p11-private-lobby.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        11
+      ],
+      "pdf_object_id": 86,
+      "pdfimages_name": "img-011-006.jpg",
+      "width": 769,
+      "height": 433,
+      "sha1": "7c15fe0170ef",
+      "feature": "Private lobby (stilt level, key 1)",
+      "design_details": "Exposed soffit with red sprinkler mains and services; travertine-look wall panels; lift door in grey/SS; timber restroom door; mustard and ivory bucket chairs on wire legs, walnut coffee table, walnut console with plants; woven rattan pendant; horizontal-stripe frosted glass partition; walnut floor zone meeting polished white large-format tiles.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R19",
+      "category": "amenities",
+      "file": "reference/amenities/p25-lobby-library-lounge.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        25
+      ],
+      "pdf_object_id": 230,
+      "pdfimages_name": "img-025-038.jpg",
+      "width": 774,
+      "height": 435,
+      "sha1": "9a53b9b9299d",
+      "feature": "Lobby lounge / library (stilt level) - UNCAPTIONED in the brochure; identified by shared materials with R18",
+      "design_details": "Exposed grey soffit with cassette AC; charcoal leather sofas and armchair; walnut floor with LED edge stepping down to a polished white tile walkway; backlit walnut + black-metal bookshelf (likely the Library, key 4); rattan-detailed side cabinets; woven pendant; striped frosted glass; tall travertine-look panels with shadow gaps.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R20",
+      "category": "amenities",
+      "file": "reference/amenities/p11-management-office.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        11
+      ],
+      "pdf_object_id": 89,
+      "pdfimages_name": "img-011-009.jpg",
+      "width": 872,
+      "height": 456,
+      "sha1": "1721ddfe3502",
+      "feature": "Management office (stilt level, key 2)",
+      "design_details": "Light-grey fluted wall panel with framed botanical sketch; white desk with all-in-one computer; two black mesh task chairs; full-height walnut bookshelf with backlit shelves; striped frosted glass partition; timber door with long brass pull; white large-format floor tiles.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R21",
+      "category": "amenities",
+      "file": "reference/amenities/p11-coworking-study-room.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        11
+      ],
+      "pdf_object_id": 88,
+      "pdfimages_name": "img-011-008.jpg",
+      "width": 703,
+      "height": 439,
+      "sha1": "b68a2fd33ec0",
+      "feature": "Co-working / study room (stilt level, key 3)",
+      "design_details": "Three workstations on a white worktop, light-oak overhead cabinets and pedestal drawers, black mesh chairs, monitors, travertine-look wall tiles, striped frosted glazing, window at left.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R22",
+      "category": "amenities",
+      "file": "reference/amenities/p12-gym-cardio-zone.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        12
+      ],
+      "pdf_object_id": 95,
+      "pdfimages_name": "img-012-011.jpg",
+      "width": 736,
+      "height": 520,
+      "sha1": "c25882cfca4a",
+      "feature": "Gym - cardio zone (terrace, key 11)",
+      "design_details": "Light wood-look floor; grey walls; crossing linear LED strips + recessed spots on the ceiling; ellipticals and treadmills along a glazed wall with horizontal blinds and planting outside; glass door to the terrace.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R23",
+      "category": "amenities",
+      "file": "reference/amenities/p12-gym-strength-zone.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        12
+      ],
+      "pdf_object_id": 96,
+      "pdfimages_name": "img-012-012.jpg",
+      "width": 705,
+      "height": 498,
+      "sha1": "e3be538db3f8",
+      "feature": "Gym - strength zone (terrace, key 11)",
+      "design_details": "Same shell as R22; large bodybuilder wall mural; multi-station machine, benches with orange upholstery, dumbbell rack, yellow/grey Swiss balls.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R24",
+      "category": "amenities",
+      "file": "reference/amenities/p12-rooftop-lounge.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        12
+      ],
+      "pdf_object_id": 94,
+      "pdfimages_name": "img-012-010.jpg",
+      "width": 1447,
+      "height": 814,
+      "sha1": "24953df1bb59",
+      "feature": "Rooftop lounge + BBQ + games corner (terrace, keys 10/12/13)",
+      "design_details": "Covered timber deck under a dark soffit with downlights; slate/sandstone tile feature wall with wall clock; BBQ counter with tan leather bar stools; carved walnut cabinet; two dining tables with ivory shell chairs and flowers; foosball table; glazed gym beyond; stone wall with ENS logo; tropical planters; pallet-style timber benches.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R25",
+      "category": "amenities",
+      "file": "reference/amenities/p24-typical-floor-corridor.jpg",
+      "kind": "embedded-original",
+      "source_pages": [
+        24
+      ],
+      "pdf_object_id": 224,
+      "pdfimages_name": "img-024-036.jpg",
+      "width": 519,
+      "height": 519,
+      "sha1": "e22e89ab65fb",
+      "feature": "Typical-floor common corridor (matches central corridor of the typical plan)",
+      "design_details": "Grey speckled granite floor with two black-granite inlay bands; black skirting; cream walls; dark-walnut doors/frames with brass number plates; white wall-mounted cabinets beside doors; raised false-ceiling tray with perimeter cove light, brass ring pendants and downlights; window to greenery at the far end.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R26",
+      "category": "amenities",
+      "file": "reference/amenities/p09-amenities-list-21.jpg",
+      "kind": "page-render-150dpi",
+      "source_pages": [
+        9
+      ],
+      "width": 1713,
+      "height": 1211,
+      "sha1": "7ba9a1160096",
+      "feature": "Amenities icon sheet - 21 amenities in 4 groups",
+      "design_details": "Private comfort/safety & security (5), Lifestyle (4), Outdoor living (6), Infrastructure (6).",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R27",
+      "category": "location",
+      "file": "reference/location/p06-location-distances.jpg",
+      "kind": "page-render-200dpi",
+      "source_pages": [
+        6
+      ],
+      "width": 2284,
+      "height": 1615,
+      "sha1": "b989c941813a",
+      "feature": "Strategically located - distance/time table",
+      "design_details": "Education, healthcare, shopping, hotels, leisure, landmarks, connectivity with km + minutes.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R28",
+      "category": "location",
+      "file": "reference/location/p07-location-map.jpg",
+      "kind": "page-render-200dpi",
+      "source_pages": [
+        7
+      ],
+      "width": 2284,
+      "height": 1615,
+      "sha1": "1f55320779fc",
+      "feature": "Location map - 1-5 km rings around the site",
+      "design_details": "Schools, colleges, hospitals, landmarks, bus stand, railway station, airport (diagrammatic map).",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R29",
+      "category": "location",
+      "file": "reference/location/p05-why-shan-poornam-residence.jpg",
+      "kind": "page-render-150dpi",
+      "source_pages": [
+        5
+      ],
+      "width": 1713,
+      "height": 1211,
+      "sha1": "0a24eb097f0e",
+      "feature": "Project facts page - 26 homes, unit mix, 85% carpet efficiency, strategic location",
+      "design_details": "4 BHK x1, 3 BHK x13, 2 BHK x12; 3 BHK from 1472 sq.ft carpet.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R30",
+      "category": "branding",
+      "file": "reference/branding/p01-cover-logo.jpg",
+      "kind": "page-render-150dpi",
+      "source_pages": [
+        1
+      ],
+      "width": 1713,
+      "height": 1211,
+      "sha1": "9d4a23b00cf4",
+      "feature": "Cover - Shan Poornam Residence by ENS wordmark",
+      "design_details": "Teal sun/moon wordmark on deep navy with vertical-bar motif. Developer trademark - reference only.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R31",
+      "category": "branding",
+      "file": "reference/branding/p03-foundational-vision-monogram.jpg",
+      "kind": "page-render-150dpi",
+      "source_pages": [
+        3
+      ],
+      "width": 1713,
+      "height": 1211,
+      "sha1": "01f3e596039b",
+      "feature": "Foundational vision - SP sun monogram, meaning of Shan (five elements) and Poornam (completeness)",
+      "design_details": "Brand story source text. Developer trademark - reference only.",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R32",
+      "category": "specifications",
+      "file": "reference/specifications/p22-specifications-1.jpg",
+      "kind": "page-render-150dpi",
+      "source_pages": [
+        22
+      ],
+      "width": 1713,
+      "height": 1211,
+      "sha1": "aa0f6cfb900d",
+      "feature": "Specifications 1-6: structure, walls, ceiling, floors, kitchen & dining, bathrooms",
+      "design_details": "Primary material source for kitchen/bathroom prompts (no kitchen or bathroom renders exist).",
+      "is_sp_residency": true
+    },
+    {
+      "id": "R33",
+      "category": "specifications",
+      "file": "reference/specifications/p23-specifications-2.jpg",
+      "kind": "page-render-150dpi",
+      "source_pages": [
+        23
+      ],
+      "width": 1713,
+      "height": 1211,
+      "sha1": "9fbc9e942a68",
+      "feature": "Specifications 7-10: joinery, electrical, sit-out, common amenities",
+      "design_details": "Door sizes/finishes, windows, lift, corridor and staircase finishes, security.",
+      "is_sp_residency": true
+    }
+  ],
+  "missing_categories": {
+    "kitchen": "No kitchen render exists in the brochure. Available evidence only: unit plans (L/U-shaped counters, hob, sink, fridge position; kitchen sizes per unit) and the specification page (concrete-slab counter finished in granite, premium single-bowl sink, Kohler faucet, 4'x2' glazed vitrified wall tiles, chimney/hob/purifier/washing-machine points, metered piped gas in SS 306). See ../specifications/p22-specifications-1.jpg and ../floor-plans/.",
+    "pooja": "No pooja room, pooja unit or pooja niche is shown, labelled or specified anywhere in the 36-page brochure. Nothing may be generated for this category without a design brief from the client.",
+    "bathrooms": "No bathroom render exists in the brochure. Available evidence only: unit plans (all bathrooms 4'6\" x 8', WC + basin + shower zones) and the specification page (Kohler sanitary and CP fittings, Kajaria 4'x2' glazed vitrified wall tiles, 2'x2' floor tiles, toughened-glass shower partition, geyser points).",
+    "bedrooms": "Only ONE bedroom render exists (filed under ../master-bedroom/). No secondary/kids bedroom design is shown. Secondary bedrooms are documented only by plan dimensions and the floor spec (wooden glazed vitrified tiles 48\" x 8')."
+  },
+  "excluded_not_sp_residency": [
+    {
+      "file": "reference/_excluded-other-developer-projects/p28-028-043.jpg",
+      "source_page": 28,
+      "description": "ENS CLQ, Penang (labour quarters) - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p28-028-044.jpg",
+      "source_page": 28,
+      "description": "Crown, Penang - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p28-028-045.jpg",
+      "source_page": 28,
+      "description": "Buddhist Temple and Association, Penang - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p28-028-046.jpg",
+      "source_page": 28,
+      "description": "Warehousing, Malaysia - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p28-028-048.jpg",
+      "source_page": 28,
+      "description": "Radisson RAK, UAE - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p29-029-068.jpg",
+      "source_page": 29,
+      "description": "Penang Exchange - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p29-029-069.jpg",
+      "source_page": 29,
+      "description": "Batu Uban City Centre - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p29-029-070.jpg",
+      "source_page": 29,
+      "description": "The Gardens, Penang - portfolio thumbnail",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p30-030-080.jpg",
+      "source_page": 30,
+      "description": "Crown Penang - bedroom",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p30-030-081.jpg",
+      "source_page": 30,
+      "description": "Crown Penang - living/kitchen",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p30-030-082.jpg",
+      "source_page": 30,
+      "description": "Crown Penang - lobby",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p30-030-083.jpg",
+      "source_page": 30,
+      "description": "Crown Penang - podium exterior",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p30-030-084.jpg",
+      "source_page": 30,
+      "description": "Crown Penang - rooftop pool",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p30-030-085.jpg",
+      "source_page": 30,
+      "description": "Crown Penang - tower exterior",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p31-031-086.jpg",
+      "source_page": 31,
+      "description": "Radisson RAK - bedroom",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p31-031-087.jpg",
+      "source_page": 31,
+      "description": "Radisson RAK - lounge",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p31-031-088.jpg",
+      "source_page": 31,
+      "description": "Radisson RAK - podium courtyard",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p31-031-089.jpg",
+      "source_page": 31,
+      "description": "Radisson RAK - restaurant",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p31-031-090.jpg",
+      "source_page": 31,
+      "description": "Radisson RAK - pool deck",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p31-031-091.jpg",
+      "source_page": 31,
+      "description": "Radisson RAK - aerial",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-092.jpg",
+      "source_page": 32,
+      "description": "Shri Meenakshi Fan House, Bypass, Madurai",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-093.jpg",
+      "source_page": 32,
+      "description": "Mount Litera Zee School, Sivagangai",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-094.jpg",
+      "source_page": 32,
+      "description": "Zudio, Madurai",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-095.jpg",
+      "source_page": 32,
+      "description": "The Lifestyle, Madurai",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-096.jpg",
+      "source_page": 32,
+      "description": "Jewel One, Madurai",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-097.jpg",
+      "source_page": 32,
+      "description": "Poonguzhali Jewellers, Madurai",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-099.jpg",
+      "source_page": 32,
+      "description": "RR Complex, Madurai",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p32-032-100.jpg",
+      "source_page": 32,
+      "description": "Shri Meenakshi Fan House, Dindigul",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p33-033-101.jpg",
+      "source_page": 33,
+      "description": "AGAM by Venka Service Apartments, Madurai (upcoming)",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p33-033-102.jpg",
+      "source_page": 33,
+      "description": "Residential Apartments, Surya Nagar, Madurai (upcoming)",
+      "is_sp_residency": false
+    },
+    {
+      "file": "reference/_excluded-other-developer-projects/p33-033-103.jpg",
+      "source_page": 33,
+      "description": "Integrated Township, Oomachikulam, Madurai (upcoming)",
+      "is_sp_residency": false
+    }
+  ],
+  "brochure_pages_dir": "reference/brochure-pages"
+}

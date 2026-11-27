@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MagneticButton from "./MagneticButton";
 
 const YEAR = new Date().getFullYear();
@@ -5,7 +6,7 @@ const YEAR = new Date().getFullYear();
 export default function Footer() {
   return (
     <footer className="relative bg-black px-6 pb-10 pt-24 md:px-16 md:pt-32">
-      <MagneticButton href="#consultation" className="block">
+      <MagneticButton href="/#consultation" className="block">
         <h2 className="font-display max-w-5xl text-5xl italic leading-[1.05] text-warm transition-colors hover:text-gold-bright md:text-8xl">
           Let&rsquo;s Build Something Extraordinary.
         </h2>
@@ -23,10 +24,10 @@ export default function Footer() {
         </div>
 
         <div className="flex gap-10 text-xs uppercase tracking-editorial">
-          <a href="#expertise" className="hover:text-gold-bright">Expertise</a>
-          <a href="#projects" className="hover:text-gold-bright">Projects</a>
-          <a href="#materials" className="hover:text-gold-bright">Materials</a>
-          <a href="#consultation" className="hover:text-gold-bright">Contact</a>
+          <Link href="/#expertise" className="hover:text-gold-bright">Expertise</Link>
+          <Link href="/#projects" className="hover:text-gold-bright">Projects</Link>
+          <Link href="/#materials" className="hover:text-gold-bright">Materials</Link>
+          <Link href="/#consultation" className="hover:text-gold-bright">Contact</Link>
         </div>
 
         <p className="text-xs text-warm/30">&copy; {YEAR} Urban Mark Interior. All rights reserved.</p>

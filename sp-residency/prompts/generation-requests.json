@@ -1,0 +1,1770 @@
+{
+  "_about": "SP Residency image-generation pack. Nothing in it has been generated yet (generated: false).",
+  "generation_status": "NOT RUN - Higgsfield account balance was 0 credits on 27 Nov 2026",
+  "cost_quotes": {
+    "seedream_5_5": "2.5 credits per image (4k, 16:9)",
+    "nano_banana_pro": "4 credits per image (4k, 16:9)",
+    "gpt_image_2_6": "2 credits per image (high quality, 2k, 16:9)"
+  },
+  "recommended_order": [
+    "1. Tier 0 - faithful upscale (upscale_image) of the originals listed in upscale_first_ref_ids",
+    "2. All low-risk enhancement requests (same camera as the brochure)",
+    "3. Medium-risk relights / secondary views, after Tier 2 approval",
+    "4. Concept-only views for internal review only"
+  ],
+  "upscale_first_ref_ids": [
+    "R01",
+    "R04",
+    "R03",
+    "R18",
+    "R19",
+    "R14",
+    "R16",
+    "R17",
+    "R25",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24"
+  ],
+  "counts": {
+    "ready": 30,
+    "concept_only": 2,
+    "blocked": 7
+  },
+  "shared_photography_standard": "Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+  "shared_avoid_list": [
+    "HDR look, halos or tone-mapping artefacts",
+    "artificial glow or bloom",
+    "oversaturated colour",
+    "plastic, waxy or CGI-smooth surfaces",
+    "bent, warped or melted geometry",
+    "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+    "any change to layout, proportions, openings, counts or materials"
+  ],
+  "requests": [
+    {
+      "id": "EXT-01",
+      "phase": 3,
+      "category": "elevation",
+      "title": "Main front elevation - night (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "3:2",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R04",
+          "file": "reference/elevation/p26-front-elevation-night.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact night photograph of the front (road-facing) elevation of Shan Poornam Residence, Madurai, keeping the identical frontal camera, framing and every architectural element. Blue-hour sky with the last light on the horizon; warm 2700-3000K interior light behind sheer curtains in the occupied bays; copper/teak louvres catching soft uplight; white bay frames reading clean but not glowing; teal signage over the security cabin lit at a realistic brightness; wet-free asphalt with faint reflections; street lamp at left. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "stilt level + exactly 5 residential floors + terrace (count the stacked bays)",
+        "white projecting box frames around the stacked bays and their wood-tone soffits",
+        "copper/teak-tone vertical louvre fields - position, extent and colour",
+        "balcony positions, MS vertical-baluster handrails, window mullion patterns",
+        "sandstone-look pylon and the teal SP sun monogram / sign mast",
+        "cascading planters at the same ledges; rooftop trees",
+        "compound wall, gates, boom barriers, security cabin and its signage"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/elevation/EXT-01.png",
+        "website": "public/images/sp-residency/elevation/sp-front-elevation-night-enhanced.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "EXT-02",
+      "phase": 3,
+      "category": "elevation",
+      "title": "Main front elevation - daylight relight",
+      "risk": "medium",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "3:2",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R04",
+          "file": "reference/elevation/p26-front-elevation-night.jpg",
+          "role": "geometry + composition (primary)",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R01",
+          "file": "reference/exterior/p04-exterior-day-three-quarter-perspective.jpg",
+          "role": "daylight materials and colour",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Re-light the building in the first reference image to natural late-morning daylight, using the second reference only to match daylight material colours (white frames, warm grey walls, copper/teak louvres, sandstone-look pylon). Keep the first image's frontal camera, framing, building geometry, bay count, louvre fields, planters, rooftop trees, sign mast, compound wall, gates and security cabin exactly. Clear sky with light haze, sun from the upper left, soft shadows under each bay frame and balcony slab, interiors darker than the sky as in real daylight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "stilt level + exactly 5 residential floors + terrace (count the stacked bays)",
+        "white projecting box frames around the stacked bays and their wood-tone soffits",
+        "copper/teak-tone vertical louvre fields - position, extent and colour",
+        "balcony positions, MS vertical-baluster handrails, window mullion patterns",
+        "sandstone-look pylon and the teal SP sun monogram / sign mast",
+        "cascading planters at the same ledges; rooftop trees",
+        "compound wall, gates, boom barriers, security cabin and its signage"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/elevation/EXT-02.png",
+        "website": "public/images/sp-residency/elevation/sp-front-elevation-day.webp"
+      },
+      "notes": "Lighting change only. Reject if any floor, bay or louvre field differs from R04.",
+      "generated": false
+    },
+    {
+      "id": "EXT-03",
+      "phase": 3,
+      "category": "exterior",
+      "title": "Three-quarter perspective - day (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R01",
+          "file": "reference/exterior/p04-exterior-day-three-quarter-perspective.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact daylight three-quarter photograph of Shan Poornam Residence, keeping the same low street-level camera, framing and all architecture. Late-morning sun from the left, soft blue sky with light cloud; crisp shadow lines under every white bay frame and balcony slab; louvres keep their exact copper/teak colour with a matte finish; clear glazing reflecting sky and trees with visible interior depth; real leaves on the framing trees; stone texture on the rubble compound wall. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "stilt level + exactly 5 residential floors + terrace (count the stacked bays)",
+        "white projecting box frames around the stacked bays and their wood-tone soffits",
+        "copper/teak-tone vertical louvre fields - position, extent and colour",
+        "balcony positions, MS vertical-baluster handrails, window mullion patterns",
+        "sandstone-look pylon and the teal SP sun monogram / sign mast",
+        "cascading planters at the same ledges; rooftop trees",
+        "compound wall, gates, boom barriers, security cabin and its signage"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/exterior/EXT-03.png",
+        "website": "public/images/sp-residency/exterior/sp-exterior-day-3q-enhanced.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "EXT-04",
+      "phase": 3,
+      "category": "exterior",
+      "title": "Three-quarter perspective - dusk",
+      "risk": "medium",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R01",
+          "file": "reference/exterior/p04-exterior-day-three-quarter-perspective.jpg",
+          "role": "geometry + composition (primary)",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R02",
+          "file": "reference/exterior/p28-exterior-dusk-three-quarter-thumbnail.jpg",
+          "role": "dusk lighting only",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Re-light the building in the first reference image to dusk, matching the time of day, sky colour and warm window glow of the second (small) reference. Keep the first image's camera, framing, building geometry, bay count, louvres, pylon with SP monogram, planters, trees and compound wall exactly. Soft violet-to-peach sky, warm interior light in some bays, gentle facade uplight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "stilt level + exactly 5 residential floors + terrace (count the stacked bays)",
+        "white projecting box frames around the stacked bays and their wood-tone soffits",
+        "copper/teak-tone vertical louvre fields - position, extent and colour",
+        "balcony positions, MS vertical-baluster handrails, window mullion patterns",
+        "sandstone-look pylon and the teal SP sun monogram / sign mast",
+        "cascading planters at the same ledges; rooftop trees",
+        "compound wall, gates, boom barriers, security cabin and its signage"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/exterior/EXT-04.png",
+        "website": "public/images/sp-residency/exterior/sp-exterior-dusk-3q.webp"
+      },
+      "notes": "R02 is 245 px - lighting reference only, never geometry.",
+      "generated": false
+    },
+    {
+      "id": "EXT-05",
+      "phase": 3,
+      "category": "elevation",
+      "title": "Side elevation",
+      "risk": "blocked",
+      "status": "blocked",
+      "model": null,
+      "aspect_ratio": null,
+      "resolution": null,
+      "reference_images": [],
+      "prompt": null,
+      "must_preserve": [],
+      "avoid": [],
+      "qa_checklist": [],
+      "output": {
+        "raw": null,
+        "website": null
+      },
+      "notes": "BLOCKED. The brochure contains no side or rear elevation. R01 shows one side obliquely only; an orthographic side elevation would require inventing it. Needs the architect's elevation drawing.",
+      "generated": false
+    },
+    {
+      "id": "EXT-06",
+      "phase": 3,
+      "category": "entrance",
+      "title": "Building entrance - security cabin (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R03",
+          "file": "reference/exterior/p11-entrance-security-cabin-night.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact night photograph of the residence entrance: glazed security cabin with the illuminated teal 'Shan Poornam Residence by ENS' lettering, timber-slat base, stilt parking beyond with black-and-yellow hazard-striped columns and red sprinkler mains under a dark soffit, white bay frames and louvres above. Keep camera, framing and the existing person and car unchanged in position. Realistic signage brightness, warm cabin interior light, cool ambient night, real tyre and paint reflections, concrete paving texture. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "cabin size, glazing and signage text/position",
+        "column positions and hazard striping",
+        "sprinkler mains",
+        "facade elements above"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/entrance/EXT-06.png",
+        "website": "public/images/sp-residency/entrance/sp-entrance-security-cabin-enhanced.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "EXT-07",
+      "phase": 3,
+      "category": "entrance",
+      "title": "Entrance frontage - dusk (enhanced crop)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "21:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R34",
+          "file": "reference/elevation/p26-entrance-frontage-crop.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R04",
+          "file": "reference/elevation/p26-front-elevation-night.jpg",
+          "role": "context for the uncropped building",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact street-level frontage of Shan Poornam Residence at blue hour: illuminated security cabin with teal signage, timber-look compound wall, boom barrier, stilt parking entry with hazard-striped columns, the lowest residential floors with white bay frames, copper louvres and trailing planters. Keep framing and all elements; realistic light falloff on the pavement, warm interior glow, natural sky gradient. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "cabin, signage, boom barrier and wall positions",
+        "column count in view",
+        "facade above"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/entrance/EXT-07.png",
+        "website": "public/images/sp-residency/entrance/sp-entrance-frontage-dusk.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "EXT-08",
+      "phase": 3,
+      "category": "lobby",
+      "title": "Apartment lobby (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R18",
+          "file": "reference/amenities/p11-private-lobby.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact photograph of the private lobby: travertine-look wall panels, grey lift door, timber restroom door, mustard and ivory bucket chairs on wire legs, walnut coffee table and console, woven rattan pendant, horizontal-stripe frosted glass partition, exposed soffit with red sprinkler mains, walnut floor meeting polished white tiles. Same camera and layout. Soft daylight from the glazing mixed with warm pendant light; real travertine pores and veining; visible upholstery weave; believable reflections in the polished tile. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "every furniture piece and its position",
+        "lift and restroom doors",
+        "pendant",
+        "striped glass",
+        "exposed services"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/lobby/EXT-08.png",
+        "website": "public/images/sp-residency/lobby/sp-lobby-enhanced.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "EXT-09",
+      "phase": 3,
+      "category": "lobby",
+      "title": "Lobby lounge / library (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R19",
+          "file": "reference/amenities/p25-lobby-library-lounge.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact photograph of the lobby lounge and library: charcoal leather sofas and armchair, walnut floor with a slim LED edge stepping down to a polished white tile walkway, backlit walnut and black-metal bookshelf, rattan-detailed side cabinets, woven pendant, striped frosted glazing, tall travertine-look panels with shadow gaps, exposed grey soffit with cassette AC. Same camera and layout. Soft daylight, warm shelf lighting, natural leather creasing, real stone texture. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "sofa/armchair positions",
+        "bookshelf grid and contents layout",
+        "floor transition",
+        "panel joints",
+        "ceiling services"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/lobby/EXT-09.png",
+        "website": "public/images/sp-residency/lobby/sp-lobby-library-lounge-enhanced.webp"
+      },
+      "notes": "R19 is uncaptioned in the brochure (assumption A2).",
+      "generated": false
+    },
+    {
+      "id": "EXT-10",
+      "phase": 3,
+      "category": "amenities",
+      "title": "Parking & access - stilt cut-away (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R05",
+          "file": "reference/floor-plans/p10-stilt-floor-plan-3d.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact 3D cut-away of the stilt floor as a photoreal architectural model photograph: same high oblique camera, same parking layout with yellow bay lines, two-way drive aisle with arrows, lobby block with lobby, management office, co-working and library, playground in the far corner, perimeter garden strips, security cabin and utilities, compound wall and gates. Soft overhead daylight, realistic asphalt, paving, foliage and car paint; keep the teal gradient backdrop. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "all bay positions and markings",
+        "lobby block plan",
+        "playground equipment layout",
+        "entry/exit openings and cabin",
+        "number and position of drawn cars"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/EXT-10.png",
+        "website": "public/images/sp-residency/amenities/sp-stilt-plan-3d-enhanced.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "EXT-11",
+      "phase": 3,
+      "category": "entrance",
+      "title": "Parking & access - eye-level stilt drive (NEW VIEW)",
+      "risk": "high",
+      "status": "concept-only",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R03",
+          "file": "reference/exterior/p11-entrance-security-cabin-night.jpg",
+          "role": "stilt materials: soffit, columns, striping",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R05",
+          "file": "reference/floor-plans/p10-stilt-floor-plan-3d.jpg",
+          "role": "stilt layout",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Eye-level photograph standing just inside the south-east vehicle entrance of the stilt parking of the building in the references, looking north along the two-way central drive aisle. Use only what the references show: dark soffit with red sprinkler mains, columns with black-and-yellow hazard bands, yellow-lined bays either side, direction arrows on the asphalt, the glazed lobby block on the left. Soft daylight from the open perimeter. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "aisle direction and width relative to bays",
+        "lobby block on the west side"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/entrance/EXT-11.png",
+        "website": null
+      },
+      "notes": "CONCEPT ONLY - not for publication without client approval. The brochure never shows this view; column grid, ceiling height and lobby facade will be inferred by the model.",
+      "generated": false
+    },
+    {
+      "id": "EXT-12",
+      "phase": 3,
+      "category": "amenities",
+      "title": "Terrace & amenities - terrace cut-away (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "4:3",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R06",
+          "file": "reference/floor-plans/p13-terrace-floor-plan-3d.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact 3D cut-away of the terrace level as a photoreal architectural model photograph: same camera; timber-deck rooftop lounge with dining tables, outdoor lounge benches, BBQ counter against a stone-tile wall, foosball games corner, glazed gym with equipment and mural, outdoor yoga lawn with three loungers, perimeter terrace-garden planting, open light-well. Soft late-afternoon light, real timber grain, real turf, real foliage; keep the teal gradient backdrop. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "every zone boundary and its numbered position (10-16)",
+        "furniture counts",
+        "light-well"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/EXT-12.png",
+        "website": "public/images/sp-residency/amenities/sp-terrace-plan-3d-enhanced.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "EXT-13",
+      "phase": 3,
+      "category": "exterior",
+      "title": "Aerial perspective - high oblique (NEW VIEW)",
+      "risk": "high",
+      "status": "concept-only",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R01",
+          "file": "reference/exterior/p04-exterior-day-three-quarter-perspective.jpg",
+          "role": "front + side facades (primary)",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R04",
+          "file": "reference/elevation/p26-front-elevation-night.jpg",
+          "role": "front facade + rooftop",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R06",
+          "file": "reference/floor-plans/p13-terrace-floor-plan-3d.jpg",
+          "role": "terrace layout",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "High oblique aerial photograph from the same side as the first reference, roughly 30 degrees down, showing the front facade, the same side facade, and the terrace level of Shan Poornam Residence. Facades exactly as in the first two references; terrace exactly as in the third (timber deck, glazed gym, yoga lawn, perimeter planting, light-well). Natural daylight, real neighbourhood rooftops and trees kept low-detail and generic. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "stilt level + exactly 5 residential floors + terrace (count the stacked bays)",
+        "white projecting box frames around the stacked bays and their wood-tone soffits",
+        "copper/teak-tone vertical louvre fields - position, extent and colour",
+        "balcony positions, MS vertical-baluster handrails, window mullion patterns",
+        "sandstone-look pylon and the teal SP sun monogram / sign mast",
+        "cascading planters at the same ledges; rooftop trees",
+        "compound wall, gates, boom barriers, security cabin and its signage",
+        "terrace zoning from R06"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/exterior/EXT-13.png",
+        "website": null
+      },
+      "notes": "CONCEPT ONLY - the brochure has no aerial; surrounding context and roof edges will be inferred. Do not show the rear or the far side facade.",
+      "generated": false
+    },
+    {
+      "id": "LIV-01",
+      "phase": 4,
+      "category": "living",
+      "title": "Living - main wide view (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R14",
+          "file": "reference/living-room/p25-living-dining-hall-view.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact photograph of the apartment hall: living zone in front, dining under a walnut-clad bulkhead, window with white sheers and taupe drapes at the far end. Keep camera, layout, furniture and finishes: large-format travertine-look panels on the left wall, dark-walnut framed openings and doors, vertical fluted dark-walnut TV wall with wall-hung TV, black-metal floor-to-ceiling rod shelving with backlit shelves and brass objects, floating walnut console with smoked fluted-glass shutters, light-grey sofa with grey and brown cushions, grey tub armchair, jute flat-weave rug, white hydrangeas, two white ceiling fans, recessed downlights, light beige polished floor tiles. Soft daylight through the sheers, gentle bounce light, subtle tile reflections. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "hall proportion (long and narrow)",
+        "TV wall, shelving and console design",
+        "sofa/armchair/rug positions",
+        "bulkhead, fans, downlights",
+        "panel joints and door positions"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/living/LIV-01.png",
+        "website": "public/images/sp-residency/living/sp-living-main.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "LIV-02",
+      "phase": 4,
+      "category": "living",
+      "title": "Living - secondary three-quarter view",
+      "risk": "medium",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R14",
+          "file": "reference/living-room/p25-living-dining-hall-view.jpg",
+          "role": "design + materials",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Three-quarter photograph of the same living room, camera at seated eye level near the left wall looking diagonally across to the fluted dark-walnut TV wall, the black-metal rod shelving with backlit shelves and brass objects, the floating walnut console with smoked fluted glass, the light-grey sofa and grey tub armchair in the foreground, and the dining zone and curtained window beyond. Only surfaces visible in the reference; identical materials and furniture. Soft daylight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "TV-wall composition (TV, shelving left, console below)",
+        "furniture design and colours"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/living/LIV-02.png",
+        "website": "public/images/sp-residency/living/sp-living-secondary.webp"
+      },
+      "notes": "New camera inside the same room; restricted to surfaces shown in R14.",
+      "generated": false
+    },
+    {
+      "id": "LIV-03",
+      "phase": 4,
+      "category": "living",
+      "title": "Living - material detail",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R14",
+          "file": "reference/living-room/p25-living-dining-hall-view.jpg",
+          "role": "material source",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Close-up architectural detail photograph from the same living room: vertical fluted dark-walnut panelling with real grain, the black-metal rod shelf with a warm LED-lit shelf and a brushed-brass sculptural object, and the corner of the walnut console with smoked fluted-glass shutter below. Shallow depth of field, soft side light raking across the flutes. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "flute width and orientation",
+        "walnut tone",
+        "black metal + brass combination"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/living/LIV-03.png",
+        "website": "public/images/sp-residency/living/sp-living-detail.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "DIN-01",
+      "phase": 4,
+      "category": "dining",
+      "title": "Dining - main view toward the window",
+      "risk": "medium",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R15",
+          "file": "reference/dining/p25-dining-zone-crop.jpg",
+          "role": "dining zone (low-res crop)",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R14",
+          "file": "reference/living-room/p25-living-dining-hall-view.jpg",
+          "role": "context and materials",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Photograph of the dining zone at the window end of the same apartment hall: oval glass-top dining table with taupe upholstered shell chairs on dark legs, dried-flower centrepiece, walnut-clad bulkhead above, full-height window with white sheers and taupe drapes opening to a balcony with white vertical balusters, split AC and white ceiling fan, light beige polished floor tiles, white walls with small framed art. Soft daylight through the sheers. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "chair and table type/colour",
+        "window, drapes, AC and bulkhead arrangement"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/dining/DIN-01.png",
+        "website": "public/images/sp-residency/dining/sp-dining-main.webp"
+      },
+      "notes": "Only source is a 230 px crop; table base and chair details will be partly inferred - review closely.",
+      "generated": false
+    },
+    {
+      "id": "DIN-02",
+      "phase": 4,
+      "category": "dining",
+      "title": "Dining - secondary / detail",
+      "risk": "blocked",
+      "status": "blocked",
+      "model": null,
+      "aspect_ratio": null,
+      "resolution": null,
+      "reference_images": [],
+      "prompt": null,
+      "must_preserve": [],
+      "avoid": [],
+      "qa_checklist": [],
+      "output": {
+        "raw": null,
+        "website": null
+      },
+      "notes": "BLOCKED. Only one distant dining view exists; any other angle or close-up would invent the dining furniture design.",
+      "generated": false
+    },
+    {
+      "id": "BED-01",
+      "phase": 4,
+      "category": "bedrooms",
+      "title": "Master bedroom - main wide view (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "1:1",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R16",
+          "file": "reference/master-bedroom/p24-bedroom-tropical-leaf-feature-wall.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact bedroom photograph: bed wall wrapping the right-hand corner with dark-walnut panelling to dado height and four walnut-framed panels of an illustrated tropical-leaf mural (beige, ochre and brown leaves, one leopard-spotted) with concealed cove light; cream upholstered headboard, taupe bedding, rust cushions; walnut bedside units with brass-base lamps and white shades; dark wide-plank walnut-look floor; grey-ivory textured rug; tan lounge chair with throw by the window; walnut box niches on the left wall; white sheers and taupe drapes; white ceiling fan; recessed downlights. Same camera and layout. Soft window daylight from the left, warm lamp and cove light. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "mural panel count, framing and leaf design",
+        "panelling height",
+        "bed, bedside, lamp design",
+        "floor plank direction",
+        "chair, niches, fan, downlights"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/bedrooms/BED-01.png",
+        "website": "public/images/sp-residency/bedrooms/sp-master-bedroom-main.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "BED-02",
+      "phase": 4,
+      "category": "bedrooms",
+      "title": "Master bedroom - secondary three-quarter view",
+      "risk": "medium",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R16",
+          "file": "reference/master-bedroom/p24-bedroom-tropical-leaf-feature-wall.jpg",
+          "role": "design + materials",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Three-quarter photograph of the same bedroom from beside the window and lounge chair, looking diagonally toward the bed wall and its wrap-around corner: walnut dado panelling, framed tropical-leaf mural panels with cove light, cream headboard, taupe bedding with rust cushions, walnut bedside unit and brass lamp, dark plank floor and textured rug. Only surfaces visible in the reference. Soft daylight from behind the camera. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "mural design and framing",
+        "corner wrap of the panelling",
+        "bed and bedside design"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/bedrooms/BED-02.png",
+        "website": "public/images/sp-residency/bedrooms/sp-master-bedroom-secondary.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "BED-03",
+      "phase": 4,
+      "category": "bedrooms",
+      "title": "Master bedroom - material detail",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R16",
+          "file": "reference/master-bedroom/p24-bedroom-tropical-leaf-feature-wall.jpg",
+          "role": "material source",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Close-up detail photograph from the same bedroom: one framed tropical-leaf mural panel meeting the dark-walnut dado panelling, the walnut bedside unit with its brass-base lamp lit, and the edge of the cream upholstered headboard. Cove light grazing the mural, real walnut grain, fabric texture. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "mural leaf style and palette",
+        "walnut tone",
+        "lamp design"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/bedrooms/BED-03.png",
+        "website": "public/images/sp-residency/bedrooms/sp-master-bedroom-detail.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "BAL-01",
+      "phase": 4,
+      "category": "balcony",
+      "title": "Balcony - main view (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R17",
+          "file": "reference/balcony/p24-balcony-sit-out.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact balcony photograph: honey-toned wood-look floor tiles, travertine-look wall cladding both sides, sculptural face-mask wall art, wall-mounted wood-tone planter boxes with trailing greens, two beige upholstered lounge chairs on slim brass frames with mustard cushions, round fluted pedestal side table with two cups, white vertical-baluster handrail with a flat top rail, charcoal soffit, neighbouring building and trees beyond. Same camera. Soft morning daylight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "chair, table and planter design/positions",
+        "baluster spacing",
+        "wall art",
+        "view beyond"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/balcony/BAL-01.png",
+        "website": "public/images/sp-residency/balcony/sp-balcony-main.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "BAL-02",
+      "phase": 4,
+      "category": "balcony",
+      "title": "Balcony - secondary view along the sit-out",
+      "risk": "medium",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R17",
+          "file": "reference/balcony/p24-balcony-sit-out.jpg",
+          "role": "design + materials",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Photograph along the same balcony from beside the face-mask wall art, looking toward the two lounge chairs, fluted side table, the planter-box wall and the white baluster handrail with trees beyond. Only elements visible in the reference. Morning daylight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "furniture design",
+        "planter wall",
+        "handrail design"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/balcony/BAL-02.png",
+        "website": "public/images/sp-residency/balcony/sp-balcony-secondary.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "BAL-03",
+      "phase": 4,
+      "category": "balcony",
+      "title": "Balcony - material detail",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R17",
+          "file": "reference/balcony/p24-balcony-sit-out.jpg",
+          "role": "material source",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Close-up of the balcony lounge chair: beige upholstery with a mustard cushion on a slim brass frame, the fluted pedestal side table with two cups, and the honey wood-look floor tile. Soft daylight, shallow depth of field. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "chair frame and colours",
+        "table fluting"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/balcony/BAL-03.png",
+        "website": "public/images/sp-residency/balcony/sp-balcony-detail.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "COR-01",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Corridor - main view (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "1:1",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R25",
+          "file": "reference/amenities/p24-typical-floor-corridor.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact one-point-perspective photograph of the residential corridor: grey speckled granite floor with two black-granite inlay bands, black skirting, cream walls, dark-walnut doors with brass number plates, white wall-mounted cabinets beside the doors, raised false-ceiling tray with perimeter cove light, brass ring pendants and downlights, window to greenery at the end. Same camera. Real granite speckle and polish, warm 3000K cove light balanced with daylight from the end window. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "corridor length and vanishing point",
+        "door and cabinet rhythm",
+        "pendant count",
+        "inlay band positions"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/COR-01.png",
+        "website": "public/images/sp-residency/amenities/sp-corridor-main.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "COR-02",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Corridor - landscape web format",
+      "risk": "medium",
+      "status": "ready-to-generate",
+      "model": "flux_2_pro_outpaint",
+      "aspect_ratio": "16:9",
+      "resolution": null,
+      "reference_images": [
+        {
+          "ref_id": "R25",
+          "file": "reference/amenities/p24-typical-floor-corridor.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Extend the corridor photograph left and right only with the same cream walls, black skirting, granite floor and ceiling tray. No new doors, fixtures or objects.",
+      "must_preserve": [
+        "original pixels unchanged"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/COR-02.png",
+        "website": "public/images/sp-residency/amenities/sp-corridor-wide.webp"
+      },
+      "notes": "Outpaint side walls to 16:9 for web banners (expand_left/expand_right ~ 200 px each).",
+      "generated": false
+    },
+    {
+      "id": "COR-03",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Corridor - material detail",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R25",
+          "file": "reference/amenities/p24-typical-floor-corridor.jpg",
+          "role": "material source",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Upward detail photograph of the same corridor ceiling: brass ring pendant hanging in the raised false-ceiling tray with warm perimeter cove light and a downlight; and a matching floor detail of the grey speckled granite meeting the black-granite inlay band and black skirting. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "ring pendant design",
+        "cove detail",
+        "granite colours"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/COR-03.png",
+        "website": "public/images/sp-residency/amenities/sp-corridor-detail.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "AME-01",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Management office (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R20",
+          "file": "reference/amenities/p11-management-office.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact photograph of the management office: light-grey fluted wall panel with a framed botanical sketch, white desk with all-in-one computer, two black mesh task chairs, full-height walnut bookshelf with backlit shelves, striped frosted glass partition, timber door with long brass pull, white large-format floor tiles. Same camera and layout. Soft daylight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "furniture positions",
+        "bookshelf design",
+        "partition and door"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/AME-01.png",
+        "website": "public/images/sp-residency/amenities/sp-management-office.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "AME-02",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Co-working / study room (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R21",
+          "file": "reference/amenities/p11-coworking-study-room.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact photograph of the co-working room: three workstations on a white worktop, light-oak overhead cabinets and pedestal drawers, black mesh chairs, monitors, travertine-look wall tiles, striped frosted glazing, window at left. Same camera and layout. Soft daylight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "three-station layout",
+        "cabinet module count",
+        "glazing film"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/AME-02.png",
+        "website": "public/images/sp-residency/amenities/sp-coworking.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "AME-03",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Gym - cardio zone (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R22",
+          "file": "reference/amenities/p12-gym-cardio-zone.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact gym photograph: light wood-look floor, grey walls, crossing linear LED strips and recessed spots on the ceiling, ellipticals and treadmills along a glazed wall with horizontal blinds and planting outside, glass door. Same camera and equipment. Warm afternoon sun through the blinds casting real slatted shadows. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "equipment count and positions",
+        "ceiling LED pattern",
+        "door and glazing"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/AME-03.png",
+        "website": "public/images/sp-residency/amenities/sp-gym-cardio.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "AME-04",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Gym - strength zone (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R23",
+          "file": "reference/amenities/p12-gym-strength-zone.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact gym photograph: large bodybuilder wall mural, multi-station machine, benches with orange upholstery, dumbbell rack, yellow and grey Swiss balls, wood-look floor, crossing LED ceiling strips, glazing with planting. Same camera and equipment. Warm afternoon sun. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "mural",
+        "equipment layout",
+        "ceiling pattern"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/AME-04.png",
+        "website": "public/images/sp-residency/amenities/sp-gym-strength.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "AME-05",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Rooftop lounge (enhanced)",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "seedream_5_5",
+      "aspect_ratio": "16:9",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R24",
+          "file": "reference/amenities/p12-rooftop-lounge.jpg",
+          "role": "geometry + composition",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Enhance this exact rooftop lounge photograph: covered timber deck under a dark soffit with downlights, slate/sandstone tile feature wall with clock, BBQ counter with tan leather bar stools, carved walnut cabinet, two dining tables with ivory shell chairs and flowers, foosball table, glazed gym beyond, stone wall with the existing logo, tropical planters, timber benches. Keep camera, furniture and the existing people unchanged. Golden-hour light, real deck grain. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "furniture and people positions",
+        "tile wall pattern",
+        "planters",
+        "logo wall as-is"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/AME-05.png",
+        "website": "public/images/sp-residency/amenities/sp-rooftop-lounge.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "AME-06",
+      "phase": 4,
+      "category": "amenities",
+      "title": "Rooftop lounge - material detail",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R24",
+          "file": "reference/amenities/p12-rooftop-lounge.jpg",
+          "role": "material source",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Close-up from the same rooftop lounge: the slate/sandstone tile feature wall behind the BBQ counter, tan leather bar stools, the timber deck underfoot. Golden-hour side light raking the stone. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "tile colours and pattern",
+        "stool design"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/amenities/AME-06.png",
+        "website": "public/images/sp-residency/amenities/sp-rooftop-detail.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "AME-07",
+      "phase": 4,
+      "category": "lobby",
+      "title": "Lobby - material detail",
+      "risk": "low",
+      "status": "ready-to-generate",
+      "model": "nano_banana_pro",
+      "aspect_ratio": "4:5",
+      "resolution": "4k",
+      "reference_images": [
+        {
+          "ref_id": "R18",
+          "file": "reference/amenities/p11-private-lobby.jpg",
+          "role": "material source",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R19",
+          "file": "reference/amenities/p25-lobby-library-lounge.jpg",
+          "role": "material source",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "Close-up detail from the lobby: woven rattan pendant in front of the horizontal-stripe frosted glass, travertine-look wall panel with shadow gap, and the walnut-to-white-tile floor transition with its slim LED edge. Soft daylight. Natural, unfiltered professional architectural photograph. Physically accurate light and soft natural shadows; true-to-life materials with real texture (genuine wood grain, real stone veining, woven fabric weave, crisp glass reflections); balanced exposure holding detail in highlights and shadows; neutral white balance; vertical lines kept vertical; subtle real-lens character; correct furniture scale.",
+      "must_preserve": [
+        "pendant weave",
+        "stripe film spacing",
+        "panel joint"
+      ],
+      "avoid": [
+        "HDR look, halos or tone-mapping artefacts",
+        "artificial glow or bloom",
+        "oversaturated colour",
+        "plastic, waxy or CGI-smooth surfaces",
+        "bent, warped or melted geometry",
+        "any added furniture, decor, plants, people, vehicles, signage, text or logos",
+        "any change to layout, proportions, openings, counts or materials"
+      ],
+      "qa_checklist": [
+        "Overlay output on the reference at 50% opacity: no moved edges, openings or furniture",
+        "Count floors / bays / furniture pieces against the reference",
+        "Compare material colours side by side under the same exposure",
+        "Reject on any invented element; regenerate with the deviation named in the prompt"
+      ],
+      "output": {
+        "raw": "generated/lobby/AME-07.png",
+        "website": "public/images/sp-residency/lobby/sp-lobby-detail.webp"
+      },
+      "notes": null,
+      "generated": false
+    },
+    {
+      "id": "KIT-00",
+      "phase": 4,
+      "category": "kitchen",
+      "title": "Kitchen",
+      "risk": "blocked",
+      "status": "blocked",
+      "model": null,
+      "aspect_ratio": "4:5",
+      "resolution": null,
+      "reference_images": [
+        {
+          "ref_id": "R32",
+          "file": "reference/specifications/p22-specifications-1.jpg",
+          "role": "specification only",
+          "higgsfield_media_role": "image_references"
+        },
+        {
+          "ref_id": "R08",
+          "file": "reference/floor-plans/p16-unit-type-a-3bhk.jpg",
+          "role": "plan only",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "DRAFT - DO NOT RUN WITHOUT A CLIENT DESIGN BRIEF. Kitchen of a Shan Poornam Residence 3BHK (10' x 12'4\" incl. utility): L-shaped counter of concrete slab finished in granite, premium single-bowl sink with Kohler faucet, hob on the external wall with a window, 4' x 2' glazed vitrified wall tiles, 4' x 2' light beige floor tiles, door to a 4'6\" x 8' service yard. Cabinet design, colours and appliances are NOT defined in the brochure.",
+      "must_preserve": [],
+      "avoid": [],
+      "qa_checklist": [],
+      "output": {
+        "raw": null,
+        "website": null
+      },
+      "notes": "BLOCKED. No kitchen render in the brochure. The draft lists only specified facts; generating it would invent cabinetry and finishes.",
+      "generated": false
+    },
+    {
+      "id": "BTH-00",
+      "phase": 4,
+      "category": "bathrooms",
+      "title": "Bathroom",
+      "risk": "blocked",
+      "status": "blocked",
+      "model": null,
+      "aspect_ratio": "4:5",
+      "resolution": null,
+      "reference_images": [
+        {
+          "ref_id": "R32",
+          "file": "reference/specifications/p22-specifications-1.jpg",
+          "role": "specification only",
+          "higgsfield_media_role": "image_references"
+        }
+      ],
+      "prompt": "DRAFT - DO NOT RUN WITHOUT A CLIENT DESIGN BRIEF. 4'6\" x 8' bathroom: Kohler wall-hung WC, basin and CP fittings, Kajaria 4' x 2' glazed vitrified wall tiles, 2' x 2' floor tiles, toughened-glass shower partition, geyser point. Tile colours, vanity and mirror design are NOT defined in the brochure.",
+      "must_preserve": [],
+      "avoid": [],
+      "qa_checklist": [],
+      "output": {
+        "raw": null,
+        "website": null
+      },
+      "notes": "BLOCKED. No bathroom render in the brochure.",
+      "generated": false
+    },
+    {
+      "id": "POO-00",
+      "phase": 4,
+      "category": "pooja",
+      "title": "Pooja room",
+      "risk": "blocked",
+      "status": "blocked",
+      "model": null,
+      "aspect_ratio": null,
+      "resolution": null,
+      "reference_images": [],
+      "prompt": null,
+      "must_preserve": [],
+      "avoid": [],
+      "qa_checklist": [],
+      "output": {
+        "raw": null,
+        "website": null
+      },
+      "notes": "BLOCKED. No pooja room, unit or niche appears anywhere in the brochure.",
+      "generated": false
+    },
+    {
+      "id": "BED-90",
+      "phase": 4,
+      "category": "bedrooms",
+      "title": "Secondary bedrooms / wardrobes",
+      "risk": "blocked",
+      "status": "blocked",
+      "model": null,
+      "aspect_ratio": null,
+      "resolution": null,
+      "reference_images": [],
+      "prompt": null,
+      "must_preserve": [],
+      "avoid": [],
+      "qa_checklist": [],
+      "output": {
+        "raw": null,
+        "website": null
+      },
+      "notes": "BLOCKED. Only one bedroom design is shown; wardrobes appear only as plan symbols.",
+      "generated": false
+    },
+    {
+      "id": "LOC-00",
+      "phase": 9,
+      "category": "location",
+      "title": "Location visualisation",
+      "risk": "blocked",
+      "status": "blocked",
+      "model": null,
+      "aspect_ratio": null,
+      "resolution": null,
+      "reference_images": [],
+      "prompt": null,
+      "must_preserve": [],
+      "avoid": [],
+      "qa_checklist": [],
+      "output": {
+        "raw": null,
+        "website": null
+      },
+      "notes": "No AI imagery: a generated neighbourhood would be fiction. The website renders the brochure's distance data as a typographic panel, and the original map (R28) is available as a reference.",
+      "generated": false
+    }
+  ]
+}

@@ -16,6 +16,7 @@
 | 6 | Location visualisation | Live data panel on the website + original map (`location/`) | Done. No AI imagery, to avoid inventing the neighbourhood |
 | 7 | Image-generation prompts | [`prompts/image-generation-prompts.md`](prompts/image-generation-prompts.md) + [`prompts/generation-requests.json`](prompts/generation-requests.json) | 30 ready · 2 concept-only · 7 blocked |
 | 8 | 3D modelling specification | [`3d/modelling-specification.md`](3d/modelling-specification.md) + [`3d/unit-geometry.json`](3d/unit-geometry.json) | Done: conceptual LOD 200/300; SketchUp, Revit, Blender, GLB |
+| 8c | **Clickable prototype** | `npm run prototype` -> `prototype/dist/`; hosted as a private claude.ai Artifact | Done: home -> SP Residency -> 3D model, no console errors |
 | 8b | **Working 3D model** | [`3d/exports/`](3d/exports/): building GLB + 6 unit GLBs + `model-report.json`; viewer at **`/projects/sp-residency/model`** | Done: built from the brochure plans; glTF-validated (0 errors) |
 | 9 | Website-ready images | [`../public/images/sp-residency/`](../public/images/sp-residency/): 25 WebP files, 2.0 MB | Done: originals only, `approval: pending` |
 | 10 | Asset manifest | [`../public/images/sp-residency/manifest.json`](../public/images/sp-residency/manifest.json) | Done |

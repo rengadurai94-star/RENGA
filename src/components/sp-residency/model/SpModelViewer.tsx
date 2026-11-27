@@ -8,7 +8,13 @@ import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import clsx from "clsx";
 import type { SpModelData, SpModelUnit } from "./types";
 
-const BASE = "/models/sp-residency/";
+// Asset base is "/" on the Next.js site; the static prototype build sets it to "" (relative paths).
+const BASE = `${process.env.NEXT_PUBLIC_ASSET_BASE ?? "/"}models/sp-residency/`;
+// The hosted prototype's sandbox blocks file downloads, so the button is hidden there.
+const CAN_DOWNLOAD = process.env.NEXT_PUBLIC_PROTOTYPE !== "1";
+// The prototype host cannot serve .glb, so its build ships the same models as embedded glTF JSON.
+const MODEL_EXT = process.env.NEXT_PUBLIC_MODEL_EXT;
+const modelUrl = (file: string) => BASE + (MODEL_EXT ? file.replace(/\.glb$/, MODEL_EXT) : file);
 const LEVEL_GAP_M = 4.5; // extra spacing per level at full explode
 
 const MATERIAL_COLORS: Record<string, string> = {
@@ -58,7 +64,7 @@ type BuildingProps = {
 };
 
 function Building({ data, explode, cutaway, focus, hovered, selected, onHover, onSelect }: BuildingProps) {
-  const { scene } = useGLTF(BASE + data.buildingFile);
+  const { scene } = useGLTF(modelUrl(data.buildingFile));
   const gl = useThree((s) => s.gl);
   const root = useMemo(() => {
     const r = scene.clone(true);
@@ -160,7 +166,7 @@ function Building({ data, explode, cutaway, focus, hovered, selected, onHover, o
 }
 
 function UnitModel({ unit, cutaway }: { unit: SpModelUnit; cutaway: boolean }) {
-  const { scene } = useGLTF(BASE + unit.file);
+  const { scene } = useGLTF(modelUrl(unit.file));
   const gl = useThree((s) => s.gl);
   const root = useMemo(() => {
     const r = scene.clone(true);
@@ -222,7 +228,7 @@ export default function SpModelViewer({ data }: { data: SpModelData }) {
 
   // warm the cache so switching to a unit does not suspend the scene
   useEffect(() => {
-    data.units.forEach((u) => useGLTF.preload(BASE + u.file));
+    data.units.forEach((u) => useGLTF.preload(modelUrl(u.file)));
   }, [data.units]);
 
   useEffect(() => {
@@ -266,7 +272,8 @@ export default function SpModelViewer({ data }: { data: SpModelData }) {
           <meshStandardMaterial color="#141312" roughness={1} />
         </mesh>
 
-        <Suspense fallback={null}>
+        {/* keyed: switching views unmounts the old scene instead of hiding it (drei Html cleanup) */}
+        <Suspense key={view} fallback={null}>
           {view === "building" ? (
             <Building
               data={data}
@@ -373,13 +380,15 @@ export default function SpModelViewer({ data }: { data: SpModelData }) {
           >
             Walls: {cutaway ? "Cut-away" : "Full height"}
           </button>
-          <a
-            href={BASE + (unit ? unit.file : data.buildingFile)}
-            download
-            className="rounded-full border border-warm/15 px-3 py-1 hover:text-warm"
-          >
-            Download .glb
-          </a>
+          {CAN_DOWNLOAD && (
+            <a
+              href={BASE + (unit ? unit.file : data.buildingFile)}
+              download
+              className="rounded-full border border-warm/15 px-3 py-1 hover:text-warm"
+            >
+              Download .glb
+            </a>
+          )}
           <button onClick={() => setShowInfo((s) => !s)} className="rounded-full border border-warm/15 px-3 py-1 hover:text-warm">
             About this model
           </button>
@@ -462,4 +471,4 @@ export default function SpModelViewer({ data }: { data: SpModelData }) {
   );
 }
 
-useGLTF.preload(BASE + "SPR_building_conceptual.glb");
+useGLTF.preload(modelUrl("SPR_building_conceptual.glb"));

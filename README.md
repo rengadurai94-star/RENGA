@@ -72,6 +72,10 @@ Projects list.
 - **3D model:** `/projects/sp-residency/model` is an interactive viewer (React Three Fiber). It loads
   the GLBs in `public/models/sp-residency/`, which are generated from the brochure floor plans by
   `sp-residency/3d/build_model.py`.
+- **Clickable prototype:** `npm run prototype` builds `prototype/dist/`, a static single-page version of
+  the site (home, SP Residency page, 3D model) that runs from any folder or static host. It renders the
+  same React components, with small stand-ins for `next/image`, `next/link` and `next/dynamic`.
+  `dist/artifact.html` is the copy that was published as a private claude.ai Artifact.
 - **Visual package:** the brochure analysis, reference library, prompt pack, 3D spec and rebuild
   scripts are in `sp-residency/`; start with `sp-residency/README.md`.
 - **Before going live:** all imagery is the developer's brochure renders (`approval: "pending"`).

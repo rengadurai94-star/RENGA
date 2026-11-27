@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Generated static prototype bundle (npm run prototype)
+    "prototype/dist/**",
   ]),
 ]);
 

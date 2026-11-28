@@ -1,0 +1,298 @@
+{
+ "photos": {
+  "exterior/exterior-day": {
+   "source": "img-004-002.jpg",
+   "page": 4,
+   "native": [
+    2263,
+    1273
+   ],
+   "files": {
+    "960": "media/exterior/exterior-day-960.webp",
+    "1920": "media/exterior/exterior-day-1920.webp"
+   }
+  },
+  "exterior/front-elevation-dusk": {
+   "source": "img-026-040.jpg",
+   "page": 26,
+   "native": [
+    2704,
+    1792
+   ],
+   "files": {
+    "960": "media/exterior/front-elevation-dusk-960.webp",
+    "1920": "media/exterior/front-elevation-dusk-1920.webp"
+   }
+  },
+  "amenities/elegant-lobby": {
+   "source": "img-011-006.jpg",
+   "page": 11,
+   "native": [
+    769,
+    433
+   ],
+   "files": {
+    "769": "media/amenities/elegant-lobby-769.webp"
+   }
+  },
+  "amenities/security-cabin": {
+   "source": "img-011-007.jpg",
+   "page": 11,
+   "native": [
+    1105,
+    622
+   ],
+   "files": {
+    "960": "media/amenities/security-cabin-960.webp",
+    "1105": "media/amenities/security-cabin-1105.webp"
+   }
+  },
+  "amenities/management-office": {
+   "source": "img-011-009.jpg",
+   "page": 11,
+   "native": [
+    872,
+    456
+   ],
+   "files": {
+    "872": "media/amenities/management-office-872.webp"
+   }
+  },
+  "amenities/coworking-study-room": {
+   "source": "img-011-008.jpg",
+   "page": 11,
+   "native": [
+    703,
+    439
+   ],
+   "files": {
+    "703": "media/amenities/coworking-study-room-703.webp"
+   }
+  },
+  "amenities/gym-cardio": {
+   "source": "img-012-011.jpg",
+   "page": 12,
+   "native": [
+    736,
+    520
+   ],
+   "files": {
+    "736": "media/amenities/gym-cardio-736.webp"
+   }
+  },
+  "amenities/gym-strength": {
+   "source": "img-012-012.jpg",
+   "page": 12,
+   "native": [
+    705,
+    498
+   ],
+   "files": {
+    "705": "media/amenities/gym-strength-705.webp"
+   }
+  },
+  "amenities/rooftop-lounge": {
+   "source": "img-012-010.jpg",
+   "page": 12,
+   "native": [
+    1447,
+    814
+   ],
+   "files": {
+    "960": "media/amenities/rooftop-lounge-960.webp",
+    "1447": "media/amenities/rooftop-lounge-1447.webp"
+   }
+  },
+  "residences/bedroom": {
+   "source": "img-024-037.jpg",
+   "page": 24,
+   "native": [
+    1012,
+    1065
+   ],
+   "files": {
+    "960": "media/residences/bedroom-960.webp",
+    "1012": "media/residences/bedroom-1012.webp"
+   }
+  },
+  "residences/balcony-sit-out": {
+   "source": "img-024-035.jpg",
+   "page": 24,
+   "native": [
+    763,
+    429
+   ],
+   "files": {
+    "763": "media/residences/balcony-sit-out-763.webp"
+   }
+  },
+  "residences/typical-floor-corridor": {
+   "source": "img-024-036.jpg",
+   "page": 24,
+   "native": [
+    519,
+    519
+   ],
+   "files": {
+    "519": "media/residences/typical-floor-corridor-519.webp"
+   }
+  },
+  "residences/living-dining": {
+   "source": "img-025-039.jpg",
+   "page": 25,
+   "native": [
+    777,
+    437
+   ],
+   "files": {
+    "777": "media/residences/living-dining-777.webp"
+   }
+  },
+  "residences/lounge-with-library": {
+   "source": "img-025-038.jpg",
+   "page": 25,
+   "native": [
+    774,
+    435
+   ],
+   "files": {
+    "774": "media/residences/lounge-with-library-774.webp"
+   }
+  },
+  "location/location-map": {
+   "source": "page 7 (vector) rasterised at 220 dpi",
+   "page": 7,
+   "native": [
+    2512,
+    1776
+   ],
+   "files": {
+    "1200": "media/location/location-map-1200.webp",
+    "2400": "media/location/location-map-2400.webp"
+   }
+  }
+ },
+ "plans": {
+  "plans/unit-type-a": {
+   "source": "img-016-017.jpg",
+   "mask": "img-016-018.png",
+   "page": 16,
+   "native": [
+    1329,
+    968
+   ],
+   "files": {
+    "1200": "media/plans/unit-type-a-1200.webp",
+    "1329": "media/plans/unit-type-a-1329.webp"
+   }
+  },
+  "plans/unit-type-b": {
+   "source": "img-016-019.jpg",
+   "mask": "img-016-020.png",
+   "page": 17,
+   "native": [
+    1512,
+    1000
+   ],
+   "files": {
+    "1200": "media/plans/unit-type-b-1200.webp",
+    "1512": "media/plans/unit-type-b-1512.webp"
+   }
+  },
+  "plans/unit-type-c": {
+   "source": "img-018-023.jpg",
+   "mask": "img-018-024.png",
+   "page": 18,
+   "native": [
+    1396,
+    911
+   ],
+   "files": {
+    "1200": "media/plans/unit-type-c-1200.webp",
+    "1396": "media/plans/unit-type-c-1396.webp"
+   }
+  },
+  "plans/unit-type-d": {
+   "source": "img-018-025.jpg",
+   "mask": "img-018-026.png",
+   "page": 19,
+   "native": [
+    1677,
+    1069
+   ],
+   "files": {
+    "1200": "media/plans/unit-type-d-1200.webp",
+    "1677": "media/plans/unit-type-d-1677.webp"
+   }
+  },
+  "plans/unit-type-e": {
+   "source": "img-020-029.jpg",
+   "mask": "img-020-030.png",
+   "page": 20,
+   "native": [
+    1314,
+    750
+   ],
+   "files": {
+    "1200": "media/plans/unit-type-e-1200.webp",
+    "1314": "media/plans/unit-type-e-1314.webp"
+   }
+  },
+  "plans/unit-type-f": {
+   "source": "img-020-031.jpg",
+   "mask": "img-020-032.png",
+   "page": 21,
+   "native": [
+    1731,
+    1079
+   ],
+   "files": {
+    "1200": "media/plans/unit-type-f-1200.webp",
+    "1731": "media/plans/unit-type-f-1731.webp"
+   }
+  },
+  "plans/stilt-floor-3d": {
+   "source": "img-010-004.jpg",
+   "mask": "img-010-005.jpg",
+   "page": 10,
+   "native": [
+    2339,
+    1279
+   ],
+   "files": {
+    "1200": "media/plans/stilt-floor-3d-1200.webp",
+    "2339": "media/plans/stilt-floor-3d-2339.webp"
+   }
+  },
+  "plans/terrace-floor-3d": {
+   "source": "img-013-013.jpg",
+   "mask": "img-013-014.jpg",
+   "page": 13,
+   "native": [
+    2914,
+    2042
+   ],
+   "files": {
+    "1200": "media/plans/terrace-floor-3d-1200.webp",
+    "2400": "media/plans/terrace-floor-3d-2400.webp"
+   }
+  },
+  "plans/typical-floor": {
+   "source": "img-015-015.jpg",
+   "page": 15,
+   "native": [
+    630,
+    840
+   ],
+   "crop_in_source": [
+    620,
+    85,
+    1250,
+    925
+   ],
+   "files": {
+    "630": "media/plans/typical-floor-630.webp"
+   }
+  }
+ }
+}

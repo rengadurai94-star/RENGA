@@ -1,0 +1,574 @@
+{
+  "_readme": "PROJECT DATA - edit this file (or use the Data Editor at /#/editor) to change what the website shows. Every value comes from SPR-Brochure-11-05-2026.pdf; 'source' fields give the brochure page. Use null for anything that is not provided - the website then hides it instead of inventing it.",
+  "meta": {
+    "dataVersion": 1,
+    "lastUpdated": "2026-11-28",
+    "sourceDocument": "SPR-Brochure-11-05-2026.pdf (36 pages, dated 11 May 2026)"
+  },
+  "project": {
+    "name": "Shan Poornam Residence",
+    "shortName": "SP Residence",
+    "byline": "by ENS",
+    "tagline": "Boutique Living in the Heart of Madurai",
+    "introLine": "A New Perspective on Living in Madurai",
+    "introLineSource": "Client-supplied introductory line (not printed in the brochure)",
+    "statement": "Live life to the fullest in a thoughtfully planned, centrally located, ultra-modern residence.",
+    "developer": "Shan Poornam Development Pvt. Ltd., an ENS Development company",
+    "collaborator": "SKR Elite Properties Pvt. Ltd.",
+    "credit": "A signature project by Shan Poornam Development Pvt. Ltd., an ENS Development company in collaboration with SKR Elite Properties Pvt. Ltd.",
+    "city": "Madurai",
+    "locality": "Visalakshipuram",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "totalResidences": 26,
+    "residentialFloors": 5,
+    "buildingLevels": "Stilt + 5 residential floors + Terrace",
+    "unitMix": [
+      { "configuration": "4 BHK", "count": 1 },
+      { "configuration": "3 BHK", "count": 13 },
+      { "configuration": "2 BHK", "count": 12 }
+    ],
+    "carpetToSuperBuiltUp": "Up to 85%",
+    "threeBhkFrom": "Our 3BHK starts from 1472 sqft carpet area.",
+    "philosophy": [
+      { "word": "Shan", "meaning": "Meaning Five (in Sanskrit), representing the five elements - Earth, Fire, Water, Air and Space. This is symbolized by the Sun in the Shan Poornam logo." },
+      { "word": "Poornam", "meaning": "Meaning Completeness (in Sanskrit) - symbolized by The Moon, the symbol of calm, rhythm, and reflection." }
+    ],
+    "philosophySummary": "At Shan Poornam Residence, the philosophy of the Sun-Moon balance inspires homes that combine energy and purpose. The result is a residence that feels complete and built to last.",
+    "advantages": [
+      "Strategic Location & Low-Density Living",
+      "Privacy and Well-Planned Homes (26 residences)",
+      "Maximum Usable Living Space (85% Carpet Area / Super Built-Up Area - highest among builders in Tamil Nadu)",
+      "Curated Lifestyle Features (21 Amenities)",
+      "Thoughtfully Designed for Everyday Comfort and Long-Term Value"
+    ],
+    "areaDefinitions": {
+      "carpet": "Carpet Area is the space inside your home.",
+      "superBuiltUp": "Super Built-Up (SBU) Area is your carpet area + shared common areas."
+    },
+    "price": null,
+    "possessionDate": null,
+    "reraNumber": null,
+    "source": "Brochure pages 1, 2, 3, 5, 25, 27, 35"
+  },
+  "floors": [
+    {
+      "id": "terrace",
+      "label": "Terrace",
+      "shortLabel": "T",
+      "level": 6,
+      "kind": "amenity",
+      "summary": "Planned as a wellness and leisure zone, offering residents spaces to recharge and connect.",
+      "plan": "terrace",
+      "source": "Brochure page 13"
+    },
+    {
+      "id": "f5",
+      "label": "5th Floor",
+      "shortLabel": "5",
+      "level": 5,
+      "kind": "residential",
+      "summary": "2 residences: 1 x 4 BHK and 1 x 3 BHK. The 5th-floor plan is not published in the brochure.",
+      "plan": null,
+      "derivation": "The brochure lists 26 homes (4 BHK x 1, 3 BHK x 13, 2 BHK x 12) and states that Types A-F are available on the 1st-4th floors only (24 homes). The remaining 1 x 4 BHK and 1 x 3 BHK are therefore on the 5th floor.",
+      "source": "Derived from brochure pages 5 and 16-21"
+    },
+    { "id": "f4", "label": "4th Floor", "shortLabel": "4", "level": 4, "kind": "residential", "summary": "6 residences - Types A to F (3 x 3 BHK, 3 x 2 BHK).", "plan": "typical", "source": "Brochure pages 15-21" },
+    { "id": "f3", "label": "3rd Floor", "shortLabel": "3", "level": 3, "kind": "residential", "summary": "6 residences - Types A to F (3 x 3 BHK, 3 x 2 BHK).", "plan": "typical", "source": "Brochure pages 15-21" },
+    { "id": "f2", "label": "2nd Floor", "shortLabel": "2", "level": 2, "kind": "residential", "summary": "6 residences - Types A to F (3 x 3 BHK, 3 x 2 BHK).", "plan": "typical", "source": "Brochure pages 15-21" },
+    { "id": "f1", "label": "1st Floor", "shortLabel": "1", "level": 1, "kind": "residential", "summary": "6 residences - Types A to F (3 x 3 BHK, 3 x 2 BHK).", "plan": "typical", "source": "Brochure pages 15-21" },
+    {
+      "id": "stilt",
+      "label": "Stilt Floor",
+      "shortLabel": "S",
+      "level": 0,
+      "kind": "amenity",
+      "summary": "Beyond functionality, the stilt floor also houses purpose-driven shared spaces designed to support work, learning, and leisure.",
+      "plan": "stilt",
+      "source": "Brochure page 10"
+    }
+  ],
+  "unitTypes": {
+    "A": {
+      "configuration": "3 BHK",
+      "carpetAreaSqft": 1500,
+      "balconyAreaSqft": 142.8,
+      "superBuiltUpSqft": 1764,
+      "udsSqft": 578.87,
+      "vastu": "East Facing Flat Vastu",
+      "buildingEntry": "S",
+      "flatEntry": "E",
+      "bedrooms": "NE / NW / SW",
+      "kitchen": "SE",
+      "bathrooms": "N/S",
+      "availableOn": "1st, 2nd, 3rd and 4th floors",
+      "positionOnFloor": "South-west of the typical floor (west row, south end)",
+      "rooms": [
+        { "name": "Hall", "size": "28'4\" x 11'" },
+        { "name": "Bedroom-1", "size": "12' x 12'" },
+        { "name": "Bedroom-2", "size": "12' x 12'6\"" },
+        { "name": "Bedroom-3", "size": "14' x 12'4\"" },
+        { "name": "Kitchen", "size": "10' x 12'4\"" },
+        { "name": "Service", "size": "4'6\" x 8'" },
+        { "name": "Bathroom (x3)", "size": "4'6\" x 8' each" },
+        { "name": "Balcony", "size": "7'1\" x 10'8\"" },
+        { "name": "Balcony (x2)", "size": "10'6\" x 3'6\" each" }
+      ],
+      "plan": "media/plans/unit-type-a",
+      "source": "Brochure page 16"
+    },
+    "B": {
+      "configuration": "2 BHK",
+      "carpetAreaSqft": 957,
+      "balconyAreaSqft": 68.3,
+      "superBuiltUpSqft": 1125,
+      "udsSqft": 369.34,
+      "vastu": "East Facing Flat Vastu",
+      "buildingEntry": "S",
+      "flatEntry": "E",
+      "bedrooms": "NE / SW",
+      "kitchen": "NW",
+      "bathrooms": "N/S",
+      "availableOn": "1st, 2nd, 3rd and 4th floors",
+      "positionOnFloor": "West of the typical floor (west row, middle)",
+      "rooms": [
+        { "name": "Hall", "size": "28'4\" x 10'7\"" },
+        { "name": "Bedroom-1", "size": "13' x 11'" },
+        { "name": "Bedroom-2", "size": "11' x 11'" },
+        { "name": "Kitchen", "size": "13' x 7'" },
+        { "name": "Service", "size": "4'6\" x 7'2\"" },
+        { "name": "Bathroom (x2)", "size": "4'6\" x 8' each" },
+        { "name": "Balcony", "size": "7'1\" x 9'4\"" }
+      ],
+      "plan": "media/plans/unit-type-b",
+      "source": "Brochure page 17"
+    },
+    "C": {
+      "configuration": "2 BHK",
+      "carpetAreaSqft": 1003,
+      "balconyAreaSqft": 23.6,
+      "superBuiltUpSqft": 1179,
+      "udsSqft": 387.08,
+      "vastu": "East Facing Flat Vastu",
+      "buildingEntry": "S",
+      "flatEntry": "E",
+      "bedrooms": "NW / SW",
+      "kitchen": "SE",
+      "bathrooms": "N/S",
+      "availableOn": "1st, 2nd, 3rd and 4th floors",
+      "positionOnFloor": "North-west of the typical floor (west row, north end)",
+      "rooms": [
+        { "name": "Hall", "size": "16' x 18'8\"" },
+        { "name": "Bedroom-1", "size": "13' x 11'5\"" },
+        { "name": "Bedroom-2", "size": "13' x 12'" },
+        { "name": "Kitchen", "size": "11'6\" x 7'5\"" },
+        { "name": "Service", "size": "4'6\" x 5'" },
+        { "name": "Bathroom (x2)", "size": "4'6\" x 8' each" },
+        { "name": "Balcony", "size": "7'3\" x 4'" }
+      ],
+      "plan": "media/plans/unit-type-c",
+      "source": "Brochure page 18"
+    },
+    "D": {
+      "configuration": "3 BHK",
+      "carpetAreaSqft": 1472,
+      "balconyAreaSqft": 144.4,
+      "superBuiltUpSqft": 1731,
+      "udsSqft": 568.07,
+      "vastu": "West Facing Flat Vastu",
+      "buildingEntry": "S",
+      "flatEntry": "W",
+      "bedrooms": "NW / SW / NE",
+      "kitchen": "SE",
+      "bathrooms": "N/S",
+      "availableOn": "1st, 2nd, 3rd and 4th floors",
+      "positionOnFloor": "North-east of the typical floor (east row, north end)",
+      "rooms": [
+        { "name": "Hall", "size": "28'4\" x 11'" },
+        { "name": "Bedroom-1", "size": "12' x 11'5\"" },
+        { "name": "Bedroom-2", "size": "12' x 11'5\"" },
+        { "name": "Bedroom-3", "size": "13' x 14'" },
+        { "name": "Kitchen", "size": "10' x 12'" },
+        { "name": "Service", "size": "4'6\" x 8'" },
+        { "name": "Bathroom (x3)", "size": "4'6\" x 8' each" },
+        { "name": "Balcony", "size": "7'1\" x 11'" },
+        { "name": "Balcony", "size": "8'10\" x 4'" },
+        { "name": "Balcony", "size": "11'4\" x 4'" }
+      ],
+      "plan": "media/plans/unit-type-d",
+      "source": "Brochure page 19"
+    },
+    "E": {
+      "configuration": "2 BHK",
+      "carpetAreaSqft": 846,
+      "balconyAreaSqft": 72.0,
+      "superBuiltUpSqft": 995,
+      "udsSqft": 326.51,
+      "vastu": "West Facing Flat Vastu",
+      "buildingEntry": "S",
+      "flatEntry": "W",
+      "bedrooms": "NE / SW",
+      "kitchen": "SE",
+      "bathrooms": "S",
+      "availableOn": "1st, 2nd, 3rd and 4th floors",
+      "positionOnFloor": "East of the typical floor (east row, middle)",
+      "rooms": [
+        { "name": "Hall", "size": "10' x 11'" },
+        { "name": "Bedroom-1", "size": "12' x 13'" },
+        { "name": "Bedroom-2", "size": "10' x 11'3\"" },
+        { "name": "Kitchen", "size": "8' x 8'" },
+        { "name": "Bathroom (x2)", "size": "4'6\" x 8' each" },
+        { "name": "Balcony", "size": "6'5\" x 12'" }
+      ],
+      "plan": "media/plans/unit-type-e",
+      "source": "Brochure page 20"
+    },
+    "F": {
+      "configuration": "3 BHK",
+      "carpetAreaSqft": 1486,
+      "balconyAreaSqft": 143.3,
+      "superBuiltUpSqft": 1747,
+      "udsSqft": 573.47,
+      "vastu": "West Facing Flat Vastu",
+      "buildingEntry": "S",
+      "flatEntry": "W",
+      "bedrooms": "NW / SW / NE",
+      "kitchen": "SE",
+      "bathrooms": "N/S",
+      "availableOn": "1st, 2nd, 3rd and 4th floors",
+      "positionOnFloor": "South-east of the typical floor (east row, south end)",
+      "rooms": [
+        { "name": "Hall", "size": "28'4\" x 11'" },
+        { "name": "Bedroom-1", "size": "12' x 12'" },
+        { "name": "Bedroom-2", "size": "12' x 12'" },
+        { "name": "Bedroom-3", "size": "14' x 12'4\"" },
+        { "name": "Kitchen", "size": "10' x 12'4\"" },
+        { "name": "Service", "size": "4'6\" x 8'" },
+        { "name": "Bathroom (x3)", "size": "4'6\" x 8' each" },
+        { "name": "Balcony", "size": "7'1\" x 10'8\"" },
+        { "name": "Balcony (x2)", "size": "10'6\" x 3'6\" each" }
+      ],
+      "plan": "media/plans/unit-type-f",
+      "source": "Brochure page 21"
+    }
+  },
+  "units": [
+    { "id": "1A", "floor": "f1", "type": "A", "officialNumber": null, "status": null },
+    { "id": "1B", "floor": "f1", "type": "B", "officialNumber": null, "status": null },
+    { "id": "1C", "floor": "f1", "type": "C", "officialNumber": null, "status": null },
+    { "id": "1D", "floor": "f1", "type": "D", "officialNumber": null, "status": null },
+    { "id": "1E", "floor": "f1", "type": "E", "officialNumber": null, "status": null },
+    { "id": "1F", "floor": "f1", "type": "F", "officialNumber": null, "status": null },
+    { "id": "2A", "floor": "f2", "type": "A", "officialNumber": null, "status": null },
+    { "id": "2B", "floor": "f2", "type": "B", "officialNumber": null, "status": null },
+    { "id": "2C", "floor": "f2", "type": "C", "officialNumber": null, "status": null },
+    { "id": "2D", "floor": "f2", "type": "D", "officialNumber": null, "status": null },
+    { "id": "2E", "floor": "f2", "type": "E", "officialNumber": null, "status": null },
+    { "id": "2F", "floor": "f2", "type": "F", "officialNumber": null, "status": null },
+    { "id": "3A", "floor": "f3", "type": "A", "officialNumber": null, "status": null },
+    { "id": "3B", "floor": "f3", "type": "B", "officialNumber": null, "status": null },
+    { "id": "3C", "floor": "f3", "type": "C", "officialNumber": null, "status": null },
+    { "id": "3D", "floor": "f3", "type": "D", "officialNumber": null, "status": null },
+    { "id": "3E", "floor": "f3", "type": "E", "officialNumber": null, "status": null },
+    { "id": "3F", "floor": "f3", "type": "F", "officialNumber": null, "status": null },
+    { "id": "4A", "floor": "f4", "type": "A", "officialNumber": null, "status": null },
+    { "id": "4B", "floor": "f4", "type": "B", "officialNumber": null, "status": null },
+    { "id": "4C", "floor": "f4", "type": "C", "officialNumber": null, "status": null },
+    { "id": "4D", "floor": "f4", "type": "D", "officialNumber": null, "status": null },
+    { "id": "4E", "floor": "f4", "type": "E", "officialNumber": null, "status": null },
+    { "id": "4F", "floor": "f4", "type": "F", "officialNumber": null, "status": null },
+    {
+      "id": "5-4BHK",
+      "floor": "f5",
+      "type": null,
+      "configuration": "4 BHK",
+      "officialNumber": null,
+      "status": null,
+      "note": "Floor plan, areas and facing are not published in the brochure. Location on the 5th floor is derived from the brochure's unit totals."
+    },
+    {
+      "id": "5-3BHK",
+      "floor": "f5",
+      "type": null,
+      "configuration": "3 BHK",
+      "officialNumber": null,
+      "status": null,
+      "note": "Floor plan, areas and facing are not published in the brochure. Location on the 5th floor is derived from the brochure's unit totals."
+    }
+  ],
+  "amenityGroups": [
+    {
+      "title": "Private Comfort / Safety & Security",
+      "items": [
+        { "name": "Management Office", "where": "Stilt", "planRef": 2, "image": "media/amenities/management-office", "caption": "On-site support for smooth day-to-day operations" },
+        { "name": "Access Card Controlled Lift & Car Park", "where": "Building", "planRef": null, "image": null, "caption": null },
+        { "name": "Security & Cabin", "where": "Stilt", "planRef": 8, "image": "media/amenities/security-cabin", "caption": "A modern and well-equipped security room with 24-hour access and safety monitoring systems." },
+        { "name": "CCTV Cameras", "where": "Building", "planRef": null, "image": null, "caption": null },
+        { "name": "Private Lobby", "where": "Stilt", "planRef": 1, "image": "media/amenities/elegant-lobby", "caption": "A refined arrival experience that sets the tone for the entire residence." }
+      ]
+    },
+    {
+      "title": "Lifestyle Features",
+      "items": [
+        { "name": "Co-working / Study Room", "where": "Stilt", "planRef": 3, "image": "media/amenities/coworking-study-room", "caption": "A quiet, comfortable environment for work, study, or focused tasks" },
+        { "name": "Library", "where": "Stilt", "planRef": 4, "image": null, "caption": null },
+        { "name": "Games Corner", "where": "Terrace", "planRef": 10, "image": null, "caption": null },
+        { "name": "Gym", "where": "Terrace", "planRef": 11, "image": "media/amenities/gym-cardio", "caption": "A dedicated fitness space for daily workouts" }
+      ]
+    },
+    {
+      "title": "Outdoor Living",
+      "items": [
+        { "name": "Garden", "where": "Stilt", "planRef": 6, "image": null, "caption": null },
+        { "name": "Playground", "where": "Stilt", "planRef": 5, "image": null, "caption": null },
+        { "name": "BBQ Area", "where": "Terrace", "planRef": 12, "image": null, "caption": null },
+        { "name": "Roof Top Lounge", "where": "Terrace", "planRef": 13, "image": "media/amenities/rooftop-lounge", "caption": "A calm, elevated retreat for relaxed evenings" },
+        { "name": "Terrace Garden Lounge", "where": "Terrace", "planRef": null, "image": null, "caption": null },
+        { "name": "Outdoor Yoga Lawn", "where": "Terrace", "planRef": 16, "image": null, "caption": null }
+      ]
+    },
+    {
+      "title": "Infrastructure",
+      "items": [
+        { "name": "Smart Main Door Lock", "where": "Residences", "planRef": null, "image": null, "caption": null },
+        { "name": "Centralized Gas Pipeline", "where": "Stilt", "planRef": 7, "image": null, "caption": null },
+        { "name": "Water Softener", "where": "Building", "planRef": null, "image": null, "caption": null },
+        { "name": "Power Backup Generator", "where": "Building", "planRef": null, "image": null, "caption": null },
+        { "name": "EV Charging Bay Provisions", "where": "Building", "planRef": null, "image": null, "caption": null },
+        { "name": "False Ceiling", "where": "Residences", "planRef": null, "image": null, "caption": null }
+      ]
+    }
+  ],
+  "planLegends": {
+    "stilt": [
+      { "n": 1, "name": "Private Lobby" },
+      { "n": 2, "name": "Management Office" },
+      { "n": 3, "name": "Co-working / Study Room" },
+      { "n": 4, "name": "Library" },
+      { "n": 5, "name": "Playground" },
+      { "n": 6, "name": "Garden" },
+      { "n": 7, "name": "Centralised Gasline" },
+      { "n": 8, "name": "Security Cabin" },
+      { "n": 9, "name": "Utilities Area" }
+    ],
+    "terrace": [
+      { "n": 10, "name": "Games Corner" },
+      { "n": 11, "name": "Gym" },
+      { "n": 12, "name": "BBQ Area" },
+      { "n": 13, "name": "Rooftop Lounge" },
+      { "n": 14, "name": "Outdoor Lounge" },
+      { "n": 15, "name": "Terrace Garden" },
+      { "n": 16, "name": "Outdoor Yoga Lawn" }
+    ]
+  },
+  "specifications": [
+    {
+      "title": "Structure",
+      "items": [
+        { "label": "Structural system", "value": "RCC framed structure with raft foundation using M-40 grade of concrete" },
+        { "label": "Floor to floor height (incl. slab)", "value": "10'" },
+        { "label": "ATT", "value": "Anti Termite treatment is done at various stages of the construction" }
+      ]
+    },
+    {
+      "title": "Wall Finish",
+      "items": [
+        { "label": "Internal Walls", "value": "Finished with premium quality (Asian Paints): 2 Coats of Wall Putty, 1 Coat of Primer, 2 Coats of Emulsion" },
+        { "label": "External Walls", "value": "Finished with premium quality (Asian Paints): 1 Coat of Exterior Primer, 2 Coats of Apex Emulsion" }
+      ]
+    },
+    {
+      "title": "Ceiling Finish",
+      "items": [
+        { "label": "Interior of Units", "value": "False ceiling with lights" },
+        { "label": "Corridor", "value": "False ceiling with decorative lights" }
+      ]
+    },
+    {
+      "title": "Floor Finishes",
+      "items": [
+        { "label": "Living, Dining & Kitchen", "value": "Glazed Vitrified Tiles of size 4' X 2'" },
+        { "label": "Bedroom", "value": "Wooden Glazed Vitrified Tiles of size 48\" X 8\"" },
+        { "label": "Balcony", "value": "Wooden Glazed Vitrified Tiles of size 48\" X 8\"" }
+      ]
+    },
+    {
+      "title": "Kitchen & Dining",
+      "items": [
+        { "label": "Kitchen", "value": "Countertop will be of concrete slab and finished with high quality granite" },
+        { "label": "Kitchen Sink & Faucet", "value": "Sink: Premium quality single bowl sink. Faucet: Kohler brand" },
+        { "label": "Electrical Provision", "value": "For chimney, HOB, Water Purifier, and Washing Machine" },
+        { "label": "LPG Provision", "value": "Centralized metered individual LPG Gasline with SS 306 piping" },
+        { "label": "Kitchen Wall Tiles", "value": "Glazed Vitrified Tiles of size 4' X 2'" }
+      ]
+    },
+    {
+      "title": "Bathrooms",
+      "items": [
+        { "label": "Sanitary Fixtures", "value": "Kohler brand fittings" },
+        { "label": "CP Fittings", "value": "Kohler brand fittings" },
+        { "label": "Floor Traps", "value": "Kohler brand fittings" },
+        { "label": "Wall Finish", "value": "Finished with Premium Quality (Kajaria) Glazed Vitrified Tiles of size 4' X 2'" },
+        { "label": "Floor Finish", "value": "Finished with Premium Quality (Kajaria) Glazed Vitrified Tiles of size 2' X 2'" },
+        { "label": "Shower Partition", "value": "Shower partition using toughened glass" }
+      ]
+    },
+    {
+      "title": "Joinery",
+      "items": [
+        { "label": "Main Doors", "value": "Door Size: 4' x 8'. Door Thickness: 38 mm. Frame: Teak wood. Door Finish: Teak Veneer finished with PU Polish" },
+        { "label": "Bedroom & Other Doors", "value": "Door Size: 3'6\" x 8'. Door Thickness: 30 mm. Frame: Teak wood. Door Finish: 1 mm thick Laminate" },
+        { "label": "Toilet Doors", "value": "Door Size: 2'9\" x 8'. Door Thickness: 30 mm. Frame: Teak wood. Door Finish: 1 mm thick Laminate" },
+        { "label": "Windows", "value": "Premium Quality UPVC profile windows with toughened glass" },
+        { "label": "Ventilators", "value": "Premium Quality UPVC framed, louvered shutter with exhaust fan" }
+      ]
+    },
+    {
+      "title": "Electrical Specs",
+      "items": [
+        { "label": "Power Supply", "value": "3 Phase power supply connection" },
+        { "label": "Safety Device", "value": "MCB & ELCB (Earth Leakage Circuit Breaker)" },
+        { "label": "Switches and Sockets", "value": "Modular box, switches & sockets of Legrand brand" },
+        { "label": "Wires", "value": "Fire Retardant Low Smoke (FRLS) copper wire of Finolex brand/Equivalent" },
+        { "label": "Lights", "value": "Light Fixtures included" },
+        { "label": "Fans", "value": "Ceiling Fans included" },
+        { "label": "Water Heater (Geyser)", "value": "Geyser points will be provided in all bathrooms" },
+        { "label": "Power Back up", "value": "Maximum of 1 KVA for each unit" }
+      ]
+    },
+    {
+      "title": "Sit-out",
+      "items": [
+        { "label": "Handrail", "value": "MS handrail as per architect's design" }
+      ]
+    },
+    {
+      "title": "Common Amenities",
+      "items": [
+        { "label": "Lift", "value": "OTIS - 1020 kg (15 pax) capacity" },
+        { "label": "Lift Finishes", "value": "Walls - SS Finish, Floor Granite" },
+        { "label": "Power Back up", "value": "100% power back up for common areas and selective amenities" },
+        { "label": "Name board", "value": "Apartment owner name board in the lobby" },
+        { "label": "Corridor", "value": "Granite Floor Tiles and False Ceiling" },
+        { "label": "Staircase Floor", "value": "Granite" },
+        { "label": "Staircase Handrail", "value": "MS Handrails" },
+        { "label": "Security", "value": "Security Cabin; RFID Access controlled Private Lobby; RFID Access controlled Lift; RFID Access controlled Car Park Entry; CCTV surveillance for all common areas" }
+      ]
+    }
+  ],
+  "location": {
+    "address": "Shan Poornam Residence, PT Rajan Road, Visalakshipuram, Madurai - 625014",
+    "headline": "Live close to everything, yet far above the ordinary",
+    "description": "Located at Visalakshipuram, Reserve Police Line, Shan Poornam Residence places you at the centre of Madurai's most accessible residential neighbourhood - surrounded by education, healthcare, daily conveniences, and seamless connectivity.",
+    "whyItMatters": [
+      "Established residential neighbourhood",
+      "Excellent access to schools & hospitals",
+      "Daily conveniences within minutes",
+      "Smooth city-wide connectivity",
+      "Peaceful surroundings with urban advantages"
+    ],
+    "mapLink": "https://maps.app.goo.gl/sCMexnfBfakJEFRt8",
+    "mapLinkSource": "Decoded from the 'Map' QR code on brochure page 35",
+    "categories": [
+      {
+        "title": "Education",
+        "places": [
+          { "name": "Kendriya Vidyalaya", "distance": "1.4 km", "time": "4 minutes" },
+          { "name": "Lady Doak College", "distance": "2.0 km", "time": "6 minutes" },
+          { "name": "The American College", "distance": "5.1 km", "time": "10 minutes" }
+        ]
+      },
+      {
+        "title": "Healthcare",
+        "places": [
+          { "name": "Apollo Specialty Hospitals", "distance": "5.8 km", "time": "12 minutes" },
+          { "name": "Vadamalayan Hospitals", "distance": "1.8 km", "time": "5 minutes" },
+          { "name": "Meenakshi Mission Hospital", "distance": "6.4 km", "time": "15 minutes" }
+        ]
+      },
+      {
+        "title": "Shopping",
+        "places": [
+          { "name": "Unlimited Fashion Store", "distance": "1.0 km", "time": "4 minutes" },
+          { "name": "Zudio", "distance": "1.7 km", "time": "6 minutes" },
+          { "name": "Style Union", "distance": "1.0 km", "time": "4 minutes" },
+          { "name": "Meenakshi Fan House", "distance": "650 m", "time": "2 minutes" },
+          { "name": "Thangamayil Jewellers", "distance": "450 m", "time": "1 minute" }
+        ]
+      },
+      {
+        "title": "Hotels & Restaurants",
+        "places": [
+          { "name": "Hotel Courtyard by Marriott", "distance": "2.3 km", "time": "6 minutes" },
+          { "name": "Hotel JC Residency", "distance": "1.7 km", "time": "5 minutes" }
+        ]
+      },
+      {
+        "title": "Entertainment & Leisure",
+        "places": [
+          { "name": "Vishaal Mall", "distance": "2.4 km", "time": "5 minutes" },
+          { "name": "Race Course", "distance": "3.2 km", "time": "8 minutes" },
+          { "name": "Madurai Rifle Club", "distance": "2.9 km", "time": "7 minutes" }
+        ]
+      },
+      {
+        "title": "Major Landmarks Nearby",
+        "places": [
+          { "name": "Meenakshi Amman Temple", "distance": "4.7 km", "time": "12 minutes" },
+          { "name": "Farmer's Market (Uzhavar Sandhai)", "distance": "900 m", "time": "3 minutes" }
+        ]
+      },
+      {
+        "title": "Connectivity",
+        "places": [
+          { "name": "Multiple city bus stops", "distance": "Walking distance", "time": null },
+          { "name": "Maatuthavani Bus Stand (Central Bus Terminal)", "distance": "5.4 km", "time": "10 minutes" },
+          { "name": "Madurai International Airport", "distance": "20 km", "time": "30 minutes" },
+          { "name": "Madurai Railway Station", "distance": "6 km", "time": "12 minutes" }
+        ]
+      }
+    ],
+    "alsoOnMap": [
+      "Chennai Flyover & Highway (8 minutes)",
+      "Madurai Kamaraj University College",
+      "Government Law College Madurai",
+      "Madurai Medical College",
+      "Government Rajaji Hospital",
+      "Aravind Eye Hospital",
+      "Thiagarajar College",
+      "Devadoss Hospitals",
+      "Preethi Multispeciality & Orthopedics Hospital",
+      "Mahatma Montessori School",
+      "Mahatma Montessori Matriculation HSS",
+      "St. Joseph Matriculation HSS",
+      "C.E.O.A Matriculation HSS"
+    ],
+    "source": "Brochure pages 6 and 7"
+  },
+  "contact": {
+    "phone": "+91 81100 04007",
+    "whatsapp": "+91 81100 04007",
+    "email": "sales@skrgroup.co",
+    "website": "www.spresidence.com",
+    "siteAddress": "Shan Poornam Residence, PT Rajan Road, Visalakshipuram, Madurai - 625014",
+    "source": "Brochure page 35 (phone shown with WhatsApp icon)"
+  },
+  "gallery": [
+    { "id": "exterior-day", "src": "media/exterior/exterior-day", "category": "Exterior", "caption": "Exterior perspective", "page": 4, "captioned": false },
+    { "id": "elevation-dusk", "src": "media/exterior/front-elevation-dusk", "category": "Exterior", "caption": "Front elevation at dusk", "page": 26, "captioned": false },
+    { "id": "living", "src": "media/residences/living-dining", "category": "Residences", "caption": "Living and dining", "page": 25, "captioned": false },
+    { "id": "bedroom", "src": "media/residences/bedroom", "category": "Residences", "caption": "Bedroom", "page": 24, "captioned": false },
+    { "id": "balcony", "src": "media/residences/balcony-sit-out", "category": "Residences", "caption": "Balcony sit-out", "page": 24, "captioned": false },
+    { "id": "corridor", "src": "media/residences/typical-floor-corridor", "category": "Common areas", "caption": "Corridor", "page": 24, "captioned": false },
+    { "id": "lounge", "src": "media/residences/lounge-with-library", "category": "Common areas", "caption": "Lounge with library shelving", "page": 25, "captioned": false },
+    { "id": "lobby", "src": "media/amenities/elegant-lobby", "category": "Amenities", "caption": "Elegant Lobby", "page": 11, "captioned": true },
+    { "id": "security", "src": "media/amenities/security-cabin", "category": "Amenities", "caption": "Security Cabin", "page": 11, "captioned": true },
+    { "id": "office", "src": "media/amenities/management-office", "category": "Amenities", "caption": "Management Office", "page": 11, "captioned": true },
+    { "id": "cowork", "src": "media/amenities/coworking-study-room", "category": "Amenities", "caption": "Co-working / Study Room", "page": 11, "captioned": true },
+    { "id": "gym-1", "src": "media/amenities/gym-cardio", "category": "Amenities", "caption": "Gym", "page": 12, "captioned": true },
+    { "id": "gym-2", "src": "media/amenities/gym-strength", "category": "Amenities", "caption": "Gym", "page": 12, "captioned": true },
+    { "id": "rooftop", "src": "media/amenities/rooftop-lounge", "category": "Amenities", "caption": "Rooftop Lounge", "page": 12, "captioned": true }
+  ],
+  "residenceGallery": ["living", "bedroom", "balcony"],
+  "disclaimer": "The information & images contained herein are subject to change and cannot form an offer or contract. While every reasonable care has been taken in providing the information, the company cannot be held responsible for any inaccuracies. The company reserves the right to make alterations and amendments as may be necessitated from time to time without prior notice. Visual representations such as layout plans, finishes, illustrations, pictures, photographs and drawings are artists' impressions only and not representations of fact."
+}

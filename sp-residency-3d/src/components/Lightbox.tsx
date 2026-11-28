@@ -115,7 +115,11 @@ export function LightboxHost() {
           </button>
           <button
             className="icon-btn"
-            onClick={() => (document.fullscreenElement ? document.exitFullscreen() : stageRef.current?.parentElement?.requestFullscreen?.())}
+            onClick={() => {
+              // optional: some browsers and embedded viewers refuse full screen
+              const req = document.fullscreenElement ? document.exitFullscreen() : stageRef.current?.parentElement?.requestFullscreen?.();
+              req?.catch?.(() => undefined);
+            }}
             aria-label="Toggle full screen"
           >
             <Maximize />

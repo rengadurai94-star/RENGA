@@ -12,6 +12,12 @@ What visitors get:
 
 ---
 
+## 0. Live prototype
+
+**https://claude.ai/artifact/4DQ2RU8dWTzSQfwNMvjdeC** is a private page hosted on claude.ai. Open it while signed in to your Claude account. To show it to someone else, use the page's **Share** menu.
+
+That hosted copy is built with `npm run build:artifact`, then `python3 -I tools/make_artifact_page.py`. It loads its fonts from Google Fonts and leaves out the embedded Google map, the PDF download and the data editor, because the hosted page blocks iframes and downloads. Everything else is identical.
+
 ## 1. See the website in 2 minutes (no installation)
 
 1. Open the ZIP **`SP-Residence-Website-Ready-To-Upload.zip`**. It contains a finished `dist` folder.

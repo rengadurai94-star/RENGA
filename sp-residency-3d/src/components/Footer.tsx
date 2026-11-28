@@ -1,4 +1,5 @@
 import { data } from '../data/project';
+import { IS_HOSTED } from '../utils/device';
 
 export default function Footer() {
   return (
@@ -11,10 +12,14 @@ export default function Footer() {
             <a href="#explore">Explore</a>
             <a href="#plans">Floor plans</a>
             <a href="#contact">Contact</a>
-            <a href="./brochure/SPR-Brochure-11-05-2026.pdf" target="_blank" rel="noopener">
-              Brochure (PDF)
-            </a>
-            <a href="#/editor">Edit project data</a>
+            {!IS_HOSTED && (
+              <>
+                <a href="./brochure/SPR-Brochure-11-05-2026.pdf" target="_blank" rel="noopener">
+                  Brochure (PDF)
+                </a>
+                <a href="#/editor">Edit project data</a>
+              </>
+            )}
           </div>
         </div>
         <p style={{ marginTop: 24 }}>{data.project.credit}</p>

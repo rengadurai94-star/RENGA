@@ -116,7 +116,7 @@ export default function SceneCanvas() {
           <Building shadows={high} />
         </Suspense>
         <City density={high ? 'high' : 'low'} />
-        <Clouds count={high ? 320 : 150} />
+        <Clouds count={high ? 320 : 260} />
         <CameraDirector />
         <ReadyNotifier />
         {high && (

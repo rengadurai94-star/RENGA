@@ -1,6 +1,6 @@
 # Automated test report
 
-Run: 2026-11-28T08:01:15.076Z against http://localhost:4173/
+Run: 2026-11-28T08:36:48.391Z against http://localhost:4173/
 
 **38 / 38 checks passed.**
 
@@ -12,7 +12,7 @@ Run: 2026-11-28T08:01:15.076Z against http://localhost:4173/
 | ✅ PASS | Typical floor plan traced into 6 residences A-F |  |
 | ✅ PASS | Seven levels represented (Stilt, 1st-5th, Terrace) | Terrace, 5th Floor, 4th Floor, 3rd Floor, 2nd Floor, 1st Floor, Stilt Floor |
 | ✅ PASS | Cinematic intro is shown on first visit |  |
-| ✅ PASS | Intro animation is running | t 0.029 -> 0.317 |
+| ✅ PASS | Intro animation is running | t 0.035 -> 0.330 |
 | ✅ PASS | Skip Intro works |  |
 | ✅ PASS | 3D building scene is rendering |  |
 | ✅ PASS | "Explore Building" opens the 3D explorer |  |

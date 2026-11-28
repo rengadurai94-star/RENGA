@@ -1,3 +1,6 @@
+/** True in the hosted-page build (claude.ai artifact): no iframes, downloads or dev-only editor. */
+export const IS_HOSTED = import.meta.env.MODE === 'artifact';
+
 import type { Quality } from './store';
 
 export function hasWebGL(): boolean {

@@ -1,4 +1,4 @@
-import { Globe, Mail, MapPin, MessageCircle, Phone, Send } from 'lucide-react';
+import { Copy, Globe, Mail, MapPin, MessageCircle, Phone, Send } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { data, unitConfiguration } from '../data/project';
 import { Reveal } from './ui';
@@ -9,6 +9,7 @@ export default function Contact() {
   const c = data.contact;
   const [form, setForm] = useState({ name: '', phone: '', email: '', interest: 'Any residence', message: '' });
   const [error, setError] = useState('');
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const on = (e: Event) => {
@@ -30,13 +31,23 @@ export default function Contact() {
     setError('');
     return true;
   };
-  const viaWhatsApp = () => {
-    if (!validate() || !c.whatsapp) return;
-    window.open(`https://wa.me/${digits(c.whatsapp)}?text=${encodeURIComponent(text())}`, '_blank', 'noopener');
+  // Real links (not pop-ups) so they work everywhere, including embedded/hosted viewers.
+  const waHref = c.whatsapp ? `https://wa.me/${digits(c.whatsapp)}?text=${encodeURIComponent(text())}` : undefined;
+  const mailHref = c.email ? `mailto:${c.email}?subject=${encodeURIComponent(`Enquiry - ${data.project.name} - ${form.interest}`)}&body=${encodeURIComponent(text())}` : undefined;
+  const guard = (e: React.MouseEvent) => {
+    if (!validate()) e.preventDefault();
   };
-  const viaEmail = () => {
-    if (!validate() || !c.email) return;
-    window.location.href = `mailto:${c.email}?subject=${encodeURIComponent(`Enquiry - ${data.project.name} - ${form.interest}`)}&body=${encodeURIComponent(text())}`;
+  const copy = async () => {
+    if (!validate()) return;
+    try {
+      await navigator.clipboard.writeText(text());
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2500);
+    } catch {
+      const ta = document.getElementById('f-preview') as HTMLTextAreaElement | null;
+      ta?.focus();
+      ta?.select();
+    }
   };
   const options = ['Any residence', ...Object.entries(data.unitTypes).map(([k, t]) => `Type ${k} · ${t.configuration}`), ...data.units.filter((u) => !u.type).map((u) => `5th Floor · ${unitConfiguration(u)}`)];
 
@@ -102,7 +113,7 @@ export default function Contact() {
             className="form"
             onSubmit={(e) => {
               e.preventDefault();
-              viaWhatsApp();
+              validate();
             }}
             aria-label="Enquiry form"
           >
@@ -134,14 +145,24 @@ export default function Contact() {
             </div>
             {error && <p className="form-error">{error}</p>}
             <div className="form-actions">
-              <button type="submit" className="btn teal">
-                <MessageCircle /> Send via WhatsApp
-              </button>
-              <button type="button" className="btn ghost" onClick={viaEmail}>
-                <Send /> Send via Email
+              {waHref && (
+                <a className="btn teal" href={waHref} target="_blank" rel="noopener noreferrer" onClick={guard}>
+                  <MessageCircle /> Send via WhatsApp
+                </a>
+              )}
+              {mailHref && (
+                <a className="btn ghost" href={mailHref} onClick={guard}>
+                  <Send /> Send via Email
+                </a>
+              )}
+              <button type="button" className="btn ghost" onClick={copy}>
+                <Copy /> {copied ? 'Copied' : 'Copy message'}
               </button>
             </div>
-            <p className="source-note">This form stores nothing. It opens WhatsApp or your email app with your message ready to send.</p>
+            <textarea id="f-preview" className="sr-only" readOnly value={text()} tabIndex={-1} aria-hidden />
+            <p className="source-note">
+              This form stores nothing. WhatsApp or your email app opens with your message ready to send. You can also copy the message and send it to {c.phone ?? 'the sales team'}.
+            </p>
           </form>
         </Reveal>
       </div>

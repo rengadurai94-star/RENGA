@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { data, mediaInfo } from '../data/project';
 import { openLightbox } from './Lightbox';
 import { Reveal } from './ui';
+import { IS_HOSTED } from '../utils/device';
 
 export default function Location() {
   const L = data.location;
@@ -76,9 +77,11 @@ export default function Location() {
             <div className="body">
               <span className="small">{embed ? 'Google Maps search for the printed address. The pin may be approximate.' : 'Brochure location map (p.7) · tap to enlarge'}</span>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                <button className="btn ghost sm" onClick={() => setEmbed((e) => !e)}>
-                  {embed ? 'Show brochure map' : 'Interactive map'}
-                </button>
+                {!IS_HOSTED && (
+                  <button className="btn ghost sm" onClick={() => setEmbed((e) => !e)}>
+                    {embed ? 'Show brochure map' : 'Interactive map'}
+                  </button>
+                )}
                 {L.mapLink && (
                   <a className="btn sm" href={L.mapLink} target="_blank" rel="noopener noreferrer" title={L.mapLinkSource}>
                     Open in Google Maps <ExternalLink />
